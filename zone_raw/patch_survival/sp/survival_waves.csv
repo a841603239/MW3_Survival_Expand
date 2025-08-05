@@ -1,0 +1,54 @@
+a0,b1,c2,d3,e4,f5,g6,h7,i8,j9,k10,
+0,1,1,easy,1,,,,,,,
+1,1,2,easy,2,,,,,,,
+2,1,3,easy,3,,,,,,,
+3,1,4,easy,4,,,,,,,
+4,1,5,easy,5,,,,,,,
+5,1,6,easy,6,,,,,,,
+6,1,7,easy,7,,,,,,,
+7,1,8,easy,8,,,,,,,
+8,1,9,easy,9,,,,,,,
+9,1,10,easy,10,,,,,,,
+10,1,11,easy,11,,,,,,,
+11,1,12,easy,12,,,,,,,
+12,1,13,easy,13,,,,,,,
+13,1,14,easy,14,,,,,,,
+14,1,15,easy,15,,,,,,,
+15,1,16,easy,16,,,,,,,
+16,1,17,easy,17,,,,,,,
+17,1,18,easy,18,,,,,,,
+18,1,19,easy,19,,,,,,,
+19,1,20,easy,20,,,,,,,
+20,1,21,easy,21,,,,,,,
+100,easy,Easy Infantry,Easy guys,actor_enemy_so_easy,iw5_1887_mp,,75,0.9,65,,1.3
+101,regular,Regular Infantry,Regular guys,actor_enemy_so_regular,iw5_pp90m1_mp,,100,0.9,90,,1.1
+102,hardened,Hardened Infantry,Harder guys,actor_enemy_so_hardened,iw5_ak47_mp,,135,1.1,125,,1.2
+103,veteran,Veterans,Veteran guys,actor_enemy_so_veteran,iw5_fad_mp,fraggrenade,185,1.2,175,,1.4
+104,elite,Elite,Elite guys,actor_enemy_so_elite,iw5_ak47_mp,flash_grenade,250,1.3,240,,1.7
+105,martyrdom,Martydom,Guys strapped with C4 that explode on death,actor_enemy_so_martyrdom,iw5_usas12_mp,,120,1.1,110,,1.3
+106,claymore,Claymore laying,Guys that place claymores,actor_enemy_so_claymore,iw5_m9_mp,,120,1,110,,1.25
+107,chemical,VX Gas,Chemical warfare enemies in gas masks,actor_enemy_so_chemical,iw5_skorpion_mp,,120,1,110,,1.2
+108,jug_regular,Juggernaut,Heavy armored guy,actor_enemy_juggernaut_so_survival,,rpg,1200,1.1,650,1,1.3
+109,jug_riotshield,Riot Shield Juggernaut,Armory guy behind a riot shield,actor_enemy_juggernaut_riotshield,,rpg,1200,1,750,1,1.2
+110,jug_explosive,Explosive Juggernaut,Uses and is weak to explosives,actor_enemy_juggernaut_explosive,,rpg,1500,1.2,800,1,1.3
+111,jug_minigun,The Terminator,WTFBBQ dead,actor_enemy_juggernaut,,,2000,1,10,1,1.3
+112,chopper,Enemy Attack Chopper,Enemy Attack Helicopter with mini-gun,,,,1300,1,700,1,
+113,dog_reg,Dog,Regular dogs,,,,50,1,100,,
+114,dog_splode,Martydom Dogs,Dogs strapped with C4 that explode on death,,,,50,1,100,,
+115,friendly_support_delta,replace to BLUE Juggernaut,dummy delta desc,,iw5_pecheneg_mp,fraggrenade,2000,1,10,,1.3
+116,friendly_support_riotshield,Riotshield Allies,dummy gign desc,,iw5_spas12_mp,flash_grenade,500,1,10,,1.3
+1000,weapon_1,,,,,,,,,,
+1001,weapon_2,,,,,,,,,,
+1002,weapon_3,,,,,,,,,,
+1003,grenade_1,,,,,,,,,,
+1004,grenade_2,,,,,,,,,,
+1005,equipment_1,,,,,,,,,,
+1006,equipment_2,,,,,,,,,,
+1007,equipment_3,,,,,,,,,,
+1008,airsupport_1,,,,,,,,,,
+1009,airsupport_2,,,,,,,,,,
+1010,airsupport_3,,,,,,,,,,
+1011,perk_1,,,,,,,,,,
+1012,perk_2,,,,,,,,,,
+1013,perk_3,,,,,,,,,,
+1014,armor_1,,,,,,,,,,

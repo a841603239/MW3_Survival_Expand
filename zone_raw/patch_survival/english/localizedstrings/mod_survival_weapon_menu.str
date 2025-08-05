@@ -1,0 +1,142 @@
+// Dumped from fastfile "patch_survival".
+// In their original format the strings might have been separated in multiple files.
+VERSION             "1"
+CONFIG              "C:/trees/cod3/cod3/bin/StringEd.cfg"
+FILENOTES           ""
+
+REFERENCE           SO_SURVIVAL_ATTACHMENT_AKIMBO
+LANG_ENGLISH        "双持模组"
+
+REFERENCE           SO_SURVIVAL_ATTACHMENT_AKIMBO_DESC
+LANG_ENGLISH        "^3适用于UMP45,PP90M1,Model 1887以及所有半自动手枪，所有冲锋手枪。^1其他武器虽能购买但无效果"
+
+REFERENCE           WEAPON_FNFIVESEVEN_DESC
+LANG_ENGLISH        "比制半自动手枪,威力极低,射程中,装填速度快.全手枪最大弹容,操控性优秀."
+
+REFERENCE           WEAPON_USP_DESC
+LANG_ENGLISH        "德制半自动手枪,威力低,射程中,装填速度中.弹容射速略逊五七式,精度稳定."
+
+REFERENCE           WEAPON_MP412_DESC
+LANG_ENGLISH        "俄制半自动手枪,威力中高,射程中,装填速度慢.出枪速度顶尖,弹容较少."
+
+REFERENCE           WEAPON_DESERTEAGLE_DESC
+LANG_ENGLISH        "美制半自动手枪,威力极高,射程中远,装填速度快.后坐力巨大,精度较差."
+
+REFERENCE           WEAPON_MAGNUM_DESC
+LANG_ENGLISH        "以制半自动手枪,威力极高,射程中远,装填速度中.精度胜沙鹰,弹容过少."
+
+REFERENCE           WEAPON_P99_DESC
+LANG_ENGLISH        "德制半自动手枪,威力高,射程中,装填速度快.高射速高精度,综合最优解."
+
+REFERENCE           WEAPON_GLOCK_DESC
+LANG_ENGLISH        "奥制半自动手枪,威力低,射程中近,装填速度快.全自动易失控,弹药消耗快."
+
+REFERENCE           WEAPON_SKORPION_DESC
+LANG_ENGLISH        "捷制冲锋手枪,威力低,射程近,装填速度中.集弹率极佳,稳定性超格洛克."
+
+REFERENCE           WEAPON_MP9_DESC
+LANG_ENGLISH        "瑞士冲锋手枪,威力中,射程中近,装填速度快.建议配红点镜,适应中距离."
+
+REFERENCE           WEAPON_FMG9_DESC
+LANG_ENGLISH        "德制冲锋手枪,威力高,射程中近,装填速度慢.可双持高射速,后坐力偏大."
+
+REFERENCE           WEAPON_MP5K_DESC
+LANG_ENGLISH        "德制冲锋枪,威力中,射程中近,装填速度快.敌人会掉落,节省资源首选."
+
+REFERENCE           WEAPON_UMP45_DESC
+LANG_ENGLISH        "德制冲锋枪,威力高,射程中,装填速度中.低射速高威力,可充突击步枪."
+
+REFERENCE           WEAPON_MP7_DESC
+LANG_ENGLISH        "德制冲锋枪,威力中,射程中,装填速度快.建议配ACOG镜,中距效能显著."
+
+REFERENCE           WEAPON_UZI_DESC
+LANG_ENGLISH        "以制冲锋枪,威力中,射程中近,装填速度快.建议配ACOG镜,中距效能显著."
+
+REFERENCE           WEAPON_PP90M1_DESC
+LANG_ENGLISH        "俄制冲锋枪,威力中,射程中近,装填速度快.高射速低后坐,可拾取使用."
+
+REFERENCE           WEAPON_P90_DESC
+LANG_ENGLISH        "比制冲锋枪,威力中,射程中,装填速度中.弹容超群仅次机枪,持续力强."
+
+REFERENCE           WEAPON_M60_DESC
+LANG_ENGLISH        "美制轻机枪,威力极高,射程远,装填速度慢.必须配瞄准镜,射速偏低."
+
+REFERENCE           WEAPON_PECHENEG_DESC
+LANG_ENGLISH        "俄制轻机枪,威力高,射程远,装填速度慢.性能在M60与MK46间平衡."
+
+REFERENCE           WEAPON_MK46_DESC
+LANG_ENGLISH        "比制轻机枪,威力中高,射程远,装填速度慢.高射速快耗弹,稳定性好."
+
+REFERENCE           WEAPON_SA80_DESC
+LANG_ENGLISH        "英制轻机枪,威力中,射程中远,装填速度中等.弹匣供弹极速换弹."
+
+REFERENCE           WEAPON_MG36_DESC
+LANG_ENGLISH        "德制轻机枪,威力中,射程中远,装填速度较快.全机枪最快换弹,续战强."
+
+REFERENCE           WEAPON_M4_DESC
+LANG_ENGLISH        "美制突击步枪,威力中,射程中,装填速度快.高自由度改装,性能均衡."
+
+REFERENCE           WEAPON_M16_DESC
+LANG_ENGLISH        "美制点射步枪,威力中高,射程中远,装填速度快.三连发模式,近战乏力."
+
+REFERENCE           WEAPON_SCAR_DESC
+LANG_ENGLISH        "比制突击步枪,威力中高,射程中远,装填速度中.低射速高精度,稳如磐石."
+
+REFERENCE           WEAPON_ACR_DESC
+LANG_ENGLISH        "美制突击步枪,威力中,射程中远,装填速度快.后坐力微弱,综合性能佳."
+
+REFERENCE           WEAPON_AK47_DESC
+LANG_ENGLISH        "苏制突击步枪,威力高,射程中远,装填速度中.本模组中GP25榴弹发射器不再可用."
+
+REFERENCE           WEAPON_FAD_DESC
+LANG_ENGLISH        "秘鲁突击步枪,威力中,射程中,装填速度慢.大弹容机枪化,持续火力强."
+
+REFERENCE           WEAPON_G36_DESC
+LANG_ENGLISH        "德制突击步枪,威力中,射程中,装填速度快.可配M320榴弹,近M4性能."
+
+REFERENCE           WEAPON_CM901_DESC
+LANG_ENGLISH        "美制突击步枪,威力高,射程中远,装填速度中.后坐力强,中远需点射."
+
+REFERENCE           WEAPON_MK14_DESC
+LANG_ENGLISH        "美制精确步枪,威力极高,射程远,装填速度中.必配瞄准镜,全AR最高伤."
+
+REFERENCE           WEAPON_TYPE95_DESC
+LANG_ENGLISH        "中制点射步枪,威力高,射程中远,装填速度快.需精细瞄准,发挥高杀伤."
+
+REFERENCE           WEAPON_MODEL1887_DESC
+LANG_ENGLISH        "美制杠杆霰弹,威力极高,射程远,装填速度慢.可双持射击,中距仍致命."
+
+REFERENCE           WEAPON_USAS12_DESC
+LANG_ENGLISH        "韩制半自动霰弹,威力高,射程中,装填速度快.快节奏战斗适应性良好."
+
+REFERENCE           WEAPON_SPAS12_DESC
+LANG_ENGLISH        "意制泵动霰弹,威力高,射程中,装填速度慢.高血敌乏力,射速成瓶颈."
+
+REFERENCE           WEAPON_KSG_DESC
+LANG_ENGLISH        "美制泵动霰弹,威力高,射程中,装填速度慢.双管弹容,载弹量占优."
+
+REFERENCE           WEAPON_STRIKER_DESC
+LANG_ENGLISH        "南非半自动霰弹,威力中高,射程中,装填速度中.全自动高爆发,售价昂贵."
+
+REFERENCE           WEAPON_AA12_DESC
+LANG_ENGLISH        "美制全自动霰弹,威力中,射程近,装填速度中.备弹量吃紧,续航较差."
+
+REFERENCE           WEAPON_MSR_DESC
+LANG_ENGLISH        "美制栓动狙击,威力极高,射程极远,装填速度慢.不可连射,高血敌棘手."
+
+REFERENCE           WEAPON_DRAGUNOV_DESC
+LANG_ENGLISH        "苏制半自动狙,威力中,射程远,装填速度中.连射优势失,杀伤力不足."
+
+REFERENCE           WEAPON_RSASS_DESC
+LANG_ENGLISH        "美制半自动狙,威力中高,射程远,装填速度中.配ACOG镜,可作战术步枪."
+
+REFERENCE           WEAPON_L96A1_DESC
+LANG_ENGLISH        "英制栓动狙击,威力极高,射程极远,装填速度慢.总体性能近似MSR."
+
+REFERENCE           WEAPON_AS50_DESC
+LANG_ENGLISH        "英制半自动狙,威力极高,射程极远,装填速度中.可速射压制,弹容有限."
+
+REFERENCE           WEAPON_BARRETT_DESC
+LANG_ENGLISH        "美制半自动狙,威力极高,射程极远,装填速度慢.弹容连射优,综合顶尖."
+
+ENDMARKER

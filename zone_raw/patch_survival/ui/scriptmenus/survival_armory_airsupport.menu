@@ -1,0 +1,2146 @@
+{
+    functionDef
+    {
+        name                        "FUNC_0"
+        value                       (tablelookup("mp/factionTable.csv", 0, getmapcustom("allieschar"), 14) * (player("teamname") == "TEAM_ALLIES")) + (tablelookup("mp/factionTable.csv", 0, getmapcustom("axischar"), 14) * (player("teamname") == "TEAM_AXIS"));
+    }
+    functionDef
+    {
+        name                        "FUNC_1"
+        value                       (tablelookup("mp/factionTable.csv", 0, getmapcustom("allieschar"), 15) * (player("teamname") == "TEAM_ALLIES")) + (tablelookup("mp/factionTable.csv", 0, getmapcustom("axischar"), 15) * (player("teamname") == "TEAM_AXIS"));
+    }
+    functionDef
+    {
+        name                        "FUNC_2"
+        value                       (tablelookup("mp/factionTable.csv", 0, getmapcustom("allieschar"), 16) * (player("teamname") == "TEAM_ALLIES")) + (tablelookup("mp/factionTable.csv", 0, getmapcustom("axischar"), 16) * (player("teamname") == "TEAM_AXIS"));
+    }
+    functionDef
+    {
+        name                        "FUNC_3"
+        value                       (tablelookup("mp/factionTable.csv", 0, getmapcustom("allieschar"), 14) * (player("teamname") == "TEAM_AXIS")) + (tablelookup("mp/factionTable.csv", 0, getmapcustom("axischar"), 14) * (player("teamname") == "TEAM_ALLIES"));
+    }
+    functionDef
+    {
+        name                        "FUNC_4"
+        value                       (tablelookup("mp/factionTable.csv", 0, getmapcustom("allieschar"), 15) * (player("teamname") == "TEAM_AXIS")) + (tablelookup("mp/factionTable.csv", 0, getmapcustom("axischar"), 15) * (player("teamname") == "TEAM_ALLIES"));
+    }
+    functionDef
+    {
+        name                        "FUNC_5"
+        value                       (tablelookup("mp/factionTable.csv", 0, getmapcustom("allieschar"), 16) * (player("teamname") == "TEAM_AXIS")) + (tablelookup("mp/factionTable.csv", 0, getmapcustom("axischar"), 16) * (player("teamname") == "TEAM_ALLIES"));
+    }
+    functionDef
+    {
+        name                        "FUNC_6"
+        value                       team("name") == "TEAM_ALLIES";
+    }
+    functionDef
+    {
+        name                        "FUNC_7"
+        value                       team("name") == "TEAM_AXIS";
+    }
+    functionDef
+    {
+        name                        "FUNC_8"
+        value                       ((team("name") == "TEAM_AXIS") * 1) + ((team("name") == "TEAM_ALLIES") * 2);
+    }
+    functionDef
+    {
+        name                        "FUNC_9"
+        value                       tablelookup("mp/factionTable.csv", 0, getmapcustom("allieschar"), 14);
+    }
+    functionDef
+    {
+        name                        "FUNC_10"
+        value                       tablelookup("mp/factionTable.csv", 0, getmapcustom("allieschar"), 15);
+    }
+    functionDef
+    {
+        name                        "FUNC_11"
+        value                       tablelookup("mp/factionTable.csv", 0, getmapcustom("allieschar"), 16);
+    }
+    functionDef
+    {
+        name                        "FUNC_12"
+        value                       tablelookup("mp/factionTable.csv", 0, getmapcustom("axischar"), 14);
+    }
+    functionDef
+    {
+        name                        "FUNC_13"
+        value                       tablelookup("mp/factionTable.csv", 0, getmapcustom("axischar"), 15);
+    }
+    functionDef
+    {
+        name                        "FUNC_14"
+        value                       tablelookup("mp/factionTable.csv", 0, getmapcustom("axischar"), 16);
+    }
+    functionDef
+    {
+        name                        "FUNC_15"
+        value                       (FUNC_12() * FUNC_7()) + (FUNC_9() * FUNC_6());
+    }
+    functionDef
+    {
+        name                        "FUNC_16"
+        value                       (FUNC_13() * FUNC_7()) + (FUNC_10() * FUNC_6());
+    }
+    functionDef
+    {
+        name                        "FUNC_17"
+        value                       (FUNC_14() * FUNC_7()) + (FUNC_11() * FUNC_6());
+    }
+    functionDef
+    {
+        name                        "FUNC_18"
+        value                       (FUNC_12() * !(FUNC_7())) + (FUNC_9() * (!FUNC_6()));
+    }
+    functionDef
+    {
+        name                        "FUNC_19"
+        value                       (FUNC_13() * !(FUNC_7())) + (FUNC_10() * (!FUNC_6()));
+    }
+    functionDef
+    {
+        name                        "FUNC_20"
+        value                       (FUNC_14() * !(FUNC_7())) + (FUNC_11() * (!FUNC_6()));
+    }
+    functionDef
+    {
+        name                        "FUNC_21"
+        value                       max(0, (localvarint("ui_ac130timer") - milliseconds()) / 1000);
+    }
+    functionDef
+    {
+        name                        "FUNC_22"
+        value                       max(0, (localvarint("ui_remoteTankTimer") - milliseconds()) / 1000);
+    }
+    functionDef
+    {
+        name                        "FUNC_23"
+        value                       (getplayercardinfo(0, 0, 7) != 0) && (getplayercardinfo(8, 0, 7) && getplayercardinfo(8, 0, 7) == FUNC_8());
+    }
+    functionDef
+    {
+        name                        "FUNC_24"
+        value                       (getplayercardinfo(0, 0, 8) != 0) && (getplayercardinfo(8, 0, 8) && getplayercardinfo(8, 0, 8) == FUNC_8());
+    }
+    functionDef
+    {
+        name                        "FUNC_25"
+        value                       (getplayercardinfo(0, 0, 5) != 0) && (getplayercardinfo(8, 0, 5) && getplayercardinfo(8, 0, 5) == FUNC_8());
+    }
+    functionDef
+    {
+        name                        "FUNC_26"
+        value                       (getplayercardinfo(0, 0, 7) != 0) && (!getplayercardinfo(8, 0, 7) || getplayercardinfo(8, 0, 7) != FUNC_8());
+    }
+    functionDef
+    {
+        name                        "FUNC_27"
+        value                       (getplayercardinfo(0, 0, 8) != 0) && (!getplayercardinfo(8, 0, 8) || getplayercardinfo(8, 0, 8) != FUNC_8());
+    }
+    functionDef
+    {
+        name                        "FUNC_28"
+        value                       (getplayercardinfo(0, 0, 5) != 0) && (!getplayercardinfo(8, 0, 5) || getplayercardinfo(8, 0, 5) != FUNC_8());
+    }
+    functionDef
+    {
+        name                        "FUNC_29"
+        value                       !isusingmatchrulesdata() || getmatchrulesdata("commonOption", "allowCustomClasses");
+    }
+    functionDef
+    {
+        name                        "FUNC_30"
+        value                       dvarbool(ui_multiplayer) && (dvarbool(cl_ingame) || dvarbool(sv_running));
+    }
+    functionDef
+    {
+        name                        "FUNC_31"
+        value                       dvarbool(cl_ingame) || dvarbool(sv_running) || inlobby();
+    }
+    functionDef
+    {
+        name                        "FUNC_32"
+        value                       (dvarstring(gameMode) == "so" && FUNC_31()) || (dvarstring(gameMode) == "mp" && FUNC_31());
+    }
+    functionDef
+    {
+        name                        "FUNC_33"
+        value                       FUNC_29() && (getplayerdata(localvarstring("ui_customClassLoc"), 0, "inUse") || getplayerdata(localvarstring("ui_customClassLoc"), 1, "inUse") || getplayerdata(localvarstring("ui_customClassLoc"), 2, "inUse") || getplayerdata(localvarstring("ui_customClassLoc"), 3, "inUse") || getplayerdata(localvarstring("ui_customClassLoc"), 4, "inUse") || getplayerdata(localvarstring("ui_customClassLoc"), 5, "inUse") || getplayerdata(localvarstring("ui_customClassLoc"), 6, "inUse") || getplayerdata(localvarstring("ui_customClassLoc"), 7, "inUse") || getplayerdata(localvarstring("ui_customClassLoc"), 8, "inUse") || getplayerdata(localvarstring("ui_customClassLoc"), 9, "inUse") || getplayerdata(localvarstring("ui_customClassLoc"), 10, "inUse") || getplayerdata(localvarstring("ui_customClassLoc"), 11, "inUse") || getplayerdata(localvarstring("ui_customClassLoc"), 12, "inUse") || getplayerdata(localvarstring("ui_customClassLoc"), 13, "inUse") || getplayerdata(localvarstring("ui_customClassLoc"), 14, "inUse"));
+    }
+    functionDef
+    {
+        name                        "FUNC_34"
+        value                       localvarbool("ui_swfSelectionBarVis") || localvarbool("ui_swfPopupSelectionBarVis");
+    }
+    functionDef
+    {
+        name                        "FUNC_35"
+        value                       (localvarstring("ui_team") == "marines") || (team("name") == "TEAM_ALLIES");
+    }
+    functionDef
+    {
+        name                        "FUNC_36"
+        value                       (localvarstring("ui_team") == "opfor") || (team("name") == "TEAM_AXIS");
+    }
+    functionDef
+    {
+        name                        "FUNC_37"
+        value                       isusingmatchrulesdata() && ((FUNC_36() && getmatchrulesdata("defaultClasses", "axis", 0, "class", "inUse")) || (FUNC_35() && getmatchrulesdata("defaultClasses", "allies", 0, "class", "inUse")));
+    }
+    functionDef
+    {
+        name                        "FUNC_38"
+        value                       isusingmatchrulesdata() && ((FUNC_36() && getmatchrulesdata("defaultClasses", "axis", 1, "class", "inUse")) || (FUNC_35() && getmatchrulesdata("defaultClasses", "allies", 1, "class", "inUse")));
+    }
+    functionDef
+    {
+        name                        "FUNC_39"
+        value                       isusingmatchrulesdata() && ((FUNC_36() && getmatchrulesdata("defaultClasses", "axis", 2, "class", "inUse")) || (FUNC_35() && getmatchrulesdata("defaultClasses", "allies", 2, "class", "inUse")));
+    }
+    functionDef
+    {
+        name                        "FUNC_40"
+        value                       isusingmatchrulesdata() && ((FUNC_36() && getmatchrulesdata("defaultClasses", "axis", 3, "class", "inUse")) || (FUNC_35() && getmatchrulesdata("defaultClasses", "allies", 3, "class", "inUse")));
+    }
+    functionDef
+    {
+        name                        "FUNC_41"
+        value                       isusingmatchrulesdata() && ((FUNC_36() && getmatchrulesdata("defaultClasses", "axis", 4, "class", "inUse")) || (FUNC_35() && getmatchrulesdata("defaultClasses", "allies", 4, "class", "inUse")));
+    }
+    functionDef
+    {
+        name                        "FUNC_42"
+        value                       isusingmatchrulesdata() && (FUNC_37() || FUNC_38() || FUNC_39() || FUNC_40() || FUNC_41());
+    }
+    functionDef
+    {
+        name                        "FUNC_43"
+        value                       sin(localclientuimilliseconds() / 80) * 0.3 + 1;
+    }
+    functionDef
+    {
+        name                        "FUNC_44"
+        value                       sin(milliseconds() / 80) * 0.3 + 1;
+    }
+    functionDef
+    {
+        name                        "FUNC_45"
+        value                       sin(localclientuimilliseconds() / 90) * (0 - 0.35);
+    }
+    functionDef
+    {
+        name                        "FUNC_46"
+        value                       sin(milliseconds() / 90) * (0 - 0.35);
+    }
+    functionDef
+    {
+        name                        "FUNC_47"
+        value                       0.3 + (sin(milliseconds() / 80) + 1) * 0.7;
+    }
+    functionDef
+    {
+        name                        "FUNC_48"
+        value                       getplayerdata("surHUD_credits");
+    }
+    menuDef
+    {
+        name                        "survival_armory_airsupport"
+        rect                        0 0 0 0 2 2
+        focuscolor                  1 1 1 1
+        outOfBoundsClick            
+        popup                       
+        legacySplitScreenScale      
+        exp rect X                  0 - (350 * 0.5);
+        exp rect Y                  0 - ((((23 * 1) + (16.367 * 0)) + (15 * (20 + 2)) + 5) * 0.5);
+        exp rect W                  350;
+        exp rect H                  (((23 * 1) + (16.367 * 0)) + (15 * (20 + 2)) + 5);
+        onOpen
+        {
+            setLocalVarInt ui_quit_timer milliseconds();
+            setLocalVarInt selected_item_index - 1;
+            setLocalVarInt ui_buttonNavGroupOffset_popup 0;
+            setLocalVarInt ui_buttonNavGroupCurrent_popup 0;
+            setLocalVarString ui_buttonNavGroupName_popup "invalid";
+            setLocalVarBool ui_swfSelectionButtonVis 0;
+            setLocalVarBool ui_swfSelectionBarVis 0;
+            setLocalVarBool ui_swfSelectionDisabled 0;
+            setLocalVarBool ui_swfPopupSelectionButtonVis 0;
+            setLocalVarBool ui_swfPopupSelectionBarVis 0;
+            setLocalVarBool ui_swfPopupSelectionDisabled 0;
+            setLocalVarString ui_swfPopupContext "invalid";
+            setLocalVarBool ui_centerPopup 1;
+            play tabs_slide;
+            lerp x from - 460 to 0 over "0.05";
+            focusfirst;
+            setfocus AIRSUPPORT_POPUP_3;
+            focusfirst;
+        }
+        onClose
+        {
+            scriptmenuresponse quit;
+            setLocalVarBool ui_centerPopup 0;
+            play "";
+        }
+        onESC
+        {
+            if (((milliseconds() - localvarint("ui_quit_timer")) >= 100))
+            {
+                close self;
+            }
+        }
+        execKeyInt 168
+        {
+            setLocalVarInt ui_quit_timer milliseconds();
+            if (((milliseconds() - localvarint("ui_donate_timer")) >= 500) && (FUNC_48() >= 500) && (iscoop() || dvarbool(splitscreen)))
+            {
+                scriptmenuresponse share;
+                play so_ingame_summary;
+                setLocalVarInt ui_donate_timer milliseconds();
+            }
+        }
+        execKeyInt 14
+        {
+            if (((milliseconds() - localvarint("ui_quit_timer")) >= 100))
+            {
+                close self;
+            }
+        }
+        itemDef
+        {
+            rect                        -1280 -480 2560 960 2 2
+            style                       3
+            decoration                  
+            visible                     when(menuistopmost("survival_armory_airsupport"));
+            textscale                   0.55
+            forecolor                   0 0 0 0.8
+            background                  "white"
+        }
+        itemDef
+        {
+            rect                        -131.333 -78.667 262.667 130.667 2 2
+            style                       3
+            decoration                  
+            visible                     when(1);
+            textscale                   0.55
+            forecolor                   0.3098 0.349 0.2745 1
+            background                  "white"
+            exp rect y                  0
+            exp rect h                  (((23 * 1) + (16.367 * 0)) + (15 * (20 + 2)) + 5) + 0
+            exp rect x                  0
+            exp rect w                  350
+        }
+        itemDef
+        {
+            rect                        0 0 350 1 2 2
+            style                       3
+            decoration                  
+            visible                     when(1);
+            textscale                   0.55
+            forecolor                   0.2118 0.2314 0.22 1
+            background                  "white"
+            exp rect x                  (0 + 0);
+            exp rect y                  (0 - 3.5) + (3 * (20 + 2)) + ((0 + 4) + ((23 * 1) + (16.367 * 0)));
+            exp rect h                  ((20 + 2) * 5) + 1;
+        }
+        itemDef
+        {
+            rect                        0 0 1 8.666 2 2
+            style                       3
+            decoration                  
+            visible                     when(localvarbool("ui_swfPopupSelectionBarVis") && (localvarstring("ui_buttonNavGroupName_popup") == "AIRSUPPORT_POPUP") && (localvarstring("ui_swfPopupContext") == "AIRSUPPORT_POPUP"));
+            textscale                   0.55
+            background                  "navbar_selection_bar_shadow"
+            exp rect x                  (0 + 0);
+            exp rect y                  (0 - 3.5) + ((localvarint("ui_buttonNavGroupCurrent_popup") - localvarint("ui_buttonNavGroupOffset_popup")) * (20 + 2)) + ((0 + 4) + ((23 * 1) + (16.367 * 0))) + (20 + 0.3333);
+            exp rect w                  350;
+        }
+        itemDef
+        {
+            rect                        0 0 1 20 2 2
+            style                       3
+            decoration                  
+            visible                     when(localvarbool("ui_swfPopupSelectionBarVis") && (localvarstring("ui_buttonNavGroupName_popup") == "AIRSUPPORT_POPUP") && (localvarstring("ui_swfPopupContext") == "AIRSUPPORT_POPUP"));
+            textscale                   0.55
+            forecolor                   0.6 0.6314 0.6 0.2
+            background                  "white"
+            exp rect x                  (0 + 0);
+            exp rect y                  (0 - 3.5) + ((localvarint("ui_buttonNavGroupCurrent_popup") - localvarint("ui_buttonNavGroupOffset_popup")) * (20 + 2)) + ((0 + 4) + ((23 * 1) + (16.367 * 0)));
+            exp rect w                  350;
+        }
+        itemDef
+        {
+            rect                        0 0 1 20 2 2
+            style                       3
+            decoration                  
+            visible                     when(localvarbool("ui_swfPopupSelectionBarVis") && (localvarstring("ui_buttonNavGroupName_popup") == "AIRSUPPORT_POPUP") && (localvarstring("ui_swfPopupContext") == "AIRSUPPORT_POPUP"));
+            textscale                   0.55
+            background                  "navbar_selection_bar"
+            exp rect x                  (0 + 0);
+            exp rect y                  (0 - 3.5) + ((localvarint("ui_buttonNavGroupCurrent_popup") - localvarint("ui_buttonNavGroupOffset_popup")) * (20 + 2)) + ((0 + 4) + ((23 * 1) + (16.367 * 0)));
+            exp rect w                  350;
+        }
+        itemDef
+        {
+            text                        "@PLATFORM_NAVBAR_BUTTON_FOCUSED_SELECTBUTTON"
+            rect                        0 0 20 20 2 2
+            style                       1
+            decoration                  
+            visible                     when(localvarbool("ui_swfPopupSelectionButtonVis") && (localvarstring("ui_buttonNavGroupName_popup") == "AIRSUPPORT_POPUP") && (localvarstring("ui_swfPopupContext") == "AIRSUPPORT_POPUP"));
+            textalign                   10
+            textscale                   0.30625
+            textfont                    3
+            exp rect x                  (0 + (0 + 350 - 24));
+            exp rect y                  (((localvarint("ui_buttonNavGroupCurrent_popup") - localvarint("ui_buttonNavGroupOffset_popup")) * (20 + 2)) + ((0 + 4) + ((23 * 1) + (16.367 * 0))) - 1.167) - 1.8;
+        }
+        itemDef
+        {
+            rect                        0 0 350 1 2 2
+            style                       3
+            decoration                  
+            visible                     when(1 && 1);
+            textscale                   0.55
+            forecolor                   0.1569 0.1725 0.1608 1
+            background                  "white"
+            exp rect x                  0;
+            exp rect y                  0;
+            exp rect h                  (1 * 22) + (16.367 * 0) + 2;
+        }
+        itemDef
+        {
+            rect                        0 0 1 8.666 2 2
+            style                       3
+            decoration                  
+            visible                     when(1 && 1);
+            textscale                   0.55
+            background                  "navbar_selection_bar_shadow"
+            exp rect x                  0
+            exp rect y                  0 + (1 * 22) + (16.367 * 0)
+            exp rect w                  350
+        }
+        itemDef
+        {
+            rect                        0 1 334 22 2 2
+            style                       1
+            decoration                  
+            visible                     when(1);
+            textalign                   8
+            textscale                   0.375
+            textstyle                   9
+            textfont                    9
+            exp text                    "@SO_SURVIVAL_ARMORY_AIRSUPPORT";
+            exp rect x                  (0 + 8);
+            exp rect y                  (0 + 4) - 4;
+        }
+        itemDef
+        {
+            rect                        0 0 272 20 2 2
+            style                       1
+            decoration                  
+            autowrapped                 
+            visible                     when(1);
+            textalign                   4
+            textscale                   0.375
+            textfont                    3
+            exp text                    localvarstring("armory_desc");
+            exp rect x                  ((0 + 8) + 0);
+            exp rect y                  (0 + (0 * (20 + 2)) + (0 + 4) + ((23 * 1) + (16.367 * 0))) - 2.333;
+        }
+        itemDef
+        {
+            rect                        0 0 62 62 2 2
+            style                       3
+            decoration                  
+            visible                     when(((tablelookup("sp/survival_armories.csv", 0, localvarint("selected_item_index"), 6) != "") && 1));
+            textscale                   0.55
+            forecolor                   1 1 1 0.75
+            exp material                tablelookup("sp/survival_armories.csv", 0, localvarint("selected_item_index"), 6);
+            exp rect x                  ((((350) - 62) + (0 - 5) + 0));
+            exp rect y                  ((0 - 2) + ((23 * 1) + (16.367 * 0)) + (0 + 4) + (0 * (20 + 2)));
+        }
+        itemDef
+        {
+            rect                        0 0 350 1 2 2
+            style                       3
+            decoration                  
+            visible                     when(1);
+            textscale                   0.55
+            forecolor                   0 0 0 0.4
+            background                  "white"
+            exp rect x                  (0 + 0);
+            exp rect y                  (0 - 3.5) + (8 * (20 + 2)) + ((0 + 4) + ((23 * 1) + (16.367 * 0)));
+            exp rect h                  (20 * 1) + 2;
+        }
+        itemDef
+        {
+            rect                        0 0 334 20 2 2
+            style                       1
+            decoration                  
+            autowrapped                 
+            visible                     when((((milliseconds() - localvarint("ui_donate_timer")) >= 500) && (FUNC_48() >= 500) && (iscoop() || dvarbool(splitscreen))));
+            textalign                   6
+            textscale                   0.30625
+            textfont                    3
+            exp text                    "[{+activate}]";
+            exp rect x                  ((0 + 8) + (0 - (30 + getTextWidth(locstring("@MENU_BACK"), 3, 0.375))));
+            exp rect y                  (2 + (14 * (20 + 2)) + (0 + 4) + ((23 * 1) + (16.367 * 0))) - 2.333;
+        }
+        itemDef
+        {
+            rect                        0 0 334 20 2 2
+            style                       1
+            decoration                  
+            autowrapped                 
+            visible                     when((((milliseconds() - localvarint("ui_donate_timer")) >= 500) && (FUNC_48() >= 500) && (iscoop() || dvarbool(splitscreen))));
+            textalign                   6
+            textscale                   0.375
+            textfont                    3
+            exp text                    "@SO_SURVIVAL_MENU_SHARE_HINT";
+            exp rect x                  ((0 + 8) + ((0 - (30 + getTextWidth(locstring("@MENU_BACK"), 3, 0.375))) - 25));
+            exp rect y                  (0 + (14 * (20 + 2)) + (0 + 4) + ((23 * 1) + (16.367 * 0))) - 2.333;
+        }
+        itemDef
+        {
+            rect                        0 0 334 20 2 2
+            style                       1
+            decoration                  
+            autowrapped                 
+            visible                     when((((milliseconds() - localvarint("ui_donate_timer")) < 500) && (FUNC_48() >= 500) && (iscoop() || dvarbool(splitscreen))));
+            textalign                   6
+            textscale                   0.30625
+            textfont                    3
+            exp text                    "";
+            exp rect x                  ((0 + 8) + (0 - (30 + getTextWidth(locstring("@MENU_BACK"), 3, 0.375))));
+            exp rect y                  (2 + (14 * (20 + 2)) + (0 + 4) + ((23 * 1) + (16.367 * 0))) - 2.333;
+        }
+        itemDef
+        {
+            rect                        0 0 334 20 2 2
+            style                       1
+            decoration                  
+            autowrapped                 
+            visible                     when((((milliseconds() - localvarint("ui_donate_timer")) < 500) && (FUNC_48() >= 500) && (iscoop() || dvarbool(splitscreen))));
+            textalign                   6
+            textscale                   0.375
+            textfont                    3
+            exp text                    "@SO_SURVIVAL_MENU_SHARE_SENDING";
+            exp rect x                  ((0 + 8) + ((0 - (30 + getTextWidth(locstring("@MENU_BACK"), 3, 0.375))) - 25));
+            exp rect y                  (0 + (14 * (20 + 2)) + (0 + 4) + ((23 * 1) + (16.367 * 0))) - 2.333;
+        }
+        itemDef
+        {
+            rect                        0 0 334 20 2 2
+            style                       1
+            decoration                  
+            autowrapped                 
+            visible                     when(1);
+            textalign                   4
+            textalignx                  3
+            textscale                   0.375
+            textfont                    3
+            forecolor                   0.7 1 0.7 0.85
+            exp text                    locstring("@SO_SURVIVAL_CREDITS", FUNC_48());
+            exp rect x                  ((0 + 8) + 0);
+            exp rect y                  (0 + (14 * (20 + 2)) + (0 + 4) + ((23 * 1) + (16.367 * 0))) - 2.333;
+        }
+        itemDef
+        {
+            rect                        0 0 18 18 2 2
+            style                       3
+            decoration                  
+            visible                     when(1);
+            textscale                   0.55
+            exp material                tablelookup("sp/rankTable.csv", 0, levelforexperienceso(getplayerdata("experience")), 6);
+            exp rect x                  ((((350) - 58) + 0));
+            exp rect y                  ((0 - 25) + ((23 * 1) + (16.367 * 0)) + (0 + 4) + (0 * (20 + 2)));
+        }
+        itemDef
+        {
+            rect                        0 0 334 20 2 2
+            style                       1
+            decoration                  
+            autowrapped                 
+            visible                     when(1);
+            textalign                   4
+            textscale                   0.375
+            textfont                    3
+            exp text                    locstring("@SO_SURVIVAL_ARMORY_LOCKED_LV", (levelforexperienceso(getplayerdata("experience")) + 1));
+            exp rect x                  ((0 + 8) + ((350) - 45));
+            exp rect y                  ((0 - 23) + (0 * (20 + 2)) + (0 + 4) + ((23 * 1) + (16.367 * 0))) - 2.333;
+        }
+        itemDef
+        {
+            rect                        0 0 350 1 2 2
+            style                       3
+            decoration                  
+            visible                     when((3 % 2 == 1));
+            textscale                   0.55
+            forecolor                   0 0 0 0.15
+            background                  "white"
+            exp rect x                  (0 + 0);
+            exp rect y                  (0 - 3.5) + (3 * (20 + 2)) + ((0 + 4) + ((23 * 1) + (16.367 * 0)));
+            exp rect h                  (20 * 1) + 2;
+        }
+        itemDef
+        {
+            rect                        0 0 14.333 14.333 2 2
+            style                       3
+            decoration                  
+            visible                     when(!((tablelookup("sp/survival_armories.csv", 0, 10004, 2) == "") && (tablelookup("sp/survival_armories.csv", 0, 10004, 8) != "") && ((int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10004, 1))) > 0))) && ((!(levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10004, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10004, 1) != "")) && 1 && !((((localvarint("ui_buttonNavGroupCurrent_popup") - localvarint("ui_buttonNavGroupOffset_popup")) == 3) && localvarbool("ui_swfPopupSelectionBarVis")))));
+            textscale                   0.55
+            exp material                "icon_lock";
+            exp rect x                  ((((350) - 14.333) + (0 - 5) + 0));
+            exp rect y                  ((2 - 2) + ((23 * 1) + (16.367 * 0)) + (0 + 4) + (3 * (20 + 2)));
+        }
+        itemDef
+        {
+            rect                        0 0 14.333 14.333 2 2
+            style                       3
+            decoration                  
+            visible                     when(!((tablelookup("sp/survival_armories.csv", 0, 10004, 2) == "") && (tablelookup("sp/survival_armories.csv", 0, 10004, 8) != "") && ((int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10004, 1))) > 0))) && ((!(levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10004, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10004, 1) != "")) && 1 && (((localvarint("ui_buttonNavGroupCurrent_popup") - localvarint("ui_buttonNavGroupOffset_popup")) == 3) && localvarbool("ui_swfPopupSelectionBarVis"))));
+            textscale                   0.55
+            forecolor                   0 0 0 1
+            exp material                "icon_lock";
+            exp rect x                  ((((350) - 14.333) + (0 - 5) + 0));
+            exp rect y                  ((2 - 2) + ((23 * 1) + (16.367 * 0)) + (0 + 4) + (3 * (20 + 2)));
+        }
+        itemDef
+        {
+            rect                        0 0 334 20 2 2
+            style                       1
+            decoration                  
+            autowrapped                 
+            visible                     when(!((tablelookup("sp/survival_armories.csv", 0, 10004, 2) == "") && (tablelookup("sp/survival_armories.csv", 0, 10004, 8) != "") && ((int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10004, 1))) > 0))) && ((!(levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10004, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10004, 1) != "")) && 1 && !((((localvarint("ui_buttonNavGroupCurrent_popup") - localvarint("ui_buttonNavGroupOffset_popup")) == 3) && localvarbool("ui_swfPopupSelectionBarVis")))));
+            textalign                   6
+            textalignx                  -30
+            textscale                   0.375
+            textfont                    3
+            forecolor                   0.569 0.569 0.569 1
+            exp text                    (locstring("@SO_SURVIVAL_ARMORY_LOCKED_LV", (int(tablelookup("sp/survival_armories.csv", 0, 10004, 7)) + 1)));
+            exp rect x                  ((0 + 8) + 0);
+            exp rect y                  (0 + (3 * (20 + 2)) + (0 + 4) + ((23 * 1) + (16.367 * 0))) - 2.333;
+        }
+        itemDef
+        {
+            rect                        0 0 334 20 2 2
+            style                       1
+            decoration                  
+            autowrapped                 
+            visible                     when(!((tablelookup("sp/survival_armories.csv", 0, 10004, 2) == "") && (tablelookup("sp/survival_armories.csv", 0, 10004, 8) != "") && ((int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10004, 1))) > 0))) && ((!(levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10004, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10004, 1) != "")) && 1 && (((localvarint("ui_buttonNavGroupCurrent_popup") - localvarint("ui_buttonNavGroupOffset_popup")) == 3) && localvarbool("ui_swfPopupSelectionBarVis"))));
+            textalign                   6
+            textalignx                  -30
+            textscale                   0.375
+            textfont                    3
+            forecolor                   0 0 0 1
+            exp text                    (locstring("@SO_SURVIVAL_ARMORY_LOCKED_LV", (int(tablelookup("sp/survival_armories.csv", 0, 10004, 7)) + 1)));
+            exp rect x                  ((0 + 8) + 0);
+            exp rect y                  (0 + (3 * (20 + 2)) + (0 + 4) + ((23 * 1) + (16.367 * 0))) - 2.333;
+        }
+        itemDef
+        {
+            name                        "AIRSUPPORT_POPUP_3"
+            rect                        11.667 0 350 19.567 2 2
+            style                       3
+            type                        1
+            visible                     when(1);
+            disabled                    when((!(levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10004, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10004, 1) != "")));
+            textscale                   0.55
+            forecolor                   0 0 0 0
+            background                  "white"
+            onFocus
+            {
+                setLocalVarString ui_swf_selection "SWF_POPUP_BUTTON_NAME(AIRSUPPORT_POPUP,3)";
+                setLocalVarInt ui_buttonNavGroupCurrent_popup 3;
+                setLocalVarString ui_buttonNavGroupName_popup "AIRSUPPORT_POPUP";
+                setLocalVarBool ui_swfPopupSelectionButtonVis ((1) && !((!(levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10004, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10004, 1) != ""))));
+                setLocalVarBool ui_swfPopupSelectionBarVis (1);
+                setLocalVarBool ui_swfPopupSelectionDisabled ((!(levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10004, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10004, 1) != "")));
+                setLocalVarString ui_swfPopupContext "AIRSUPPORT_POPUP";
+                play mouse_over;
+                setLocalVarString armory_desc "@SURVIVAL_ARMORY_PERKS_DESC";
+                setLocalVarInt selected_item_index - 1;
+            }
+            leaveFocus
+            {
+                setLocalVarBool ui_swfPopupSelectionButtonVis 0;
+                setLocalVarBool ui_swfPopupSelectionBarVis 0;
+                setLocalVarBool ui_swfPopupSelectionDisabled 0;
+            }
+            action
+            {
+                play mouse_click;
+                open survival_armory_airsupport_perks;
+            }
+            exp disabled                (!(levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10004, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10004, 1) != ""));
+            exp rect y                  ((3 * (20 + 2)) + (0 + 4) + ((23 * 1) + (16.367 * 0))) + ((0 - 1.333));
+            exp rect w                  350 - 0;
+            exp rect x                  (0 + (0 + 8));
+        }
+        itemDef
+        {
+            rect                        11.667 0 350 19.567 2 2
+            style                       1
+            decoration                  
+            visible                     when((1) && (1));
+            textalign                   8
+            textscale                   0.375
+            textstyle                   9
+            textfont                    3
+            exp text                    "@SO_SURVIVAL_ARMORY_PERKS";
+            exp rect y                  (((3 * (20 + 2)) + (0 + 4) + ((23 * 1) + (16.367 * 0))) + (0 - 1.333)) - 2.333;
+            exp rect w                  350;
+            exp forecolor r             select((!(levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10004, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10004, 1) != "")), select(localvarstring("ui_swf_selection") == "SWF_POPUP_BUTTON_NAME(AIRSUPPORT_POPUP,3)" && select(localvarbool("ui_centerPopup"), localvarbool("ui_swfPopupSelectionBarVis"), localvarbool("ui_swfSelectionBarVis")) && localvarstring("ui_buttonNavGroupName_popup") == "AIRSUPPORT_POPUP", 0, 0.360784), select(localvarstring("ui_swf_selection") == "SWF_POPUP_BUTTON_NAME(AIRSUPPORT_POPUP,3)" && select(localvarbool("ui_centerPopup"), localvarbool("ui_swfPopupSelectionBarVis"), localvarbool("ui_swfSelectionBarVis")) && localvarstring("ui_buttonNavGroupName_popup") == "AIRSUPPORT_POPUP", select(isdemoplaying(), FUNC_44(), FUNC_43()), 1));
+            exp forecolor g             select((!(levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10004, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10004, 1) != "")), select(localvarstring("ui_swf_selection") == "SWF_POPUP_BUTTON_NAME(AIRSUPPORT_POPUP,3)" && select(localvarbool("ui_centerPopup"), localvarbool("ui_swfPopupSelectionBarVis"), localvarbool("ui_swfSelectionBarVis")) && localvarstring("ui_buttonNavGroupName_popup") == "AIRSUPPORT_POPUP", 0, 0.360784), select(localvarstring("ui_swf_selection") == "SWF_POPUP_BUTTON_NAME(AIRSUPPORT_POPUP,3)" && select(localvarbool("ui_centerPopup"), localvarbool("ui_swfPopupSelectionBarVis"), localvarbool("ui_swfSelectionBarVis")) && localvarstring("ui_buttonNavGroupName_popup") == "AIRSUPPORT_POPUP", select(isdemoplaying(), FUNC_44(), FUNC_43()), 1));
+            exp forecolor b             select((!(levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10004, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10004, 1) != "")), select(localvarstring("ui_swf_selection") == "SWF_POPUP_BUTTON_NAME(AIRSUPPORT_POPUP,3)" && select(localvarbool("ui_centerPopup"), localvarbool("ui_swfPopupSelectionBarVis"), localvarbool("ui_swfSelectionBarVis")) && localvarstring("ui_buttonNavGroupName_popup") == "AIRSUPPORT_POPUP", 0, 0.360784), select(localvarstring("ui_swf_selection") == "SWF_POPUP_BUTTON_NAME(AIRSUPPORT_POPUP,3)" && select(localvarbool("ui_centerPopup"), localvarbool("ui_swfPopupSelectionBarVis"), localvarbool("ui_swfSelectionBarVis")) && localvarstring("ui_buttonNavGroupName_popup") == "AIRSUPPORT_POPUP", select(isdemoplaying(), FUNC_44(), FUNC_43()), 1));
+            exp rect x                  (0 + (0 + 8));
+        }
+        itemDef
+        {
+            rect                        0 0 350 1 2 2
+            style                       3
+            decoration                  
+            visible                     when((4 % 2 == 1));
+            textscale                   0.55
+            forecolor                   0 0 0 0.15
+            background                  "white"
+            exp rect x                  (0 + 0);
+            exp rect y                  (0 - 3.5) + (4 * (20 + 2)) + ((0 + 4) + ((23 * 1) + (16.367 * 0)));
+            exp rect h                  (20 * 1) + 2;
+        }
+        itemDef
+        {
+            rect                        0 0 334 20 2 2
+            style                       1
+            decoration                  
+            autowrapped                 
+            visible                     when((((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10000, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10000, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10000, 1))) > 0) && int(int(tablelookup("sp/survival_armories.csv", 0, 10000, 3)) <= FUNC_48())));
+            textalign                   6
+            textalignx                  -30
+            textscale                   0.375
+            textfont                    3
+            exp text                    locstring("@SO_SURVIVAL_CREDITS", int(tablelookup("sp/survival_armories.csv", 0, 10000, 3)));
+            exp rect x                  ((0 + 8) + 0);
+            exp rect y                  (0 + (4 * (20 + 2)) + (0 + 4) + ((23 * 1) + (16.367 * 0))) - 2.333;
+        }
+        itemDef
+        {
+            rect                        0 0 334 20 2 2
+            style                       1
+            decoration                  
+            autowrapped                 
+            visible                     when((((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10000, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10000, 1) != "")) && !int(int(tablelookup("sp/survival_armories.csv", 0, 10000, 3)) <= FUNC_48()) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10000, 1))) > 0)));
+            textalign                   6
+            textalignx                  -30
+            textscale                   0.375
+            textfont                    3
+            forecolor                   1 0.5 0.5 1
+            exp text                    locstring("@SO_SURVIVAL_CREDITS", int(tablelookup("sp/survival_armories.csv", 0, 10000, 3)));
+            exp rect x                  ((0 + 8) + 0);
+            exp rect y                  (0 + (4 * (20 + 2)) + (0 + 4) + ((23 * 1) + (16.367 * 0))) - 2.333;
+        }
+        itemDef
+        {
+            rect                        0 0 334 20 2 2
+            style                       1
+            decoration                  
+            autowrapped                 
+            visible                     when((!((tablelookup("sp/survival_armories.csv", 0, 10000, 2) == "") && (tablelookup("sp/survival_armories.csv", 0, 10000, 8) != "") && ((int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10000, 1))) > 0))) && (int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10000, 1))) > 0) && (int(tablelookup("sp/survival_armories.csv", 0, 10000, 10) != 1))));
+            textalign                   6
+            textalignx                  -30
+            textscale                   0.375
+            textfont                    3
+            forecolor                   1 1 0.5 1
+            exp text                    "@SO_SURVIVAL_ARMORY_FULL";
+            exp rect x                  ((0 + 8) + 0);
+            exp rect y                  (0 + (4 * (20 + 2)) + (0 + 4) + ((23 * 1) + (16.367 * 0))) - 2.333;
+        }
+        itemDef
+        {
+            rect                        0 0 334 20 2 2
+            style                       1
+            decoration                  
+            autowrapped                 
+            visible                     when((!((tablelookup("sp/survival_armories.csv", 0, 10000, 2) == "") && (tablelookup("sp/survival_armories.csv", 0, 10000, 8) != "") && ((int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10000, 1))) > 0))) && (int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10000, 1))) > 0) && (int(tablelookup("sp/survival_armories.csv", 0, 10000, 10) == 1))));
+            textalign                   6
+            textalignx                  -30
+            textscale                   0.375
+            textfont                    3
+            forecolor                   1 1 0.5 1
+            exp text                    "@SO_SURVIVAL_ARMORY_OWNED";
+            exp rect x                  ((0 + 8) + 0);
+            exp rect y                  (0 + (4 * (20 + 2)) + (0 + 4) + ((23 * 1) + (16.367 * 0))) - 2.333;
+        }
+        itemDef
+        {
+            rect                        0 0 334 20 2 2
+            style                       1
+            decoration                  
+            autowrapped                 
+            visible                     when((((tablelookup("sp/survival_armories.csv", 0, 10000, 2) == "") && (tablelookup("sp/survival_armories.csv", 0, 10000, 8) != "") && ((int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10000, 1))) > 0))) && (int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10000, 1))) > 0)));
+            textalign                   6
+            textalignx                  -30
+            textscale                   0.375
+            textfont                    3
+            forecolor                   1 1 0.5 1
+            exp text                    "@SO_SURVIVAL_ARMORY_UPGRADE";
+            exp rect x                  ((0 + 8) + 0);
+            exp rect y                  (0 + (4 * (20 + 2)) + (0 + 4) + ((23 * 1) + (16.367 * 0))) - 2.333;
+        }
+        itemDef
+        {
+            rect                        0 0 14.333 14.333 2 2
+            style                       3
+            decoration                  
+            visible                     when(!((tablelookup("sp/survival_armories.csv", 0, 10000, 2) == "") && (tablelookup("sp/survival_armories.csv", 0, 10000, 8) != "") && ((int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10000, 1))) > 0))) && ((!(levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10000, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10000, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10000, 1))) > 0) && !((((localvarint("ui_buttonNavGroupCurrent_popup") - localvarint("ui_buttonNavGroupOffset_popup")) == 4) && localvarbool("ui_swfPopupSelectionBarVis")))));
+            textscale                   0.55
+            exp material                "icon_lock";
+            exp rect x                  ((((350) - 14.333) + (0 - 5) + 0));
+            exp rect y                  ((2 - 2) + ((23 * 1) + (16.367 * 0)) + (0 + 4) + (4 * (20 + 2)));
+        }
+        itemDef
+        {
+            rect                        0 0 14.333 14.333 2 2
+            style                       3
+            decoration                  
+            visible                     when(!((tablelookup("sp/survival_armories.csv", 0, 10000, 2) == "") && (tablelookup("sp/survival_armories.csv", 0, 10000, 8) != "") && ((int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10000, 1))) > 0))) && ((!(levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10000, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10000, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10000, 1))) > 0) && (((localvarint("ui_buttonNavGroupCurrent_popup") - localvarint("ui_buttonNavGroupOffset_popup")) == 4) && localvarbool("ui_swfPopupSelectionBarVis"))));
+            textscale                   0.55
+            forecolor                   0 0 0 1
+            exp material                "icon_lock";
+            exp rect x                  ((((350) - 14.333) + (0 - 5) + 0));
+            exp rect y                  ((2 - 2) + ((23 * 1) + (16.367 * 0)) + (0 + 4) + (4 * (20 + 2)));
+        }
+        itemDef
+        {
+            rect                        0 0 334 20 2 2
+            style                       1
+            decoration                  
+            autowrapped                 
+            visible                     when(!((tablelookup("sp/survival_armories.csv", 0, 10000, 2) == "") && (tablelookup("sp/survival_armories.csv", 0, 10000, 8) != "") && ((int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10000, 1))) > 0))) && ((!(levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10000, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10000, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10000, 1))) > 0) && !((((localvarint("ui_buttonNavGroupCurrent_popup") - localvarint("ui_buttonNavGroupOffset_popup")) == 4) && localvarbool("ui_swfPopupSelectionBarVis")))));
+            textalign                   6
+            textalignx                  -30
+            textscale                   0.375
+            textfont                    3
+            forecolor                   0.569 0.569 0.569 1
+            exp text                    (locstring("@SO_SURVIVAL_ARMORY_LOCKED_LV", (int(tablelookup("sp/survival_armories.csv", 0, 10000, 7)) + 1)));
+            exp rect x                  ((0 + 8) + 0);
+            exp rect y                  (0 + (4 * (20 + 2)) + (0 + 4) + ((23 * 1) + (16.367 * 0))) - 2.333;
+        }
+        itemDef
+        {
+            rect                        0 0 334 20 2 2
+            style                       1
+            decoration                  
+            autowrapped                 
+            visible                     when(!((tablelookup("sp/survival_armories.csv", 0, 10000, 2) == "") && (tablelookup("sp/survival_armories.csv", 0, 10000, 8) != "") && ((int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10000, 1))) > 0))) && ((!(levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10000, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10000, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10000, 1))) > 0) && (((localvarint("ui_buttonNavGroupCurrent_popup") - localvarint("ui_buttonNavGroupOffset_popup")) == 4) && localvarbool("ui_swfPopupSelectionBarVis"))));
+            textalign                   6
+            textalignx                  -30
+            textscale                   0.375
+            textfont                    3
+            forecolor                   0 0 0 1
+            exp text                    (locstring("@SO_SURVIVAL_ARMORY_LOCKED_LV", (int(tablelookup("sp/survival_armories.csv", 0, 10000, 7)) + 1)));
+            exp rect x                  ((0 + 8) + 0);
+            exp rect y                  (0 + (4 * (20 + 2)) + (0 + 4) + ((23 * 1) + (16.367 * 0))) - 2.333;
+        }
+        itemDef
+        {
+            name                        "AIRSUPPORT_POPUP_4"
+            rect                        11.667 0 350 19.567 2 2
+            style                       3
+            type                        1
+            visible                     when(1);
+            disabled                    when(!(((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10000, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10000, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10000, 1))) > 0) && int(int(tablelookup("sp/survival_armories.csv", 0, 10000, 3)) <= FUNC_48())));
+            textscale                   0.55
+            forecolor                   0 0 0 0
+            background                  "white"
+            onFocus
+            {
+                setLocalVarString ui_swf_selection "SWF_POPUP_BUTTON_NAME(AIRSUPPORT_POPUP,4)";
+                setLocalVarInt ui_buttonNavGroupCurrent_popup 4;
+                setLocalVarString ui_buttonNavGroupName_popup "AIRSUPPORT_POPUP";
+                setLocalVarBool ui_swfPopupSelectionButtonVis ((1) && !(!(((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10000, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10000, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10000, 1))) > 0) && int(int(tablelookup("sp/survival_armories.csv", 0, 10000, 3)) <= FUNC_48()))));
+                setLocalVarBool ui_swfPopupSelectionBarVis (1);
+                setLocalVarBool ui_swfPopupSelectionDisabled (!(((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10000, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10000, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10000, 1))) > 0) && int(int(tablelookup("sp/survival_armories.csv", 0, 10000, 3)) <= FUNC_48())));
+                setLocalVarString ui_swfPopupContext "AIRSUPPORT_POPUP";
+                play mouse_over;
+                setLocalVarString armory_desc "@" + tablelookup("sp/survival_armories.csv", 0, 10000, 5);
+                setLocalVarInt selected_item_index 10000;
+            }
+            leaveFocus
+            {
+                setLocalVarBool ui_swfPopupSelectionButtonVis 0;
+                setLocalVarBool ui_swfPopupSelectionBarVis 0;
+                setLocalVarBool ui_swfPopupSelectionDisabled 0;
+            }
+            action
+            {
+                play mouse_click;
+                setLocalVarInt ui_quit_timer milliseconds();
+                play so_ingame_summary;
+                setLocalVarString purchase_item ("purchase_" + 10000);
+                scriptmenuresponse localVarString ( purchase_item );
+            }
+            exp disabled                !(((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10000, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10000, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10000, 1))) > 0) && int(int(tablelookup("sp/survival_armories.csv", 0, 10000, 3)) <= FUNC_48()));
+            exp rect y                  ((4 * (20 + 2)) + (0 + 4) + ((23 * 1) + (16.367 * 0))) + ((0 - 1.333));
+            exp rect w                  350 - 0;
+            exp rect x                  (0 + (0 + 8));
+        }
+        itemDef
+        {
+            rect                        11.667 0 350 19.567 2 2
+            style                       1
+            decoration                  
+            visible                     when((1) && (1));
+            textalign                   8
+            textscale                   0.375
+            textstyle                   9
+            textfont                    3
+            exp text                    "@" + tablelookup("sp/survival_armories.csv", 0, 10000, 4);
+            exp rect y                  (((4 * (20 + 2)) + (0 + 4) + ((23 * 1) + (16.367 * 0))) + (0 - 1.333)) - 2.333;
+            exp rect w                  350;
+            exp forecolor r             select(!(((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10000, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10000, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10000, 1))) > 0) && int(int(tablelookup("sp/survival_armories.csv", 0, 10000, 3)) <= FUNC_48())), select(localvarstring("ui_swf_selection") == "SWF_POPUP_BUTTON_NAME(AIRSUPPORT_POPUP,4)" && select(localvarbool("ui_centerPopup"), localvarbool("ui_swfPopupSelectionBarVis"), localvarbool("ui_swfSelectionBarVis")) && localvarstring("ui_buttonNavGroupName_popup") == "AIRSUPPORT_POPUP", 0, 0.360784), select(localvarstring("ui_swf_selection") == "SWF_POPUP_BUTTON_NAME(AIRSUPPORT_POPUP,4)" && select(localvarbool("ui_centerPopup"), localvarbool("ui_swfPopupSelectionBarVis"), localvarbool("ui_swfSelectionBarVis")) && localvarstring("ui_buttonNavGroupName_popup") == "AIRSUPPORT_POPUP", select(isdemoplaying(), FUNC_44(), FUNC_43()), 1));
+            exp forecolor g             select(!(((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10000, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10000, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10000, 1))) > 0) && int(int(tablelookup("sp/survival_armories.csv", 0, 10000, 3)) <= FUNC_48())), select(localvarstring("ui_swf_selection") == "SWF_POPUP_BUTTON_NAME(AIRSUPPORT_POPUP,4)" && select(localvarbool("ui_centerPopup"), localvarbool("ui_swfPopupSelectionBarVis"), localvarbool("ui_swfSelectionBarVis")) && localvarstring("ui_buttonNavGroupName_popup") == "AIRSUPPORT_POPUP", 0, 0.360784), select(localvarstring("ui_swf_selection") == "SWF_POPUP_BUTTON_NAME(AIRSUPPORT_POPUP,4)" && select(localvarbool("ui_centerPopup"), localvarbool("ui_swfPopupSelectionBarVis"), localvarbool("ui_swfSelectionBarVis")) && localvarstring("ui_buttonNavGroupName_popup") == "AIRSUPPORT_POPUP", select(isdemoplaying(), FUNC_44(), FUNC_43()), 1));
+            exp forecolor b             select(!(((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10000, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10000, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10000, 1))) > 0) && int(int(tablelookup("sp/survival_armories.csv", 0, 10000, 3)) <= FUNC_48())), select(localvarstring("ui_swf_selection") == "SWF_POPUP_BUTTON_NAME(AIRSUPPORT_POPUP,4)" && select(localvarbool("ui_centerPopup"), localvarbool("ui_swfPopupSelectionBarVis"), localvarbool("ui_swfSelectionBarVis")) && localvarstring("ui_buttonNavGroupName_popup") == "AIRSUPPORT_POPUP", 0, 0.360784), select(localvarstring("ui_swf_selection") == "SWF_POPUP_BUTTON_NAME(AIRSUPPORT_POPUP,4)" && select(localvarbool("ui_centerPopup"), localvarbool("ui_swfPopupSelectionBarVis"), localvarbool("ui_swfSelectionBarVis")) && localvarstring("ui_buttonNavGroupName_popup") == "AIRSUPPORT_POPUP", select(isdemoplaying(), FUNC_44(), FUNC_43()), 1));
+            exp rect x                  (0 + (0 + 8));
+        }
+        itemDef
+        {
+            rect                        0 0 350 1 2 2
+            style                       3
+            decoration                  
+            visible                     when((5 % 2 == 1));
+            textscale                   0.55
+            forecolor                   0 0 0 0.15
+            background                  "white"
+            exp rect x                  (0 + 0);
+            exp rect y                  (0 - 3.5) + (5 * (20 + 2)) + ((0 + 4) + ((23 * 1) + (16.367 * 0)));
+            exp rect h                  (20 * 1) + 2;
+        }
+        itemDef
+        {
+            rect                        0 0 334 20 2 2
+            style                       1
+            decoration                  
+            autowrapped                 
+            visible                     when((((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10001, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10001, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10001, 1))) > 0) && int(int(tablelookup("sp/survival_armories.csv", 0, 10001, 3)) <= FUNC_48())));
+            textalign                   6
+            textalignx                  -30
+            textscale                   0.375
+            textfont                    3
+            exp text                    locstring("@SO_SURVIVAL_CREDITS", int(tablelookup("sp/survival_armories.csv", 0, 10001, 3)));
+            exp rect x                  ((0 + 8) + 0);
+            exp rect y                  (0 + (5 * (20 + 2)) + (0 + 4) + ((23 * 1) + (16.367 * 0))) - 2.333;
+        }
+        itemDef
+        {
+            rect                        0 0 334 20 2 2
+            style                       1
+            decoration                  
+            autowrapped                 
+            visible                     when((((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10001, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10001, 1) != "")) && !int(int(tablelookup("sp/survival_armories.csv", 0, 10001, 3)) <= FUNC_48()) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10001, 1))) > 0)));
+            textalign                   6
+            textalignx                  -30
+            textscale                   0.375
+            textfont                    3
+            forecolor                   1 0.5 0.5 1
+            exp text                    locstring("@SO_SURVIVAL_CREDITS", int(tablelookup("sp/survival_armories.csv", 0, 10001, 3)));
+            exp rect x                  ((0 + 8) + 0);
+            exp rect y                  (0 + (5 * (20 + 2)) + (0 + 4) + ((23 * 1) + (16.367 * 0))) - 2.333;
+        }
+        itemDef
+        {
+            rect                        0 0 334 20 2 2
+            style                       1
+            decoration                  
+            autowrapped                 
+            visible                     when((!((tablelookup("sp/survival_armories.csv", 0, 10001, 2) == "") && (tablelookup("sp/survival_armories.csv", 0, 10001, 8) != "") && ((int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10001, 1))) > 0))) && (int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10001, 1))) > 0) && (int(tablelookup("sp/survival_armories.csv", 0, 10001, 10) != 1))));
+            textalign                   6
+            textalignx                  -30
+            textscale                   0.375
+            textfont                    3
+            forecolor                   1 1 0.5 1
+            exp text                    "@SO_SURVIVAL_ARMORY_FULL";
+            exp rect x                  ((0 + 8) + 0);
+            exp rect y                  (0 + (5 * (20 + 2)) + (0 + 4) + ((23 * 1) + (16.367 * 0))) - 2.333;
+        }
+        itemDef
+        {
+            rect                        0 0 334 20 2 2
+            style                       1
+            decoration                  
+            autowrapped                 
+            visible                     when((!((tablelookup("sp/survival_armories.csv", 0, 10001, 2) == "") && (tablelookup("sp/survival_armories.csv", 0, 10001, 8) != "") && ((int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10001, 1))) > 0))) && (int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10001, 1))) > 0) && (int(tablelookup("sp/survival_armories.csv", 0, 10001, 10) == 1))));
+            textalign                   6
+            textalignx                  -30
+            textscale                   0.375
+            textfont                    3
+            forecolor                   1 1 0.5 1
+            exp text                    "@SO_SURVIVAL_ARMORY_OWNED";
+            exp rect x                  ((0 + 8) + 0);
+            exp rect y                  (0 + (5 * (20 + 2)) + (0 + 4) + ((23 * 1) + (16.367 * 0))) - 2.333;
+        }
+        itemDef
+        {
+            rect                        0 0 334 20 2 2
+            style                       1
+            decoration                  
+            autowrapped                 
+            visible                     when((((tablelookup("sp/survival_armories.csv", 0, 10001, 2) == "") && (tablelookup("sp/survival_armories.csv", 0, 10001, 8) != "") && ((int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10001, 1))) > 0))) && (int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10001, 1))) > 0)));
+            textalign                   6
+            textalignx                  -30
+            textscale                   0.375
+            textfont                    3
+            forecolor                   1 1 0.5 1
+            exp text                    "@SO_SURVIVAL_ARMORY_UPGRADE";
+            exp rect x                  ((0 + 8) + 0);
+            exp rect y                  (0 + (5 * (20 + 2)) + (0 + 4) + ((23 * 1) + (16.367 * 0))) - 2.333;
+        }
+        itemDef
+        {
+            rect                        0 0 14.333 14.333 2 2
+            style                       3
+            decoration                  
+            visible                     when(!((tablelookup("sp/survival_armories.csv", 0, 10001, 2) == "") && (tablelookup("sp/survival_armories.csv", 0, 10001, 8) != "") && ((int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10001, 1))) > 0))) && ((!(levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10001, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10001, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10001, 1))) > 0) && !((((localvarint("ui_buttonNavGroupCurrent_popup") - localvarint("ui_buttonNavGroupOffset_popup")) == 5) && localvarbool("ui_swfPopupSelectionBarVis")))));
+            textscale                   0.55
+            exp material                "icon_lock";
+            exp rect x                  ((((350) - 14.333) + (0 - 5) + 0));
+            exp rect y                  ((2 - 2) + ((23 * 1) + (16.367 * 0)) + (0 + 4) + (5 * (20 + 2)));
+        }
+        itemDef
+        {
+            rect                        0 0 14.333 14.333 2 2
+            style                       3
+            decoration                  
+            visible                     when(!((tablelookup("sp/survival_armories.csv", 0, 10001, 2) == "") && (tablelookup("sp/survival_armories.csv", 0, 10001, 8) != "") && ((int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10001, 1))) > 0))) && ((!(levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10001, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10001, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10001, 1))) > 0) && (((localvarint("ui_buttonNavGroupCurrent_popup") - localvarint("ui_buttonNavGroupOffset_popup")) == 5) && localvarbool("ui_swfPopupSelectionBarVis"))));
+            textscale                   0.55
+            forecolor                   0 0 0 1
+            exp material                "icon_lock";
+            exp rect x                  ((((350) - 14.333) + (0 - 5) + 0));
+            exp rect y                  ((2 - 2) + ((23 * 1) + (16.367 * 0)) + (0 + 4) + (5 * (20 + 2)));
+        }
+        itemDef
+        {
+            rect                        0 0 334 20 2 2
+            style                       1
+            decoration                  
+            autowrapped                 
+            visible                     when(!((tablelookup("sp/survival_armories.csv", 0, 10001, 2) == "") && (tablelookup("sp/survival_armories.csv", 0, 10001, 8) != "") && ((int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10001, 1))) > 0))) && ((!(levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10001, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10001, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10001, 1))) > 0) && !((((localvarint("ui_buttonNavGroupCurrent_popup") - localvarint("ui_buttonNavGroupOffset_popup")) == 5) && localvarbool("ui_swfPopupSelectionBarVis")))));
+            textalign                   6
+            textalignx                  -30
+            textscale                   0.375
+            textfont                    3
+            forecolor                   0.569 0.569 0.569 1
+            exp text                    (locstring("@SO_SURVIVAL_ARMORY_LOCKED_LV", (int(tablelookup("sp/survival_armories.csv", 0, 10001, 7)) + 1)));
+            exp rect x                  ((0 + 8) + 0);
+            exp rect y                  (0 + (5 * (20 + 2)) + (0 + 4) + ((23 * 1) + (16.367 * 0))) - 2.333;
+        }
+        itemDef
+        {
+            rect                        0 0 334 20 2 2
+            style                       1
+            decoration                  
+            autowrapped                 
+            visible                     when(!((tablelookup("sp/survival_armories.csv", 0, 10001, 2) == "") && (tablelookup("sp/survival_armories.csv", 0, 10001, 8) != "") && ((int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10001, 1))) > 0))) && ((!(levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10001, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10001, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10001, 1))) > 0) && (((localvarint("ui_buttonNavGroupCurrent_popup") - localvarint("ui_buttonNavGroupOffset_popup")) == 5) && localvarbool("ui_swfPopupSelectionBarVis"))));
+            textalign                   6
+            textalignx                  -30
+            textscale                   0.375
+            textfont                    3
+            forecolor                   0 0 0 1
+            exp text                    (locstring("@SO_SURVIVAL_ARMORY_LOCKED_LV", (int(tablelookup("sp/survival_armories.csv", 0, 10001, 7)) + 1)));
+            exp rect x                  ((0 + 8) + 0);
+            exp rect y                  (0 + (5 * (20 + 2)) + (0 + 4) + ((23 * 1) + (16.367 * 0))) - 2.333;
+        }
+        itemDef
+        {
+            name                        "AIRSUPPORT_POPUP_5"
+            rect                        11.667 0 350 19.567 2 2
+            style                       3
+            type                        1
+            visible                     when(1);
+            disabled                    when(!(((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10001, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10001, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10001, 1))) > 0) && int(int(tablelookup("sp/survival_armories.csv", 0, 10001, 3)) <= FUNC_48())));
+            textscale                   0.55
+            forecolor                   0 0 0 0
+            background                  "white"
+            onFocus
+            {
+                setLocalVarString ui_swf_selection "SWF_POPUP_BUTTON_NAME(AIRSUPPORT_POPUP,5)";
+                setLocalVarInt ui_buttonNavGroupCurrent_popup 5;
+                setLocalVarString ui_buttonNavGroupName_popup "AIRSUPPORT_POPUP";
+                setLocalVarBool ui_swfPopupSelectionButtonVis ((1) && !(!(((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10001, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10001, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10001, 1))) > 0) && int(int(tablelookup("sp/survival_armories.csv", 0, 10001, 3)) <= FUNC_48()))));
+                setLocalVarBool ui_swfPopupSelectionBarVis (1);
+                setLocalVarBool ui_swfPopupSelectionDisabled (!(((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10001, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10001, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10001, 1))) > 0) && int(int(tablelookup("sp/survival_armories.csv", 0, 10001, 3)) <= FUNC_48())));
+                setLocalVarString ui_swfPopupContext "AIRSUPPORT_POPUP";
+                play mouse_over;
+                setLocalVarString armory_desc "@" + tablelookup("sp/survival_armories.csv", 0, 10001, 5);
+                setLocalVarInt selected_item_index 10001;
+            }
+            leaveFocus
+            {
+                setLocalVarBool ui_swfPopupSelectionButtonVis 0;
+                setLocalVarBool ui_swfPopupSelectionBarVis 0;
+                setLocalVarBool ui_swfPopupSelectionDisabled 0;
+            }
+            action
+            {
+                play mouse_click;
+                setLocalVarInt ui_quit_timer milliseconds();
+                play so_ingame_summary;
+                setLocalVarString purchase_item ("purchase_" + 10001);
+                scriptmenuresponse localVarString ( purchase_item );
+            }
+            exp disabled                !(((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10001, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10001, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10001, 1))) > 0) && int(int(tablelookup("sp/survival_armories.csv", 0, 10001, 3)) <= FUNC_48()));
+            exp rect y                  ((5 * (20 + 2)) + (0 + 4) + ((23 * 1) + (16.367 * 0))) + ((0 - 1.333));
+            exp rect w                  350 - 0;
+            exp rect x                  (0 + (0 + 8));
+        }
+        itemDef
+        {
+            rect                        11.667 0 350 19.567 2 2
+            style                       1
+            decoration                  
+            visible                     when((1) && (1));
+            textalign                   8
+            textscale                   0.375
+            textstyle                   9
+            textfont                    3
+            exp text                    "@" + tablelookup("sp/survival_armories.csv", 0, 10001, 4);
+            exp rect y                  (((5 * (20 + 2)) + (0 + 4) + ((23 * 1) + (16.367 * 0))) + (0 - 1.333)) - 2.333;
+            exp rect w                  350;
+            exp forecolor r             select(!(((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10001, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10001, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10001, 1))) > 0) && int(int(tablelookup("sp/survival_armories.csv", 0, 10001, 3)) <= FUNC_48())), select(localvarstring("ui_swf_selection") == "SWF_POPUP_BUTTON_NAME(AIRSUPPORT_POPUP,5)" && select(localvarbool("ui_centerPopup"), localvarbool("ui_swfPopupSelectionBarVis"), localvarbool("ui_swfSelectionBarVis")) && localvarstring("ui_buttonNavGroupName_popup") == "AIRSUPPORT_POPUP", 0, 0.360784), select(localvarstring("ui_swf_selection") == "SWF_POPUP_BUTTON_NAME(AIRSUPPORT_POPUP,5)" && select(localvarbool("ui_centerPopup"), localvarbool("ui_swfPopupSelectionBarVis"), localvarbool("ui_swfSelectionBarVis")) && localvarstring("ui_buttonNavGroupName_popup") == "AIRSUPPORT_POPUP", select(isdemoplaying(), FUNC_44(), FUNC_43()), 1));
+            exp forecolor g             select(!(((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10001, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10001, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10001, 1))) > 0) && int(int(tablelookup("sp/survival_armories.csv", 0, 10001, 3)) <= FUNC_48())), select(localvarstring("ui_swf_selection") == "SWF_POPUP_BUTTON_NAME(AIRSUPPORT_POPUP,5)" && select(localvarbool("ui_centerPopup"), localvarbool("ui_swfPopupSelectionBarVis"), localvarbool("ui_swfSelectionBarVis")) && localvarstring("ui_buttonNavGroupName_popup") == "AIRSUPPORT_POPUP", 0, 0.360784), select(localvarstring("ui_swf_selection") == "SWF_POPUP_BUTTON_NAME(AIRSUPPORT_POPUP,5)" && select(localvarbool("ui_centerPopup"), localvarbool("ui_swfPopupSelectionBarVis"), localvarbool("ui_swfSelectionBarVis")) && localvarstring("ui_buttonNavGroupName_popup") == "AIRSUPPORT_POPUP", select(isdemoplaying(), FUNC_44(), FUNC_43()), 1));
+            exp forecolor b             select(!(((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10001, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10001, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10001, 1))) > 0) && int(int(tablelookup("sp/survival_armories.csv", 0, 10001, 3)) <= FUNC_48())), select(localvarstring("ui_swf_selection") == "SWF_POPUP_BUTTON_NAME(AIRSUPPORT_POPUP,5)" && select(localvarbool("ui_centerPopup"), localvarbool("ui_swfPopupSelectionBarVis"), localvarbool("ui_swfSelectionBarVis")) && localvarstring("ui_buttonNavGroupName_popup") == "AIRSUPPORT_POPUP", 0, 0.360784), select(localvarstring("ui_swf_selection") == "SWF_POPUP_BUTTON_NAME(AIRSUPPORT_POPUP,5)" && select(localvarbool("ui_centerPopup"), localvarbool("ui_swfPopupSelectionBarVis"), localvarbool("ui_swfSelectionBarVis")) && localvarstring("ui_buttonNavGroupName_popup") == "AIRSUPPORT_POPUP", select(isdemoplaying(), FUNC_44(), FUNC_43()), 1));
+            exp rect x                  (0 + (0 + 8));
+        }
+        itemDef
+        {
+            rect                        0 0 350 1 2 2
+            style                       3
+            decoration                  
+            visible                     when((6 % 2 == 1));
+            textscale                   0.55
+            forecolor                   0 0 0 0.15
+            background                  "white"
+            exp rect x                  (0 + 0);
+            exp rect y                  (0 - 3.5) + (6 * (20 + 2)) + ((0 + 4) + ((23 * 1) + (16.367 * 0)));
+            exp rect h                  (20 * 1) + 2;
+        }
+        itemDef
+        {
+            rect                        0 0 334 20 2 2
+            style                       1
+            decoration                  
+            autowrapped                 
+            visible                     when((((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10002, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10002, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10002, 1))) > 0) && int(int(tablelookup("sp/survival_armories.csv", 0, 10002, 3)) <= FUNC_48())));
+            textalign                   6
+            textalignx                  -30
+            textscale                   0.375
+            textfont                    3
+            exp text                    locstring("@SO_SURVIVAL_CREDITS", int(tablelookup("sp/survival_armories.csv", 0, 10002, 3)));
+            exp rect x                  ((0 + 8) + 0);
+            exp rect y                  (0 + (6 * (20 + 2)) + (0 + 4) + ((23 * 1) + (16.367 * 0))) - 2.333;
+        }
+        itemDef
+        {
+            rect                        0 0 334 20 2 2
+            style                       1
+            decoration                  
+            autowrapped                 
+            visible                     when((((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10002, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10002, 1) != "")) && !int(int(tablelookup("sp/survival_armories.csv", 0, 10002, 3)) <= FUNC_48()) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10002, 1))) > 0)));
+            textalign                   6
+            textalignx                  -30
+            textscale                   0.375
+            textfont                    3
+            forecolor                   1 0.5 0.5 1
+            exp text                    locstring("@SO_SURVIVAL_CREDITS", int(tablelookup("sp/survival_armories.csv", 0, 10002, 3)));
+            exp rect x                  ((0 + 8) + 0);
+            exp rect y                  (0 + (6 * (20 + 2)) + (0 + 4) + ((23 * 1) + (16.367 * 0))) - 2.333;
+        }
+        itemDef
+        {
+            rect                        0 0 334 20 2 2
+            style                       1
+            decoration                  
+            autowrapped                 
+            visible                     when((!((tablelookup("sp/survival_armories.csv", 0, 10002, 2) == "") && (tablelookup("sp/survival_armories.csv", 0, 10002, 8) != "") && ((int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10002, 1))) > 0))) && (int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10002, 1))) > 0) && (int(tablelookup("sp/survival_armories.csv", 0, 10002, 10) != 1))));
+            textalign                   6
+            textalignx                  -30
+            textscale                   0.375
+            textfont                    3
+            forecolor                   1 1 0.5 1
+            exp text                    "@SO_SURVIVAL_ARMORY_FULL";
+            exp rect x                  ((0 + 8) + 0);
+            exp rect y                  (0 + (6 * (20 + 2)) + (0 + 4) + ((23 * 1) + (16.367 * 0))) - 2.333;
+        }
+        itemDef
+        {
+            rect                        0 0 334 20 2 2
+            style                       1
+            decoration                  
+            autowrapped                 
+            visible                     when((!((tablelookup("sp/survival_armories.csv", 0, 10002, 2) == "") && (tablelookup("sp/survival_armories.csv", 0, 10002, 8) != "") && ((int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10002, 1))) > 0))) && (int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10002, 1))) > 0) && (int(tablelookup("sp/survival_armories.csv", 0, 10002, 10) == 1))));
+            textalign                   6
+            textalignx                  -30
+            textscale                   0.375
+            textfont                    3
+            forecolor                   1 1 0.5 1
+            exp text                    "@SO_SURVIVAL_ARMORY_OWNED";
+            exp rect x                  ((0 + 8) + 0);
+            exp rect y                  (0 + (6 * (20 + 2)) + (0 + 4) + ((23 * 1) + (16.367 * 0))) - 2.333;
+        }
+        itemDef
+        {
+            rect                        0 0 334 20 2 2
+            style                       1
+            decoration                  
+            autowrapped                 
+            visible                     when((((tablelookup("sp/survival_armories.csv", 0, 10002, 2) == "") && (tablelookup("sp/survival_armories.csv", 0, 10002, 8) != "") && ((int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10002, 1))) > 0))) && (int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10002, 1))) > 0)));
+            textalign                   6
+            textalignx                  -30
+            textscale                   0.375
+            textfont                    3
+            forecolor                   1 1 0.5 1
+            exp text                    "@SO_SURVIVAL_ARMORY_UPGRADE";
+            exp rect x                  ((0 + 8) + 0);
+            exp rect y                  (0 + (6 * (20 + 2)) + (0 + 4) + ((23 * 1) + (16.367 * 0))) - 2.333;
+        }
+        itemDef
+        {
+            rect                        0 0 14.333 14.333 2 2
+            style                       3
+            decoration                  
+            visible                     when(!((tablelookup("sp/survival_armories.csv", 0, 10002, 2) == "") && (tablelookup("sp/survival_armories.csv", 0, 10002, 8) != "") && ((int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10002, 1))) > 0))) && ((!(levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10002, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10002, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10002, 1))) > 0) && !((((localvarint("ui_buttonNavGroupCurrent_popup") - localvarint("ui_buttonNavGroupOffset_popup")) == 6) && localvarbool("ui_swfPopupSelectionBarVis")))));
+            textscale                   0.55
+            exp material                "icon_lock";
+            exp rect x                  ((((350) - 14.333) + (0 - 5) + 0));
+            exp rect y                  ((2 - 2) + ((23 * 1) + (16.367 * 0)) + (0 + 4) + (6 * (20 + 2)));
+        }
+        itemDef
+        {
+            rect                        0 0 14.333 14.333 2 2
+            style                       3
+            decoration                  
+            visible                     when(!((tablelookup("sp/survival_armories.csv", 0, 10002, 2) == "") && (tablelookup("sp/survival_armories.csv", 0, 10002, 8) != "") && ((int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10002, 1))) > 0))) && ((!(levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10002, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10002, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10002, 1))) > 0) && (((localvarint("ui_buttonNavGroupCurrent_popup") - localvarint("ui_buttonNavGroupOffset_popup")) == 6) && localvarbool("ui_swfPopupSelectionBarVis"))));
+            textscale                   0.55
+            forecolor                   0 0 0 1
+            exp material                "icon_lock";
+            exp rect x                  ((((350) - 14.333) + (0 - 5) + 0));
+            exp rect y                  ((2 - 2) + ((23 * 1) + (16.367 * 0)) + (0 + 4) + (6 * (20 + 2)));
+        }
+        itemDef
+        {
+            rect                        0 0 334 20 2 2
+            style                       1
+            decoration                  
+            autowrapped                 
+            visible                     when(!((tablelookup("sp/survival_armories.csv", 0, 10002, 2) == "") && (tablelookup("sp/survival_armories.csv", 0, 10002, 8) != "") && ((int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10002, 1))) > 0))) && ((!(levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10002, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10002, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10002, 1))) > 0) && !((((localvarint("ui_buttonNavGroupCurrent_popup") - localvarint("ui_buttonNavGroupOffset_popup")) == 6) && localvarbool("ui_swfPopupSelectionBarVis")))));
+            textalign                   6
+            textalignx                  -30
+            textscale                   0.375
+            textfont                    3
+            forecolor                   0.569 0.569 0.569 1
+            exp text                    (locstring("@SO_SURVIVAL_ARMORY_LOCKED_LV", (int(tablelookup("sp/survival_armories.csv", 0, 10002, 7)) + 1)));
+            exp rect x                  ((0 + 8) + 0);
+            exp rect y                  (0 + (6 * (20 + 2)) + (0 + 4) + ((23 * 1) + (16.367 * 0))) - 2.333;
+        }
+        itemDef
+        {
+            rect                        0 0 334 20 2 2
+            style                       1
+            decoration                  
+            autowrapped                 
+            visible                     when(!((tablelookup("sp/survival_armories.csv", 0, 10002, 2) == "") && (tablelookup("sp/survival_armories.csv", 0, 10002, 8) != "") && ((int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10002, 1))) > 0))) && ((!(levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10002, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10002, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10002, 1))) > 0) && (((localvarint("ui_buttonNavGroupCurrent_popup") - localvarint("ui_buttonNavGroupOffset_popup")) == 6) && localvarbool("ui_swfPopupSelectionBarVis"))));
+            textalign                   6
+            textalignx                  -30
+            textscale                   0.375
+            textfont                    3
+            forecolor                   0 0 0 1
+            exp text                    (locstring("@SO_SURVIVAL_ARMORY_LOCKED_LV", (int(tablelookup("sp/survival_armories.csv", 0, 10002, 7)) + 1)));
+            exp rect x                  ((0 + 8) + 0);
+            exp rect y                  (0 + (6 * (20 + 2)) + (0 + 4) + ((23 * 1) + (16.367 * 0))) - 2.333;
+        }
+        itemDef
+        {
+            name                        "AIRSUPPORT_POPUP_6"
+            rect                        11.667 0 350 19.567 2 2
+            style                       3
+            type                        1
+            visible                     when(1);
+            disabled                    when(!(((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10002, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10002, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10002, 1))) > 0) && int(int(tablelookup("sp/survival_armories.csv", 0, 10002, 3)) <= FUNC_48())));
+            textscale                   0.55
+            forecolor                   0 0 0 0
+            background                  "white"
+            onFocus
+            {
+                setLocalVarString ui_swf_selection "SWF_POPUP_BUTTON_NAME(AIRSUPPORT_POPUP,6)";
+                setLocalVarInt ui_buttonNavGroupCurrent_popup 6;
+                setLocalVarString ui_buttonNavGroupName_popup "AIRSUPPORT_POPUP";
+                setLocalVarBool ui_swfPopupSelectionButtonVis ((1) && !(!(((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10002, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10002, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10002, 1))) > 0) && int(int(tablelookup("sp/survival_armories.csv", 0, 10002, 3)) <= FUNC_48()))));
+                setLocalVarBool ui_swfPopupSelectionBarVis (1);
+                setLocalVarBool ui_swfPopupSelectionDisabled (!(((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10002, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10002, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10002, 1))) > 0) && int(int(tablelookup("sp/survival_armories.csv", 0, 10002, 3)) <= FUNC_48())));
+                setLocalVarString ui_swfPopupContext "AIRSUPPORT_POPUP";
+                play mouse_over;
+                setLocalVarString armory_desc "@" + tablelookup("sp/survival_armories.csv", 0, 10002, 5);
+                setLocalVarInt selected_item_index 10002;
+            }
+            leaveFocus
+            {
+                setLocalVarBool ui_swfPopupSelectionButtonVis 0;
+                setLocalVarBool ui_swfPopupSelectionBarVis 0;
+                setLocalVarBool ui_swfPopupSelectionDisabled 0;
+            }
+            action
+            {
+                play mouse_click;
+                setLocalVarInt ui_quit_timer milliseconds();
+                play so_ingame_summary;
+                setLocalVarString purchase_item ("purchase_" + 10002);
+                scriptmenuresponse localVarString ( purchase_item );
+            }
+            exp disabled                !(((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10002, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10002, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10002, 1))) > 0) && int(int(tablelookup("sp/survival_armories.csv", 0, 10002, 3)) <= FUNC_48()));
+            exp rect y                  ((6 * (20 + 2)) + (0 + 4) + ((23 * 1) + (16.367 * 0))) + ((0 - 1.333));
+            exp rect w                  350 - 0;
+            exp rect x                  (0 + (0 + 8));
+        }
+        itemDef
+        {
+            rect                        11.667 0 350 19.567 2 2
+            style                       1
+            decoration                  
+            visible                     when((1) && (1));
+            textalign                   8
+            textscale                   0.375
+            textstyle                   9
+            textfont                    3
+            exp text                    "@" + tablelookup("sp/survival_armories.csv", 0, 10002, 4);
+            exp rect y                  (((6 * (20 + 2)) + (0 + 4) + ((23 * 1) + (16.367 * 0))) + (0 - 1.333)) - 2.333;
+            exp rect w                  350;
+            exp forecolor r             select(!(((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10002, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10002, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10002, 1))) > 0) && int(int(tablelookup("sp/survival_armories.csv", 0, 10002, 3)) <= FUNC_48())), select(localvarstring("ui_swf_selection") == "SWF_POPUP_BUTTON_NAME(AIRSUPPORT_POPUP,6)" && select(localvarbool("ui_centerPopup"), localvarbool("ui_swfPopupSelectionBarVis"), localvarbool("ui_swfSelectionBarVis")) && localvarstring("ui_buttonNavGroupName_popup") == "AIRSUPPORT_POPUP", 0, 0.360784), select(localvarstring("ui_swf_selection") == "SWF_POPUP_BUTTON_NAME(AIRSUPPORT_POPUP,6)" && select(localvarbool("ui_centerPopup"), localvarbool("ui_swfPopupSelectionBarVis"), localvarbool("ui_swfSelectionBarVis")) && localvarstring("ui_buttonNavGroupName_popup") == "AIRSUPPORT_POPUP", select(isdemoplaying(), FUNC_44(), FUNC_43()), 1));
+            exp forecolor g             select(!(((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10002, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10002, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10002, 1))) > 0) && int(int(tablelookup("sp/survival_armories.csv", 0, 10002, 3)) <= FUNC_48())), select(localvarstring("ui_swf_selection") == "SWF_POPUP_BUTTON_NAME(AIRSUPPORT_POPUP,6)" && select(localvarbool("ui_centerPopup"), localvarbool("ui_swfPopupSelectionBarVis"), localvarbool("ui_swfSelectionBarVis")) && localvarstring("ui_buttonNavGroupName_popup") == "AIRSUPPORT_POPUP", 0, 0.360784), select(localvarstring("ui_swf_selection") == "SWF_POPUP_BUTTON_NAME(AIRSUPPORT_POPUP,6)" && select(localvarbool("ui_centerPopup"), localvarbool("ui_swfPopupSelectionBarVis"), localvarbool("ui_swfSelectionBarVis")) && localvarstring("ui_buttonNavGroupName_popup") == "AIRSUPPORT_POPUP", select(isdemoplaying(), FUNC_44(), FUNC_43()), 1));
+            exp forecolor b             select(!(((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10002, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10002, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10002, 1))) > 0) && int(int(tablelookup("sp/survival_armories.csv", 0, 10002, 3)) <= FUNC_48())), select(localvarstring("ui_swf_selection") == "SWF_POPUP_BUTTON_NAME(AIRSUPPORT_POPUP,6)" && select(localvarbool("ui_centerPopup"), localvarbool("ui_swfPopupSelectionBarVis"), localvarbool("ui_swfSelectionBarVis")) && localvarstring("ui_buttonNavGroupName_popup") == "AIRSUPPORT_POPUP", 0, 0.360784), select(localvarstring("ui_swf_selection") == "SWF_POPUP_BUTTON_NAME(AIRSUPPORT_POPUP,6)" && select(localvarbool("ui_centerPopup"), localvarbool("ui_swfPopupSelectionBarVis"), localvarbool("ui_swfSelectionBarVis")) && localvarstring("ui_buttonNavGroupName_popup") == "AIRSUPPORT_POPUP", select(isdemoplaying(), FUNC_44(), FUNC_43()), 1));
+            exp rect x                  (0 + (0 + 8));
+        }
+        itemDef
+        {
+            rect                        0 0 350 1 2 2
+            style                       3
+            decoration                  
+            visible                     when((7 % 2 == 1));
+            textscale                   0.55
+            forecolor                   0 0 0 0.15
+            background                  "white"
+            exp rect x                  (0 + 0);
+            exp rect y                  (0 - 3.5) + (7 * (20 + 2)) + ((0 + 4) + ((23 * 1) + (16.367 * 0)));
+            exp rect h                  (20 * 1) + 2;
+        }
+        itemDef
+        {
+            rect                        0 0 334 20 2 2
+            style                       1
+            decoration                  
+            autowrapped                 
+            visible                     when((((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10003, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10003, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10003, 1))) > 0) && int(int(tablelookup("sp/survival_armories.csv", 0, 10003, 3)) <= FUNC_48())));
+            textalign                   6
+            textalignx                  -30
+            textscale                   0.375
+            textfont                    3
+            exp text                    locstring("@SO_SURVIVAL_CREDITS", int(tablelookup("sp/survival_armories.csv", 0, 10003, 3)));
+            exp rect x                  ((0 + 8) + 0);
+            exp rect y                  (0 + (7 * (20 + 2)) + (0 + 4) + ((23 * 1) + (16.367 * 0))) - 2.333;
+        }
+        itemDef
+        {
+            rect                        0 0 334 20 2 2
+            style                       1
+            decoration                  
+            autowrapped                 
+            visible                     when((((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10003, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10003, 1) != "")) && !int(int(tablelookup("sp/survival_armories.csv", 0, 10003, 3)) <= FUNC_48()) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10003, 1))) > 0)));
+            textalign                   6
+            textalignx                  -30
+            textscale                   0.375
+            textfont                    3
+            forecolor                   1 0.5 0.5 1
+            exp text                    locstring("@SO_SURVIVAL_CREDITS", int(tablelookup("sp/survival_armories.csv", 0, 10003, 3)));
+            exp rect x                  ((0 + 8) + 0);
+            exp rect y                  (0 + (7 * (20 + 2)) + (0 + 4) + ((23 * 1) + (16.367 * 0))) - 2.333;
+        }
+        itemDef
+        {
+            rect                        0 0 334 20 2 2
+            style                       1
+            decoration                  
+            autowrapped                 
+            visible                     when((!((tablelookup("sp/survival_armories.csv", 0, 10003, 2) == "") && (tablelookup("sp/survival_armories.csv", 0, 10003, 8) != "") && ((int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10003, 1))) > 0))) && (int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10003, 1))) > 0) && (int(tablelookup("sp/survival_armories.csv", 0, 10003, 10) != 1))));
+            textalign                   6
+            textalignx                  -30
+            textscale                   0.375
+            textfont                    3
+            forecolor                   1 1 0.5 1
+            exp text                    "@SO_SURVIVAL_ARMORY_FULL";
+            exp rect x                  ((0 + 8) + 0);
+            exp rect y                  (0 + (7 * (20 + 2)) + (0 + 4) + ((23 * 1) + (16.367 * 0))) - 2.333;
+        }
+        itemDef
+        {
+            rect                        0 0 334 20 2 2
+            style                       1
+            decoration                  
+            autowrapped                 
+            visible                     when((!((tablelookup("sp/survival_armories.csv", 0, 10003, 2) == "") && (tablelookup("sp/survival_armories.csv", 0, 10003, 8) != "") && ((int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10003, 1))) > 0))) && (int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10003, 1))) > 0) && (int(tablelookup("sp/survival_armories.csv", 0, 10003, 10) == 1))));
+            textalign                   6
+            textalignx                  -30
+            textscale                   0.375
+            textfont                    3
+            forecolor                   1 1 0.5 1
+            exp text                    "@SO_SURVIVAL_ARMORY_OWNED";
+            exp rect x                  ((0 + 8) + 0);
+            exp rect y                  (0 + (7 * (20 + 2)) + (0 + 4) + ((23 * 1) + (16.367 * 0))) - 2.333;
+        }
+        itemDef
+        {
+            rect                        0 0 334 20 2 2
+            style                       1
+            decoration                  
+            autowrapped                 
+            visible                     when((((tablelookup("sp/survival_armories.csv", 0, 10003, 2) == "") && (tablelookup("sp/survival_armories.csv", 0, 10003, 8) != "") && ((int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10003, 1))) > 0))) && (int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10003, 1))) > 0)));
+            textalign                   6
+            textalignx                  -30
+            textscale                   0.375
+            textfont                    3
+            forecolor                   1 1 0.5 1
+            exp text                    "@SO_SURVIVAL_ARMORY_UPGRADE";
+            exp rect x                  ((0 + 8) + 0);
+            exp rect y                  (0 + (7 * (20 + 2)) + (0 + 4) + ((23 * 1) + (16.367 * 0))) - 2.333;
+        }
+        itemDef
+        {
+            rect                        0 0 14.333 14.333 2 2
+            style                       3
+            decoration                  
+            visible                     when(!((tablelookup("sp/survival_armories.csv", 0, 10003, 2) == "") && (tablelookup("sp/survival_armories.csv", 0, 10003, 8) != "") && ((int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10003, 1))) > 0))) && ((!(levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10003, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10003, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10003, 1))) > 0) && !((((localvarint("ui_buttonNavGroupCurrent_popup") - localvarint("ui_buttonNavGroupOffset_popup")) == 7) && localvarbool("ui_swfPopupSelectionBarVis")))));
+            textscale                   0.55
+            exp material                "icon_lock";
+            exp rect x                  ((((350) - 14.333) + (0 - 5) + 0));
+            exp rect y                  ((2 - 2) + ((23 * 1) + (16.367 * 0)) + (0 + 4) + (7 * (20 + 2)));
+        }
+        itemDef
+        {
+            rect                        0 0 14.333 14.333 2 2
+            style                       3
+            decoration                  
+            visible                     when(!((tablelookup("sp/survival_armories.csv", 0, 10003, 2) == "") && (tablelookup("sp/survival_armories.csv", 0, 10003, 8) != "") && ((int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10003, 1))) > 0))) && ((!(levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10003, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10003, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10003, 1))) > 0) && (((localvarint("ui_buttonNavGroupCurrent_popup") - localvarint("ui_buttonNavGroupOffset_popup")) == 7) && localvarbool("ui_swfPopupSelectionBarVis"))));
+            textscale                   0.55
+            forecolor                   0 0 0 1
+            exp material                "icon_lock";
+            exp rect x                  ((((350) - 14.333) + (0 - 5) + 0));
+            exp rect y                  ((2 - 2) + ((23 * 1) + (16.367 * 0)) + (0 + 4) + (7 * (20 + 2)));
+        }
+        itemDef
+        {
+            rect                        0 0 334 20 2 2
+            style                       1
+            decoration                  
+            autowrapped                 
+            visible                     when(!((tablelookup("sp/survival_armories.csv", 0, 10003, 2) == "") && (tablelookup("sp/survival_armories.csv", 0, 10003, 8) != "") && ((int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10003, 1))) > 0))) && ((!(levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10003, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10003, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10003, 1))) > 0) && !((((localvarint("ui_buttonNavGroupCurrent_popup") - localvarint("ui_buttonNavGroupOffset_popup")) == 7) && localvarbool("ui_swfPopupSelectionBarVis")))));
+            textalign                   6
+            textalignx                  -30
+            textscale                   0.375
+            textfont                    3
+            forecolor                   0.569 0.569 0.569 1
+            exp text                    (locstring("@SO_SURVIVAL_ARMORY_LOCKED_LV", (int(tablelookup("sp/survival_armories.csv", 0, 10003, 7)) + 1)));
+            exp rect x                  ((0 + 8) + 0);
+            exp rect y                  (0 + (7 * (20 + 2)) + (0 + 4) + ((23 * 1) + (16.367 * 0))) - 2.333;
+        }
+        itemDef
+        {
+            rect                        0 0 334 20 2 2
+            style                       1
+            decoration                  
+            autowrapped                 
+            visible                     when(!((tablelookup("sp/survival_armories.csv", 0, 10003, 2) == "") && (tablelookup("sp/survival_armories.csv", 0, 10003, 8) != "") && ((int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10003, 1))) > 0))) && ((!(levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10003, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10003, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10003, 1))) > 0) && (((localvarint("ui_buttonNavGroupCurrent_popup") - localvarint("ui_buttonNavGroupOffset_popup")) == 7) && localvarbool("ui_swfPopupSelectionBarVis"))));
+            textalign                   6
+            textalignx                  -30
+            textscale                   0.375
+            textfont                    3
+            forecolor                   0 0 0 1
+            exp text                    (locstring("@SO_SURVIVAL_ARMORY_LOCKED_LV", (int(tablelookup("sp/survival_armories.csv", 0, 10003, 7)) + 1)));
+            exp rect x                  ((0 + 8) + 0);
+            exp rect y                  (0 + (7 * (20 + 2)) + (0 + 4) + ((23 * 1) + (16.367 * 0))) - 2.333;
+        }
+        itemDef
+        {
+            name                        "AIRSUPPORT_POPUP_7"
+            rect                        11.667 0 350 19.567 2 2
+            style                       3
+            type                        1
+            visible                     when(1);
+            disabled                    when(!(((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10003, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10003, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10003, 1))) > 0) && int(int(tablelookup("sp/survival_armories.csv", 0, 10003, 3)) <= FUNC_48())));
+            textscale                   0.55
+            forecolor                   0 0 0 0
+            background                  "white"
+            onFocus
+            {
+                setLocalVarString ui_swf_selection "SWF_POPUP_BUTTON_NAME(AIRSUPPORT_POPUP,7)";
+                setLocalVarInt ui_buttonNavGroupCurrent_popup 7;
+                setLocalVarString ui_buttonNavGroupName_popup "AIRSUPPORT_POPUP";
+                setLocalVarBool ui_swfPopupSelectionButtonVis ((1) && !(!(((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10003, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10003, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10003, 1))) > 0) && int(int(tablelookup("sp/survival_armories.csv", 0, 10003, 3)) <= FUNC_48()))));
+                setLocalVarBool ui_swfPopupSelectionBarVis (1);
+                setLocalVarBool ui_swfPopupSelectionDisabled (!(((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10003, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10003, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10003, 1))) > 0) && int(int(tablelookup("sp/survival_armories.csv", 0, 10003, 3)) <= FUNC_48())));
+                setLocalVarString ui_swfPopupContext "AIRSUPPORT_POPUP";
+                play mouse_over;
+                setLocalVarString armory_desc "@" + tablelookup("sp/survival_armories.csv", 0, 10003, 5);
+                setLocalVarInt selected_item_index 10003;
+            }
+            leaveFocus
+            {
+                setLocalVarBool ui_swfPopupSelectionButtonVis 0;
+                setLocalVarBool ui_swfPopupSelectionBarVis 0;
+                setLocalVarBool ui_swfPopupSelectionDisabled 0;
+            }
+            action
+            {
+                play mouse_click;
+                setLocalVarInt ui_quit_timer milliseconds();
+                play so_ingame_summary;
+                setLocalVarString purchase_item ("purchase_" + 10003);
+                scriptmenuresponse localVarString ( purchase_item );
+            }
+            exp disabled                !(((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10003, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10003, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10003, 1))) > 0) && int(int(tablelookup("sp/survival_armories.csv", 0, 10003, 3)) <= FUNC_48()));
+            exp rect y                  ((7 * (20 + 2)) + (0 + 4) + ((23 * 1) + (16.367 * 0))) + ((0 - 1.333));
+            exp rect w                  350 - 0;
+            exp rect x                  (0 + (0 + 8));
+        }
+        itemDef
+        {
+            rect                        11.667 0 350 19.567 2 2
+            style                       1
+            decoration                  
+            visible                     when((1) && (1));
+            textalign                   8
+            textscale                   0.375
+            textstyle                   9
+            textfont                    3
+            exp text                    "@" + tablelookup("sp/survival_armories.csv", 0, 10003, 4);
+            exp rect y                  (((7 * (20 + 2)) + (0 + 4) + ((23 * 1) + (16.367 * 0))) + (0 - 1.333)) - 2.333;
+            exp rect w                  350;
+            exp forecolor r             select(!(((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10003, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10003, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10003, 1))) > 0) && int(int(tablelookup("sp/survival_armories.csv", 0, 10003, 3)) <= FUNC_48())), select(localvarstring("ui_swf_selection") == "SWF_POPUP_BUTTON_NAME(AIRSUPPORT_POPUP,7)" && select(localvarbool("ui_centerPopup"), localvarbool("ui_swfPopupSelectionBarVis"), localvarbool("ui_swfSelectionBarVis")) && localvarstring("ui_buttonNavGroupName_popup") == "AIRSUPPORT_POPUP", 0, 0.360784), select(localvarstring("ui_swf_selection") == "SWF_POPUP_BUTTON_NAME(AIRSUPPORT_POPUP,7)" && select(localvarbool("ui_centerPopup"), localvarbool("ui_swfPopupSelectionBarVis"), localvarbool("ui_swfSelectionBarVis")) && localvarstring("ui_buttonNavGroupName_popup") == "AIRSUPPORT_POPUP", select(isdemoplaying(), FUNC_44(), FUNC_43()), 1));
+            exp forecolor g             select(!(((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10003, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10003, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10003, 1))) > 0) && int(int(tablelookup("sp/survival_armories.csv", 0, 10003, 3)) <= FUNC_48())), select(localvarstring("ui_swf_selection") == "SWF_POPUP_BUTTON_NAME(AIRSUPPORT_POPUP,7)" && select(localvarbool("ui_centerPopup"), localvarbool("ui_swfPopupSelectionBarVis"), localvarbool("ui_swfSelectionBarVis")) && localvarstring("ui_buttonNavGroupName_popup") == "AIRSUPPORT_POPUP", 0, 0.360784), select(localvarstring("ui_swf_selection") == "SWF_POPUP_BUTTON_NAME(AIRSUPPORT_POPUP,7)" && select(localvarbool("ui_centerPopup"), localvarbool("ui_swfPopupSelectionBarVis"), localvarbool("ui_swfSelectionBarVis")) && localvarstring("ui_buttonNavGroupName_popup") == "AIRSUPPORT_POPUP", select(isdemoplaying(), FUNC_44(), FUNC_43()), 1));
+            exp forecolor b             select(!(((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10003, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10003, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10003, 1))) > 0) && int(int(tablelookup("sp/survival_armories.csv", 0, 10003, 3)) <= FUNC_48())), select(localvarstring("ui_swf_selection") == "SWF_POPUP_BUTTON_NAME(AIRSUPPORT_POPUP,7)" && select(localvarbool("ui_centerPopup"), localvarbool("ui_swfPopupSelectionBarVis"), localvarbool("ui_swfSelectionBarVis")) && localvarstring("ui_buttonNavGroupName_popup") == "AIRSUPPORT_POPUP", 0, 0.360784), select(localvarstring("ui_swf_selection") == "SWF_POPUP_BUTTON_NAME(AIRSUPPORT_POPUP,7)" && select(localvarbool("ui_centerPopup"), localvarbool("ui_swfPopupSelectionBarVis"), localvarbool("ui_swfSelectionBarVis")) && localvarstring("ui_buttonNavGroupName_popup") == "AIRSUPPORT_POPUP", select(isdemoplaying(), FUNC_44(), FUNC_43()), 1));
+            exp rect x                  (0 + (0 + 8));
+        }
+        itemDef
+        {
+            rect                        0 0 0 20 2 2
+            type                        1
+            visible                     when(1);
+            textalign                   8
+            textscale                   0.375
+            textfont                    3
+            onFocus
+            {
+                setLocalVarInt ui_ralign_index 1;
+                setLocalVarString ui_ralign_group "AIRSUPPORT_POPUP";
+                play mouse_over;
+            }
+            leaveFocus
+            {
+                setLocalVarInt ui_ralign_index - 1;
+                setLocalVarString ui_ralign_group "";
+            }
+            action
+            {
+                play mouse_click;
+                uiscript simulateKeyPress 27;
+            }
+            exp rect x                  (350) - (1 * 5) - 20 - getTextWidth(locstring("@PLATFORM_BACK_SHORTCUT"), 3, 0.375);
+            exp rect y                  (((0 - 2.333) + (14 * (20 + 2)) + (0 + 4) + ((23 * 1) + (16.367 * 0))));
+            exp rect w                  getTextWidth(locstring("@PLATFORM_BACK_SHORTCUT"), 3, 0.375) + 20;
+        }
+        itemDef
+        {
+            rect                        0 0 0 8.666 2 2
+            style                       3
+            decoration                  
+            visible                     when((1) && (!1) && (localvarint("ui_ralign_index") == 1 && localvarstring("ui_ralign_group") == "AIRSUPPORT_POPUP"));
+            textscale                   0.55
+            background                  "navbar_selection_bar_shadow"
+            exp rect x                  (350) - (1 * 5) - (20) - getTextWidth(locstring("@PLATFORM_BACK_SHORTCUT"), 3, 0.375);
+            exp rect y                  (((0 - 2.333) + (14 * (20 + 2)) + (0 + 4) + ((23 * 1) + (16.367 * 0)))) + 20;
+            exp rect w                  getTextWidth(locstring("@PLATFORM_BACK_SHORTCUT"), 3, 0.375) + 20;
+        }
+        itemDef
+        {
+            rect                        0 0 0 20 2 2
+            style                       1
+            decoration                  
+            visible                     when((1) && (localvarint("ui_ralign_index") == 1 && localvarstring("ui_ralign_group") == "AIRSUPPORT_POPUP"));
+            textscale                   0.55
+            backcolor                   0.6 0.6314 0.6 1
+            exp rect x                  (350) - (1 * 5) - (20) - getTextWidth(locstring("@PLATFORM_BACK_SHORTCUT"), 3, 0.375);
+            exp rect y                  (((0 - 2.333) + (14 * (20 + 2)) + (0 + 4) + ((23 * 1) + (16.367 * 0))));
+            exp rect w                  getTextWidth(locstring("@PLATFORM_BACK_SHORTCUT"), 3, 0.375) + 20;
+        }
+        itemDef
+        {
+            rect                        0 0 0 20 2 2
+            decoration                  
+            visible                     when(1);
+            textalign                   8
+            textscale                   0.375
+            textfont                    3
+            exp text                    "@PLATFORM_BACK_SHORTCUT";
+            exp rect x                  (350) - (1 * 5) - (20 / 2) - getTextWidth(locstring("@PLATFORM_BACK_SHORTCUT"), 3, 0.375);
+            exp rect y                  (((0 - 2.333) + (14 * (20 + 2)) + (0 + 4) + ((23 * 1) + (16.367 * 0))));
+            exp rect w                  getTextWidth(locstring("@PLATFORM_BACK_SHORTCUT"), 3, 0.375);
+            exp forecolor r             select((localvarint("ui_ralign_index") == 1 && localvarstring("ui_ralign_group") == "AIRSUPPORT_POPUP"), select(isdemoplaying(), FUNC_44(), FUNC_43()), 1);
+            exp forecolor g             select((localvarint("ui_ralign_index") == 1 && localvarstring("ui_ralign_group") == "AIRSUPPORT_POPUP"), select(isdemoplaying(), FUNC_44(), FUNC_43()), 1);
+            exp forecolor b             select((localvarint("ui_ralign_index") == 1 && localvarstring("ui_ralign_group") == "AIRSUPPORT_POPUP"), select(isdemoplaying(), FUNC_44(), FUNC_43()), 1);
+        }
+        // ---------- AUTO-INSERT ID 10009 BEGIN ----------
+        itemDef
+        {
+            rect                        0 0 350 1 2 2
+            style                       3
+            decoration                  
+            visible                     when((8 % 2 == 1));
+            textscale                   0.55
+            forecolor                   0 0 0 0.15
+            background                  "white"
+            exp rect x                  (0 + 0);
+            exp rect y                  (0 - 3.5) + (8 * (20 + 2)) + ((0 + 4) + ((23 * 1) + (16.367 * 0)));
+            exp rect h                  (20 * 1) + 2;
+        }
+        itemDef
+        {
+            rect                        0 0 334 20 2 2
+            style                       1
+            decoration                  
+            autowrapped                 
+            visible                     when((((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10009, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10009, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10009, 1))) > 0) && int(int(tablelookup("sp/survival_armories.csv", 0, 10009, 3)) <= FUNC_48())));
+            textalign                   6
+            textalignx                  -30
+            textscale                   0.375
+            textfont                    3
+            exp text                    locstring("@SO_SURVIVAL_CREDITS", int(tablelookup("sp/survival_armories.csv", 0, 10009, 3)));
+            exp rect x                  ((0 + 8) + 0);
+            exp rect y                  (0 + (8 * (20 + 2)) + (0 + 4) + ((23 * 1) + (16.367 * 0))) - 2.333;
+        }
+        itemDef
+        {
+            name                        "AIRSUPPORT_POPUP_8"
+            rect                        11.667 0 350 19.567 2 2
+            style                       3
+            type                        1
+            visible                     when(1);
+            disabled                    when(!(((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10009, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10009, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10009, 1))) > 0) && int(int(tablelookup("sp/survival_armories.csv", 0, 10009, 3)) <= FUNC_48())));
+            textscale                   0.55
+            forecolor                   0 0 0 0
+            background                  "white"
+            onFocus
+            {
+                setLocalVarString ui_swf_selection "SWF_POPUP_BUTTON_NAME(AIRSUPPORT_POPUP,8)";
+                setLocalVarInt ui_buttonNavGroupCurrent_popup 8;
+                setLocalVarString ui_buttonNavGroupName_popup "AIRSUPPORT_POPUP";
+                setLocalVarBool ui_swfPopupSelectionButtonVis ((1) && !(!(((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10009, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10009, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10009, 1))) > 0) && int(int(tablelookup("sp/survival_armories.csv", 0, 10009, 3)) <= FUNC_48()))));
+                setLocalVarBool ui_swfPopupSelectionBarVis (1);
+                setLocalVarBool ui_swfPopupSelectionDisabled (!(((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10009, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10009, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10009, 1))) > 0) && int(int(tablelookup("sp/survival_armories.csv", 0, 10009, 3)) <= FUNC_48())));
+                setLocalVarString ui_swfPopupContext "AIRSUPPORT_POPUP";
+                play mouse_over;
+                setLocalVarString armory_desc "@" + tablelookup("sp/survival_armories.csv", 0, 10009, 5);
+                setLocalVarInt selected_item_index 10009;
+            }
+            leaveFocus
+            {
+                setLocalVarBool ui_swfPopupSelectionButtonVis 0;
+                setLocalVarBool ui_swfPopupSelectionBarVis 0;
+                setLocalVarBool ui_swfPopupSelectionDisabled 0;
+            }
+            action
+            {
+                play mouse_click;
+                setLocalVarInt ui_quit_timer milliseconds();
+                play so_ingame_summary;
+                setLocalVarString purchase_item ("purchase_" + 10009);
+                scriptmenuresponse localVarString ( purchase_item );
+            }
+            exp disabled                !(((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10009, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10009, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10009, 1))) > 0) && int(int(tablelookup("sp/survival_armories.csv", 0, 10009, 3)) <= FUNC_48()));
+            exp rect y                  ((8 * (20 + 2)) + (0 + 4) + ((23 * 1) + (16.367 * 0))) + ((0 - 1.333));
+            exp rect w                  350 - 0;
+            exp rect x                  (0 + (0 + 8));
+        }
+        itemDef
+        {
+            rect                        11.667 0 350 19.567 2 2
+            style                       1
+            decoration                  
+            visible                     when((1) && (1));
+            textalign                   8
+            textscale                   0.375
+            textstyle                   9
+            textfont                    3
+            exp text                    "@" + tablelookup("sp/survival_armories.csv", 0, 10009, 4);
+            exp rect y                  (((8 * (20 + 2)) + (0 + 4) + ((23 * 1) + (16.367 * 0))) + (0 - 1.333)) - 2.333;
+            exp rect w                  350;
+            exp forecolor r             select(!(((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10009, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10009, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10009, 1))) > 0) && int(int(tablelookup("sp/survival_armories.csv", 0, 10009, 3)) <= FUNC_48())), select(localvarstring("ui_swf_selection") == "SWF_POPUP_BUTTON_NAME(AIRSUPPORT_POPUP,8)" && select(localvarbool("ui_centerPopup"), localvarbool("ui_swfPopupSelectionBarVis"), localvarbool("ui_swfSelectionBarVis")) && localvarstring("ui_buttonNavGroupName_popup") == "AIRSUPPORT_POPUP", 0, 0.360784), select(localvarstring("ui_swf_selection") == "SWF_POPUP_BUTTON_NAME(AIRSUPPORT_POPUP,8)" && select(localvarbool("ui_centerPopup"), localvarbool("ui_swfPopupSelectionBarVis"), localvarbool("ui_swfSelectionBarVis")) && localvarstring("ui_buttonNavGroupName_popup") == "AIRSUPPORT_POPUP", select(isdemoplaying(), FUNC_44(), FUNC_43()), 1));
+            exp forecolor g             select(!(((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10009, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10009, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10009, 1))) > 0) && int(int(tablelookup("sp/survival_armories.csv", 0, 10009, 3)) <= FUNC_48())), select(localvarstring("ui_swf_selection") == "SWF_POPUP_BUTTON_NAME(AIRSUPPORT_POPUP,8)" && select(localvarbool("ui_centerPopup"), localvarbool("ui_swfPopupSelectionBarVis"), localvarbool("ui_swfSelectionBarVis")) && localvarstring("ui_buttonNavGroupName_popup") == "AIRSUPPORT_POPUP", 0, 0.360784), select(localvarstring("ui_swf_selection") == "SWF_POPUP_BUTTON_NAME(AIRSUPPORT_POPUP,8)" && select(localvarbool("ui_centerPopup"), localvarbool("ui_swfPopupSelectionBarVis"), localvarbool("ui_swfSelectionBarVis")) && localvarstring("ui_buttonNavGroupName_popup") == "AIRSUPPORT_POPUP", select(isdemoplaying(), FUNC_44(), FUNC_43()), 1));
+            exp forecolor b             select(!(((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10009, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10009, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10009, 1))) > 0) && int(int(tablelookup("sp/survival_armories.csv", 0, 10009, 3)) <= FUNC_48())), select(localvarstring("ui_swf_selection") == "SWF_POPUP_BUTTON_NAME(AIRSUPPORT_POPUP,8)" && select(localvarbool("ui_centerPopup"), localvarbool("ui_swfPopupSelectionBarVis"), localvarbool("ui_swfSelectionBarVis")) && localvarstring("ui_buttonNavGroupName_popup") == "AIRSUPPORT_POPUP", 0, 0.360784), select(localvarstring("ui_swf_selection") == "SWF_POPUP_BUTTON_NAME(AIRSUPPORT_POPUP,8)" && select(localvarbool("ui_centerPopup"), localvarbool("ui_swfPopupSelectionBarVis"), localvarbool("ui_swfSelectionBarVis")) && localvarstring("ui_buttonNavGroupName_popup") == "AIRSUPPORT_POPUP", select(isdemoplaying(), FUNC_44(), FUNC_43()), 1));
+            exp rect x                  (0 + (0 + 8));
+        }
+        // ---------- AUTO-INSERT ID 10009 END ----------
+        // ---------- AUTO-INSERT ID 10010 BEGIN ----------
+        itemDef
+        {
+            rect                        0 0 350 1 2 2
+            style                       3
+            decoration                  
+            visible                     when((9 % 2 == 1));
+            textscale                   0.55
+            forecolor                   0 0 0 0.15
+            background                  "white"
+            exp rect x                  (0 + 0);
+            exp rect y                  (0 - 3.5) + (9 * (20 + 2)) + ((0 + 4) + ((23 * 1) + (16.367 * 0)));
+            exp rect h                  (20 * 1) + 2;
+        }
+        itemDef
+        {
+            rect                        0 0 334 20 2 2
+            style                       1
+            decoration                  
+            autowrapped                 
+            visible                     when((((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10010, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10010, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10010, 1))) > 0) && int(int(tablelookup("sp/survival_armories.csv", 0, 10010, 3)) <= FUNC_48())));
+            textalign                   6
+            textalignx                  -30
+            textscale                   0.375
+            textfont                    3
+            exp text                    locstring("@SO_SURVIVAL_CREDITS", int(tablelookup("sp/survival_armories.csv", 0, 10010, 3)));
+            exp rect x                  ((0 + 8) + 0);
+            exp rect y                  (0 + (9 * (20 + 2)) + (0 + 4) + ((23 * 1) + (16.367 * 0))) - 2.333;
+        }
+        itemDef
+        {
+            name                        "AIRSUPPORT_POPUP_9"
+            rect                        11.667 0 350 19.567 2 2
+            style                       3
+            type                        1
+            visible                     when(1);
+            disabled                    when(!(((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10010, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10010, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10010, 1))) > 0) && int(int(tablelookup("sp/survival_armories.csv", 0, 10010, 3)) <= FUNC_48())));
+            textscale                   0.55
+            forecolor                   0 0 0 0
+            background                  "white"
+            onFocus
+            {
+                setLocalVarString ui_swf_selection "SWF_POPUP_BUTTON_NAME(AIRSUPPORT_POPUP,9)";
+                setLocalVarInt ui_buttonNavGroupCurrent_popup 9;
+                setLocalVarString ui_buttonNavGroupName_popup "AIRSUPPORT_POPUP";
+                setLocalVarBool ui_swfPopupSelectionButtonVis ((1) && !(!(((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10010, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10010, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10010, 1))) > 0) && int(int(tablelookup("sp/survival_armories.csv", 0, 10010, 3)) <= FUNC_48()))));
+                setLocalVarBool ui_swfPopupSelectionBarVis (1);
+                setLocalVarBool ui_swfPopupSelectionDisabled (!(((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10010, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10010, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10010, 1))) > 0) && int(int(tablelookup("sp/survival_armories.csv", 0, 10010, 3)) <= FUNC_48())));
+                setLocalVarString ui_swfPopupContext "AIRSUPPORT_POPUP";
+                play mouse_over;
+                setLocalVarString armory_desc "@" + tablelookup("sp/survival_armories.csv", 0, 10010, 5);
+                setLocalVarInt selected_item_index 10010;
+            }
+            leaveFocus
+            {
+                setLocalVarBool ui_swfPopupSelectionButtonVis 0;
+                setLocalVarBool ui_swfPopupSelectionBarVis 0;
+                setLocalVarBool ui_swfPopupSelectionDisabled 0;
+            }
+            action
+            {
+                play mouse_click;
+                setLocalVarInt ui_quit_timer milliseconds();
+                play so_ingame_summary;
+                setLocalVarString purchase_item ("purchase_" + 10010);
+                scriptmenuresponse localVarString ( purchase_item );
+            }
+            exp disabled                !(((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10010, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10010, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10010, 1))) > 0) && int(int(tablelookup("sp/survival_armories.csv", 0, 10010, 3)) <= FUNC_48()));
+            exp rect y                  ((9 * (20 + 2)) + (0 + 4) + ((23 * 1) + (16.367 * 0))) + ((0 - 1.333));
+            exp rect w                  350 - 0;
+            exp rect x                  (0 + (0 + 8));
+        }
+        itemDef
+        {
+            rect                        11.667 0 350 19.567 2 2
+            style                       1
+            decoration                  
+            visible                     when((1) && (1));
+            textalign                   8
+            textscale                   0.375
+            textstyle                   9
+            textfont                    3
+            exp text                    "@" + tablelookup("sp/survival_armories.csv", 0, 10010, 4);
+            exp rect y                  (((9 * (20 + 2)) + (0 + 4) + ((23 * 1) + (16.367 * 0))) + (0 - 1.333)) - 2.333;
+            exp rect w                  350;
+            exp forecolor r             select(!(((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10010, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10010, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10010, 1))) > 0) && int(int(tablelookup("sp/survival_armories.csv", 0, 10010, 3)) <= FUNC_48())), select(localvarstring("ui_swf_selection") == "SWF_POPUP_BUTTON_NAME(AIRSUPPORT_POPUP,9)" && select(localvarbool("ui_centerPopup"), localvarbool("ui_swfPopupSelectionBarVis"), localvarbool("ui_swfSelectionBarVis")) && localvarstring("ui_buttonNavGroupName_popup") == "AIRSUPPORT_POPUP", 0, 0.360784), select(localvarstring("ui_swf_selection") == "SWF_POPUP_BUTTON_NAME(AIRSUPPORT_POPUP,9)" && select(localvarbool("ui_centerPopup"), localvarbool("ui_swfPopupSelectionBarVis"), localvarbool("ui_swfSelectionBarVis")) && localvarstring("ui_buttonNavGroupName_popup") == "AIRSUPPORT_POPUP", select(isdemoplaying(), FUNC_44(), FUNC_43()), 1));
+            exp forecolor g             select(!(((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10010, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10010, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10010, 1))) > 0) && int(int(tablelookup("sp/survival_armories.csv", 0, 10010, 3)) <= FUNC_48())), select(localvarstring("ui_swf_selection") == "SWF_POPUP_BUTTON_NAME(AIRSUPPORT_POPUP,9)" && select(localvarbool("ui_centerPopup"), localvarbool("ui_swfPopupSelectionBarVis"), localvarbool("ui_swfSelectionBarVis")) && localvarstring("ui_buttonNavGroupName_popup") == "AIRSUPPORT_POPUP", 0, 0.360784), select(localvarstring("ui_swf_selection") == "SWF_POPUP_BUTTON_NAME(AIRSUPPORT_POPUP,9)" && select(localvarbool("ui_centerPopup"), localvarbool("ui_swfPopupSelectionBarVis"), localvarbool("ui_swfSelectionBarVis")) && localvarstring("ui_buttonNavGroupName_popup") == "AIRSUPPORT_POPUP", select(isdemoplaying(), FUNC_44(), FUNC_43()), 1));
+            exp forecolor b             select(!(((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10010, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10010, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10010, 1))) > 0) && int(int(tablelookup("sp/survival_armories.csv", 0, 10010, 3)) <= FUNC_48())), select(localvarstring("ui_swf_selection") == "SWF_POPUP_BUTTON_NAME(AIRSUPPORT_POPUP,9)" && select(localvarbool("ui_centerPopup"), localvarbool("ui_swfPopupSelectionBarVis"), localvarbool("ui_swfSelectionBarVis")) && localvarstring("ui_buttonNavGroupName_popup") == "AIRSUPPORT_POPUP", 0, 0.360784), select(localvarstring("ui_swf_selection") == "SWF_POPUP_BUTTON_NAME(AIRSUPPORT_POPUP,9)" && select(localvarbool("ui_centerPopup"), localvarbool("ui_swfPopupSelectionBarVis"), localvarbool("ui_swfSelectionBarVis")) && localvarstring("ui_buttonNavGroupName_popup") == "AIRSUPPORT_POPUP", select(isdemoplaying(), FUNC_44(), FUNC_43()), 1));
+            exp rect x                  (0 + (0 + 8));
+        }
+        // ---------- AUTO-INSERT ID 10010 END ----------
+        // ---------- AUTO-INSERT ID 10011 BEGIN ----------
+        itemDef
+        {
+            rect                        0 0 350 1 2 2
+            style                       3
+            decoration                  
+            visible                     when((10 % 2 == 1));
+            textscale                   0.55
+            forecolor                   0 0 0 0.15
+            background                  "white"
+            exp rect x                  (0 + 0);
+            exp rect y                  (0 - 3.5) + (10 * (20 + 2)) + ((0 + 4) + ((23 * 1) + (16.367 * 0)));
+            exp rect h                  (20 * 1) + 2;
+        }
+        itemDef
+        {
+            rect                        0 0 334 20 2 2
+            style                       1
+            decoration                  
+            autowrapped                 
+            visible                     when((((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10011, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10011, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10011, 1))) > 0) && int(int(tablelookup("sp/survival_armories.csv", 0, 10011, 3)) <= FUNC_48())));
+            textalign                   6
+            textalignx                  -30
+            textscale                   0.375
+            textfont                    3
+            exp text                    locstring("@SO_SURVIVAL_CREDITS", int(tablelookup("sp/survival_armories.csv", 0, 10011, 3)));
+            exp rect x                  ((0 + 8) + 0);
+            exp rect y                  (0 + (10 * (20 + 2)) + (0 + 4) + ((23 * 1) + (16.367 * 0))) - 2.333;
+        }
+        itemDef
+        {
+            name                        "AIRSUPPORT_POPUP_10"
+            rect                        11.667 0 350 19.567 2 2
+            style                       3
+            type                        1
+            visible                     when(1);
+            disabled                    when(!(((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10011, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10011, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10011, 1))) > 0) && int(int(tablelookup("sp/survival_armories.csv", 0, 10011, 3)) <= FUNC_48())));
+            textscale                   0.55
+            forecolor                   0 0 0 0
+            background                  "white"
+            onFocus
+            {
+                setLocalVarString ui_swf_selection "SWF_POPUP_BUTTON_NAME(AIRSUPPORT_POPUP,10)";
+                setLocalVarInt ui_buttonNavGroupCurrent_popup 10;
+                setLocalVarString ui_buttonNavGroupName_popup "AIRSUPPORT_POPUP";
+                setLocalVarBool ui_swfPopupSelectionButtonVis ((1) && !(!(((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10011, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10011, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10011, 1))) > 0) && int(int(tablelookup("sp/survival_armories.csv", 0, 10011, 3)) <= FUNC_48()))));
+                setLocalVarBool ui_swfPopupSelectionBarVis (1);
+                setLocalVarBool ui_swfPopupSelectionDisabled (!(((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10011, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10011, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10011, 1))) > 0) && int(int(tablelookup("sp/survival_armories.csv", 0, 10011, 3)) <= FUNC_48())));
+                setLocalVarString ui_swfPopupContext "AIRSUPPORT_POPUP";
+                play mouse_over;
+                setLocalVarString armory_desc "@" + tablelookup("sp/survival_armories.csv", 0, 10011, 5);
+                setLocalVarInt selected_item_index 10011;
+            }
+            leaveFocus
+            {
+                setLocalVarBool ui_swfPopupSelectionButtonVis 0;
+                setLocalVarBool ui_swfPopupSelectionBarVis 0;
+                setLocalVarBool ui_swfPopupSelectionDisabled 0;
+            }
+            action
+            {
+                play mouse_click;
+                setLocalVarInt ui_quit_timer milliseconds();
+                play so_ingame_summary;
+                setLocalVarString purchase_item ("purchase_" + 10011);
+                scriptmenuresponse localVarString ( purchase_item );
+            }
+            exp disabled                !(((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10011, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10011, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10011, 1))) > 0) && int(int(tablelookup("sp/survival_armories.csv", 0, 10011, 3)) <= FUNC_48()));
+            exp rect y                  ((10 * (20 + 2)) + (0 + 4) + ((23 * 1) + (16.367 * 0))) + ((0 - 1.333));
+            exp rect w                  350 - 0;
+            exp rect x                  (0 + (0 + 8));
+        }
+        itemDef
+        {
+            rect                        11.667 0 350 19.567 2 2
+            style                       1
+            decoration                  
+            visible                     when((1) && (1));
+            textalign                   8
+            textscale                   0.375
+            textstyle                   9
+            textfont                    3
+            exp text                    "@" + tablelookup("sp/survival_armories.csv", 0, 10011, 4);
+            exp rect y                  (((10 * (20 + 2)) + (0 + 4) + ((23 * 1) + (16.367 * 0))) + (0 - 1.333)) - 2.333;
+            exp rect w                  350;
+            exp forecolor r             select(!(((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10011, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10011, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10011, 1))) > 0) && int(int(tablelookup("sp/survival_armories.csv", 0, 10011, 3)) <= FUNC_48())), select(localvarstring("ui_swf_selection") == "SWF_POPUP_BUTTON_NAME(AIRSUPPORT_POPUP,10)" && select(localvarbool("ui_centerPopup"), localvarbool("ui_swfPopupSelectionBarVis"), localvarbool("ui_swfSelectionBarVis")) && localvarstring("ui_buttonNavGroupName_popup") == "AIRSUPPORT_POPUP", 0, 0.360784), select(localvarstring("ui_swf_selection") == "SWF_POPUP_BUTTON_NAME(AIRSUPPORT_POPUP,10)" && select(localvarbool("ui_centerPopup"), localvarbool("ui_swfPopupSelectionBarVis"), localvarbool("ui_swfSelectionBarVis")) && localvarstring("ui_buttonNavGroupName_popup") == "AIRSUPPORT_POPUP", select(isdemoplaying(), FUNC_44(), FUNC_43()), 1));
+            exp forecolor g             select(!(((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10011, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10011, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10011, 1))) > 0) && int(int(tablelookup("sp/survival_armories.csv", 0, 10011, 3)) <= FUNC_48())), select(localvarstring("ui_swf_selection") == "SWF_POPUP_BUTTON_NAME(AIRSUPPORT_POPUP,10)" && select(localvarbool("ui_centerPopup"), localvarbool("ui_swfPopupSelectionBarVis"), localvarbool("ui_swfSelectionBarVis")) && localvarstring("ui_buttonNavGroupName_popup") == "AIRSUPPORT_POPUP", 0, 0.360784), select(localvarstring("ui_swf_selection") == "SWF_POPUP_BUTTON_NAME(AIRSUPPORT_POPUP,10)" && select(localvarbool("ui_centerPopup"), localvarbool("ui_swfPopupSelectionBarVis"), localvarbool("ui_swfSelectionBarVis")) && localvarstring("ui_buttonNavGroupName_popup") == "AIRSUPPORT_POPUP", select(isdemoplaying(), FUNC_44(), FUNC_43()), 1));
+            exp forecolor b             select(!(((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10011, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10011, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10011, 1))) > 0) && int(int(tablelookup("sp/survival_armories.csv", 0, 10011, 3)) <= FUNC_48())), select(localvarstring("ui_swf_selection") == "SWF_POPUP_BUTTON_NAME(AIRSUPPORT_POPUP,10)" && select(localvarbool("ui_centerPopup"), localvarbool("ui_swfPopupSelectionBarVis"), localvarbool("ui_swfSelectionBarVis")) && localvarstring("ui_buttonNavGroupName_popup") == "AIRSUPPORT_POPUP", 0, 0.360784), select(localvarstring("ui_swf_selection") == "SWF_POPUP_BUTTON_NAME(AIRSUPPORT_POPUP,10)" && select(localvarbool("ui_centerPopup"), localvarbool("ui_swfPopupSelectionBarVis"), localvarbool("ui_swfSelectionBarVis")) && localvarstring("ui_buttonNavGroupName_popup") == "AIRSUPPORT_POPUP", select(isdemoplaying(), FUNC_44(), FUNC_43()), 1));
+            exp rect x                  (0 + (0 + 8));
+        }
+        // ---------- AUTO-INSERT ID 10011 END ----------
+        // ---------- AUTO-INSERT ID 10012 BEGIN ----------
+        itemDef
+        {
+            rect                        0 0 350 1 2 2
+            style                       3
+            decoration                  
+            visible                     when((11 % 2 == 1));
+            textscale                   0.55
+            forecolor                   0 0 0 0.15
+            background                  "white"
+            exp rect x                  (0 + 0);
+            exp rect y                  (0 - 3.5) + (11 * (20 + 2)) + ((0 + 4) + ((23 * 1) + (16.367 * 0)));
+            exp rect h                  (20 * 1) + 2;
+        }
+        itemDef
+        {
+            rect                        0 0 334 20 2 2
+            style                       1
+            decoration                  
+            autowrapped                 
+            visible                     when((((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10012, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10012, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10012, 1))) > 0) && int(int(tablelookup("sp/survival_armories.csv", 0, 10012, 3)) <= FUNC_48())));
+            textalign                   6
+            textalignx                  -30
+            textscale                   0.375
+            textfont                    3
+            exp text                    locstring("@SO_SURVIVAL_CREDITS", int(tablelookup("sp/survival_armories.csv", 0, 10012, 3)));
+            exp rect x                  ((0 + 8) + 0);
+            exp rect y                  (0 + (11 * (20 + 2)) + (0 + 4) + ((23 * 1) + (16.367 * 0))) - 2.333;
+        }
+        itemDef
+        {
+            name                        "AIRSUPPORT_POPUP_11"
+            rect                        11.667 0 350 19.567 2 2
+            style                       3
+            type                        1
+            visible                     when(1);
+            disabled                    when(!(((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10012, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10012, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10012, 1))) > 0) && int(int(tablelookup("sp/survival_armories.csv", 0, 10012, 3)) <= FUNC_48())));
+            textscale                   0.55
+            forecolor                   0 0 0 0
+            background                  "white"
+            onFocus
+            {
+                setLocalVarString ui_swf_selection "SWF_POPUP_BUTTON_NAME(AIRSUPPORT_POPUP,11)";
+                setLocalVarInt ui_buttonNavGroupCurrent_popup 11;
+                setLocalVarString ui_buttonNavGroupName_popup "AIRSUPPORT_POPUP";
+                setLocalVarBool ui_swfPopupSelectionButtonVis ((1) && !(!(((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10012, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10012, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10012, 1))) > 0) && int(int(tablelookup("sp/survival_armories.csv", 0, 10012, 3)) <= FUNC_48()))));
+                setLocalVarBool ui_swfPopupSelectionBarVis (1);
+                setLocalVarBool ui_swfPopupSelectionDisabled (!(((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10012, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10012, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10012, 1))) > 0) && int(int(tablelookup("sp/survival_armories.csv", 0, 10012, 3)) <= FUNC_48())));
+                setLocalVarString ui_swfPopupContext "AIRSUPPORT_POPUP";
+                play mouse_over;
+                setLocalVarString armory_desc "@" + tablelookup("sp/survival_armories.csv", 0, 10012, 5);
+                setLocalVarInt selected_item_index 10012;
+            }
+            leaveFocus
+            {
+                setLocalVarBool ui_swfPopupSelectionButtonVis 0;
+                setLocalVarBool ui_swfPopupSelectionBarVis 0;
+                setLocalVarBool ui_swfPopupSelectionDisabled 0;
+            }
+            action
+            {
+                play mouse_click;
+                setLocalVarInt ui_quit_timer milliseconds();
+                play so_ingame_summary;
+                setLocalVarString purchase_item ("purchase_" + 10012);
+                scriptmenuresponse localVarString ( purchase_item );
+            }
+            exp disabled                !(((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10012, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10012, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10012, 1))) > 0) && int(int(tablelookup("sp/survival_armories.csv", 0, 10012, 3)) <= FUNC_48()));
+            exp rect y                  ((11 * (20 + 2)) + (0 + 4) + ((23 * 1) + (16.367 * 0))) + ((0 - 1.333));
+            exp rect w                  350 - 0;
+            exp rect x                  (0 + (0 + 8));
+        }
+        itemDef
+        {
+            rect                        11.667 0 350 19.567 2 2
+            style                       1
+            decoration                  
+            visible                     when((1) && (1));
+            textalign                   8
+            textscale                   0.375
+            textstyle                   9
+            textfont                    3
+            exp text                    "@" + tablelookup("sp/survival_armories.csv", 0, 10012, 4);
+            exp rect y                  (((11 * (20 + 2)) + (0 + 4) + ((23 * 1) + (16.367 * 0))) + (0 - 1.333)) - 2.333;
+            exp rect w                  350;
+            exp forecolor r             select(!(((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10012, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10012, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10012, 1))) > 0) && int(int(tablelookup("sp/survival_armories.csv", 0, 10012, 3)) <= FUNC_48())), select(localvarstring("ui_swf_selection") == "SWF_POPUP_BUTTON_NAME(AIRSUPPORT_POPUP,11)" && select(localvarbool("ui_centerPopup"), localvarbool("ui_swfPopupSelectionBarVis"), localvarbool("ui_swfSelectionBarVis")) && localvarstring("ui_buttonNavGroupName_popup") == "AIRSUPPORT_POPUP", 0, 0.360784), select(localvarstring("ui_swf_selection") == "SWF_POPUP_BUTTON_NAME(AIRSUPPORT_POPUP,11)" && select(localvarbool("ui_centerPopup"), localvarbool("ui_swfPopupSelectionBarVis"), localvarbool("ui_swfSelectionBarVis")) && localvarstring("ui_buttonNavGroupName_popup") == "AIRSUPPORT_POPUP", select(isdemoplaying(), FUNC_44(), FUNC_43()), 1));
+            exp forecolor g             select(!(((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10012, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10012, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10012, 1))) > 0) && int(int(tablelookup("sp/survival_armories.csv", 0, 10012, 3)) <= FUNC_48())), select(localvarstring("ui_swf_selection") == "SWF_POPUP_BUTTON_NAME(AIRSUPPORT_POPUP,11)" && select(localvarbool("ui_centerPopup"), localvarbool("ui_swfPopupSelectionBarVis"), localvarbool("ui_swfSelectionBarVis")) && localvarstring("ui_buttonNavGroupName_popup") == "AIRSUPPORT_POPUP", 0, 0.360784), select(localvarstring("ui_swf_selection") == "SWF_POPUP_BUTTON_NAME(AIRSUPPORT_POPUP,11)" && select(localvarbool("ui_centerPopup"), localvarbool("ui_swfPopupSelectionBarVis"), localvarbool("ui_swfSelectionBarVis")) && localvarstring("ui_buttonNavGroupName_popup") == "AIRSUPPORT_POPUP", select(isdemoplaying(), FUNC_44(), FUNC_43()), 1));
+            exp forecolor b             select(!(((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10012, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10012, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10012, 1))) > 0) && int(int(tablelookup("sp/survival_armories.csv", 0, 10012, 3)) <= FUNC_48())), select(localvarstring("ui_swf_selection") == "SWF_POPUP_BUTTON_NAME(AIRSUPPORT_POPUP,11)" && select(localvarbool("ui_centerPopup"), localvarbool("ui_swfPopupSelectionBarVis"), localvarbool("ui_swfSelectionBarVis")) && localvarstring("ui_buttonNavGroupName_popup") == "AIRSUPPORT_POPUP", 0, 0.360784), select(localvarstring("ui_swf_selection") == "SWF_POPUP_BUTTON_NAME(AIRSUPPORT_POPUP,11)" && select(localvarbool("ui_centerPopup"), localvarbool("ui_swfPopupSelectionBarVis"), localvarbool("ui_swfSelectionBarVis")) && localvarstring("ui_buttonNavGroupName_popup") == "AIRSUPPORT_POPUP", select(isdemoplaying(), FUNC_44(), FUNC_43()), 1));
+            exp rect x                  (0 + (0 + 8));
+        }
+        // ---------- AUTO-INSERT ID 10012 END ----------
+        // ---------- AUTO-INSERT ID 10013 BEGIN ----------
+        itemDef
+        {
+            rect                        0 0 350 1 2 2
+            style                       3
+            decoration                  
+            visible                     when((12 % 2 == 1));
+            textscale                   0.55
+            forecolor                   0 0 0 0.15
+            background                  "white"
+            exp rect x                  (0 + 0);
+            exp rect y                  (0 - 3.5) + (12 * (20 + 2)) + ((0 + 4) + ((23 * 1) + (16.367 * 0)));
+            exp rect h                  (20 * 1) + 2;
+        }
+        itemDef
+        {
+            rect                        0 0 334 20 2 2
+            style                       1
+            decoration                  
+            autowrapped                 
+            visible                     when((((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10013, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10013, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10013, 1))) > 0) && int(int(tablelookup("sp/survival_armories.csv", 0, 10013, 3)) <= FUNC_48())));
+            textalign                   6
+            textalignx                  -30
+            textscale                   0.375
+            textfont                    3
+            exp text                    locstring("@SO_SURVIVAL_CREDITS", int(tablelookup("sp/survival_armories.csv", 0, 10013, 3)));
+            exp rect x                  ((0 + 8) + 0);
+            exp rect y                  (0 + (12 * (20 + 2)) + (0 + 4) + ((23 * 1) + (16.367 * 0))) - 2.333;
+        }
+        itemDef
+        {
+            name                        "AIRSUPPORT_POPUP_12"
+            rect                        11.667 0 350 19.567 2 2
+            style                       3
+            type                        1
+            visible                     when(1);
+            disabled                    when(!(((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10013, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10013, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10013, 1))) > 0) && int(int(tablelookup("sp/survival_armories.csv", 0, 10013, 3)) <= FUNC_48())));
+            textscale                   0.55
+            forecolor                   0 0 0 0
+            background                  "white"
+            onFocus
+            {
+                setLocalVarString ui_swf_selection "SWF_POPUP_BUTTON_NAME(AIRSUPPORT_POPUP,12)";
+                setLocalVarInt ui_buttonNavGroupCurrent_popup 12;
+                setLocalVarString ui_buttonNavGroupName_popup "AIRSUPPORT_POPUP";
+                setLocalVarBool ui_swfPopupSelectionButtonVis ((1) && !(!(((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10013, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10013, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10013, 1))) > 0) && int(int(tablelookup("sp/survival_armories.csv", 0, 10013, 3)) <= FUNC_48()))));
+                setLocalVarBool ui_swfPopupSelectionBarVis (1);
+                setLocalVarBool ui_swfPopupSelectionDisabled (!(((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10013, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10013, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10013, 1))) > 0) && int(int(tablelookup("sp/survival_armories.csv", 0, 10013, 3)) <= FUNC_48())));
+                setLocalVarString ui_swfPopupContext "AIRSUPPORT_POPUP";
+                play mouse_over;
+                setLocalVarString armory_desc "@" + tablelookup("sp/survival_armories.csv", 0, 10013, 5);
+                setLocalVarInt selected_item_index 10013;
+            }
+            leaveFocus
+            {
+                setLocalVarBool ui_swfPopupSelectionButtonVis 0;
+                setLocalVarBool ui_swfPopupSelectionBarVis 0;
+                setLocalVarBool ui_swfPopupSelectionDisabled 0;
+            }
+            action
+            {
+                play mouse_click;
+                setLocalVarInt ui_quit_timer milliseconds();
+                play so_ingame_summary;
+                setLocalVarString purchase_item ("purchase_" + 10013);
+                scriptmenuresponse localVarString ( purchase_item );
+            }
+            exp disabled                !(((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10013, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10013, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10013, 1))) > 0) && int(int(tablelookup("sp/survival_armories.csv", 0, 10013, 3)) <= FUNC_48()));
+            exp rect y                  ((12 * (20 + 2)) + (0 + 4) + ((23 * 1) + (16.367 * 0))) + ((0 - 1.333));
+            exp rect w                  350 - 0;
+            exp rect x                  (0 + (0 + 8));
+        }
+        itemDef
+        {
+            rect                        11.667 0 350 19.567 2 2
+            style                       1
+            decoration                  
+            visible                     when((1) && (1));
+            textalign                   8
+            textscale                   0.375
+            textstyle                   9
+            textfont                    3
+            exp text                    "@" + tablelookup("sp/survival_armories.csv", 0, 10013, 4);
+            exp rect y                  (((12 * (20 + 2)) + (0 + 4) + ((23 * 1) + (16.367 * 0))) + (0 - 1.333)) - 2.333;
+            exp rect w                  350;
+            exp forecolor r             select(!(((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10013, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10013, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10013, 1))) > 0) && int(int(tablelookup("sp/survival_armories.csv", 0, 10013, 3)) <= FUNC_48())), select(localvarstring("ui_swf_selection") == "SWF_POPUP_BUTTON_NAME(AIRSUPPORT_POPUP,12)" && select(localvarbool("ui_centerPopup"), localvarbool("ui_swfPopupSelectionBarVis"), localvarbool("ui_swfSelectionBarVis")) && localvarstring("ui_buttonNavGroupName_popup") == "AIRSUPPORT_POPUP", 0, 0.360784), select(localvarstring("ui_swf_selection") == "SWF_POPUP_BUTTON_NAME(AIRSUPPORT_POPUP,12)" && select(localvarbool("ui_centerPopup"), localvarbool("ui_swfPopupSelectionBarVis"), localvarbool("ui_swfSelectionBarVis")) && localvarstring("ui_buttonNavGroupName_popup") == "AIRSUPPORT_POPUP", select(isdemoplaying(), FUNC_44(), FUNC_43()), 1));
+            exp forecolor g             select(!(((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10013, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10013, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10013, 1))) > 0) && int(int(tablelookup("sp/survival_armories.csv", 0, 10013, 3)) <= FUNC_48())), select(localvarstring("ui_swf_selection") == "SWF_POPUP_BUTTON_NAME(AIRSUPPORT_POPUP,12)" && select(localvarbool("ui_centerPopup"), localvarbool("ui_swfPopupSelectionBarVis"), localvarbool("ui_swfSelectionBarVis")) && localvarstring("ui_buttonNavGroupName_popup") == "AIRSUPPORT_POPUP", 0, 0.360784), select(localvarstring("ui_swf_selection") == "SWF_POPUP_BUTTON_NAME(AIRSUPPORT_POPUP,12)" && select(localvarbool("ui_centerPopup"), localvarbool("ui_swfPopupSelectionBarVis"), localvarbool("ui_swfSelectionBarVis")) && localvarstring("ui_buttonNavGroupName_popup") == "AIRSUPPORT_POPUP", select(isdemoplaying(), FUNC_44(), FUNC_43()), 1));
+            exp forecolor b             select(!(((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10013, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10013, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10013, 1))) > 0) && int(int(tablelookup("sp/survival_armories.csv", 0, 10013, 3)) <= FUNC_48())), select(localvarstring("ui_swf_selection") == "SWF_POPUP_BUTTON_NAME(AIRSUPPORT_POPUP,12)" && select(localvarbool("ui_centerPopup"), localvarbool("ui_swfPopupSelectionBarVis"), localvarbool("ui_swfSelectionBarVis")) && localvarstring("ui_buttonNavGroupName_popup") == "AIRSUPPORT_POPUP", 0, 0.360784), select(localvarstring("ui_swf_selection") == "SWF_POPUP_BUTTON_NAME(AIRSUPPORT_POPUP,12)" && select(localvarbool("ui_centerPopup"), localvarbool("ui_swfPopupSelectionBarVis"), localvarbool("ui_swfSelectionBarVis")) && localvarstring("ui_buttonNavGroupName_popup") == "AIRSUPPORT_POPUP", select(isdemoplaying(), FUNC_44(), FUNC_43()), 1));
+            exp rect x                  (0 + (0 + 8));
+        }
+        // ---------- AUTO-INSERT ID 10013 END ----------
+        // ---------- AUTO-INSERT ID 10014 BEGIN ----------
+        itemDef
+        {
+            rect                        0 0 350 1 2 2
+            style                       3
+            decoration                  
+            visible                     when((13 % 2 == 1));
+            textscale                   0.55
+            forecolor                   0 0 0 0.15
+            background                  "white"
+            exp rect x                  (0 + 0);
+            exp rect y                  (0 - 3.5) + (13 * (20 + 2)) + ((0 + 4) + ((23 * 1) + (16.367 * 0)));
+            exp rect h                  (20 * 1) + 2;
+        }
+        itemDef
+        {
+            rect                        0 0 334 20 2 2
+            style                       1
+            decoration                  
+            autowrapped                 
+            visible                     when((((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10014, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10014, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10014, 1))) > 0) && int(int(tablelookup("sp/survival_armories.csv", 0, 10014, 3)) <= FUNC_48())));
+            textalign                   6
+            textalignx                  -30
+            textscale                   0.375
+            textfont                    3
+            exp text                    locstring("@SO_SURVIVAL_CREDITS", int(tablelookup("sp/survival_armories.csv", 0, 10014, 3)));
+            exp rect x                  ((0 + 8) + 0);
+            exp rect y                  (0 + (13 * (20 + 2)) + (0 + 4) + ((23 * 1) + (16.367 * 0))) - 2.333;
+        }
+        itemDef
+        {
+            name                        "AIRSUPPORT_POPUP_13"
+            rect                        11.667 0 350 19.567 2 2
+            style                       3
+            type                        1
+            visible                     when(1);
+            disabled                    when(!(((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10014, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10014, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10014, 1))) > 0) && int(int(tablelookup("sp/survival_armories.csv", 0, 10014, 3)) <= FUNC_48())));
+            textscale                   0.55
+            forecolor                   0 0 0 0
+            background                  "white"
+            onFocus
+            {
+                setLocalVarString ui_swf_selection "SWF_POPUP_BUTTON_NAME(AIRSUPPORT_POPUP,13)";
+                setLocalVarInt ui_buttonNavGroupCurrent_popup 13;
+                setLocalVarString ui_buttonNavGroupName_popup "AIRSUPPORT_POPUP";
+                setLocalVarBool ui_swfPopupSelectionButtonVis ((1) && !(!(((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10014, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10014, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10014, 1))) > 0) && int(int(tablelookup("sp/survival_armories.csv", 0, 10014, 3)) <= FUNC_48()))));
+                setLocalVarBool ui_swfPopupSelectionBarVis (1);
+                setLocalVarBool ui_swfPopupSelectionDisabled (!(((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10014, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10014, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10014, 1))) > 0) && int(int(tablelookup("sp/survival_armories.csv", 0, 10014, 3)) <= FUNC_48())));
+                setLocalVarString ui_swfPopupContext "AIRSUPPORT_POPUP";
+                play mouse_over;
+                setLocalVarString armory_desc "@" + tablelookup("sp/survival_armories.csv", 0, 10014, 5);
+                setLocalVarInt selected_item_index 10014;
+            }
+            leaveFocus
+            {
+                setLocalVarBool ui_swfPopupSelectionButtonVis 0;
+                setLocalVarBool ui_swfPopupSelectionBarVis 0;
+                setLocalVarBool ui_swfPopupSelectionDisabled 0;
+            }
+            action
+            {
+                play mouse_click;
+                setLocalVarInt ui_quit_timer milliseconds();
+                play so_ingame_summary;
+                setLocalVarString purchase_item ("purchase_" + 10014);
+                scriptmenuresponse localVarString ( purchase_item );
+            }
+            exp disabled                !(((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10014, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10014, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10014, 1))) > 0) && int(int(tablelookup("sp/survival_armories.csv", 0, 10014, 3)) <= FUNC_48()));
+            exp rect y                  ((13 * (20 + 2)) + (0 + 4) + ((23 * 1) + (16.367 * 0))) + ((0 - 1.333));
+            exp rect w                  350 - 0;
+            exp rect x                  (0 + (0 + 8));
+        }
+        itemDef
+        {
+            rect                        11.667 0 350 19.567 2 2
+            style                       1
+            decoration                  
+            visible                     when((1) && (1));
+            textalign                   8
+            textscale                   0.375
+            textstyle                   9
+            textfont                    3
+            exp text                    "@" + tablelookup("sp/survival_armories.csv", 0, 10014, 4);
+            exp rect y                  (((13 * (20 + 2)) + (0 + 4) + ((23 * 1) + (16.367 * 0))) + (0 - 1.333)) - 2.333;
+            exp rect w                  350;
+            exp forecolor r             select(!(((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10014, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10014, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10014, 1))) > 0) && int(int(tablelookup("sp/survival_armories.csv", 0, 10014, 3)) <= FUNC_48())), select(localvarstring("ui_swf_selection") == "SWF_POPUP_BUTTON_NAME(AIRSUPPORT_POPUP,13)" && select(localvarbool("ui_centerPopup"), localvarbool("ui_swfPopupSelectionBarVis"), localvarbool("ui_swfSelectionBarVis")) && localvarstring("ui_buttonNavGroupName_popup") == "AIRSUPPORT_POPUP", 0, 0.360784), select(localvarstring("ui_swf_selection") == "SWF_POPUP_BUTTON_NAME(AIRSUPPORT_POPUP,13)" && select(localvarbool("ui_centerPopup"), localvarbool("ui_swfPopupSelectionBarVis"), localvarbool("ui_swfSelectionBarVis")) && localvarstring("ui_buttonNavGroupName_popup") == "AIRSUPPORT_POPUP", select(isdemoplaying(), FUNC_44(), FUNC_43()), 1));
+            exp forecolor g             select(!(((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10014, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10014, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10014, 1))) > 0) && int(int(tablelookup("sp/survival_armories.csv", 0, 10014, 3)) <= FUNC_48())), select(localvarstring("ui_swf_selection") == "SWF_POPUP_BUTTON_NAME(AIRSUPPORT_POPUP,13)" && select(localvarbool("ui_centerPopup"), localvarbool("ui_swfPopupSelectionBarVis"), localvarbool("ui_swfSelectionBarVis")) && localvarstring("ui_buttonNavGroupName_popup") == "AIRSUPPORT_POPUP", 0, 0.360784), select(localvarstring("ui_swf_selection") == "SWF_POPUP_BUTTON_NAME(AIRSUPPORT_POPUP,13)" && select(localvarbool("ui_centerPopup"), localvarbool("ui_swfPopupSelectionBarVis"), localvarbool("ui_swfSelectionBarVis")) && localvarstring("ui_buttonNavGroupName_popup") == "AIRSUPPORT_POPUP", select(isdemoplaying(), FUNC_44(), FUNC_43()), 1));
+            exp forecolor b             select(!(((levelforexperienceso(getplayerdata("experience")) >= int(tablelookup("sp/survival_armories.csv", 0, 10014, 7))) && (tablelookup("sp/survival_armories.csv", 0, 10014, 1) != "")) && !(int(getplayerdata("armory" + "airsupport", tablelookup("sp/survival_armories.csv", 0, 10014, 1))) > 0) && int(int(tablelookup("sp/survival_armories.csv", 0, 10014, 3)) <= FUNC_48())), select(localvarstring("ui_swf_selection") == "SWF_POPUP_BUTTON_NAME(AIRSUPPORT_POPUP,13)" && select(localvarbool("ui_centerPopup"), localvarbool("ui_swfPopupSelectionBarVis"), localvarbool("ui_swfSelectionBarVis")) && localvarstring("ui_buttonNavGroupName_popup") == "AIRSUPPORT_POPUP", 0, 0.360784), select(localvarstring("ui_swf_selection") == "SWF_POPUP_BUTTON_NAME(AIRSUPPORT_POPUP,13)" && select(localvarbool("ui_centerPopup"), localvarbool("ui_swfPopupSelectionBarVis"), localvarbool("ui_swfSelectionBarVis")) && localvarstring("ui_buttonNavGroupName_popup") == "AIRSUPPORT_POPUP", select(isdemoplaying(), FUNC_44(), FUNC_43()), 1));
+            exp rect x                  (0 + (0 + 8));
+        }
+        // ---------- AUTO-INSERT ID 10014 END ----------
+    }
+    loadMenu { "ui/scriptmenus/survival_armory_airsupport_perks.menu" }
+}

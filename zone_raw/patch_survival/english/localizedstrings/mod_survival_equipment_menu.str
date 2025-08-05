@@ -1,0 +1,31 @@
+// Dumped from fastfile "patch_survival".
+// In their original format the strings might have been separated in multiple files.
+VERSION             "1"
+CONFIG              "C:/trees/cod3/cod3/bin/StringEd.cfg"
+FILENOTES           ""
+
+REFERENCE           SURVIVAL_EQUIPMENT_RPG
+LANG_ENGLISH        "购买RPG火箭筒"
+
+REFERENCE           SURVIVAL_EQUIPMENT_RPG_DESC
+LANG_ENGLISH        "苏制单兵反装甲武器,是一种肩扛式火箭推进榴弹发射器,廉价可靠;每次购买可补充2发火箭弹,最大可携带^18发."
+
+REFERENCE           SURVIVAL_EQUIPMENT_BODYARMOR
+LANG_ENGLISH        "购买多层防弹衣"
+
+REFERENCE           SURVIVAL_EQUIPMENT_BODYARMOR_DESC
+LANG_ENGLISH        "多层防弹装甲。每次购买获得200点护甲值，最多^3可连续购买3次^7，护甲值大于^3 600 ^7时无法购买。"
+
+REFERENCE           SURVIVAL_EQUIPMENT_SENTRY
+LANG_ENGLISH        "购买哨戒机枪"
+
+REFERENCE           SURVIVAL_EQUIPMENT_SENTRY_DESC
+LANG_ENGLISH        "载有M134机枪的自动化装置，侦测到敌人后会自动攻击。初始生命值^31800^7。注意，敌人直升机对本装置威胁极大。"
+
+REFERENCE           SURVIVAL_EQUIPMENT_SENTRY_GL
+LANG_ENGLISH        "购买哨戒枪榴弹炮"
+
+REFERENCE           SURVIVAL_EQUIPMENT_SENTRY_GL_DESC
+LANG_ENGLISH        "载有榴弹发射器的自动化装置，侦测到敌人后会自动攻击。初始生命值^31600^7。注意，敌人直升机对本装置威胁极大。"
+
+ENDMARKER

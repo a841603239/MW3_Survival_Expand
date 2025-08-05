@@ -1,0 +1,58 @@
+// Dumped from fastfile "patch_survival".
+// In their original format the strings might have been separated in multiple files.
+VERSION             "1"
+CONFIG              "C:/trees/cod3/cod3/bin/StringEd.cfg"
+FILENOTES           ""
+
+REFERENCE           SURVIVAL_AIRSUPPORT_REINFORCEMENT_DELTA
+LANG_ENGLISH        "呼叫无畏战士增援"
+
+REFERENCE           SURVIVAL_AIRSUPPORT_REINFORCEMENT_DELTA_DESC
+LANG_ENGLISH        "呼叫一名无畏战士增援。配备佩切涅格重机枪，拥有50%的伤害抗性;MaxHP 2000.会跟随玩家行动，但移动速度较慢。"
+
+REFERENCE           SURVIVAL_AIRSUPPORT_REINFORCEMENT_RIOT
+LANG_ENGLISH        "呼叫G.I.G.N小队增援"
+
+REFERENCE           SURVIVAL_AIRSUPPORT_REINFORCEMENT_RIOT_DESC
+LANG_ENGLISH        "呼叫两名法国宪兵干预队精增援。小队配备SPAS12霰弹枪,MaxHP 500.^3前60秒会跟随玩家行动，后进入固守状态。"
+
+REFERENCE           SURVIVAL_AIRSUPPORT_REINFORCEMENT_CHOPPER
+LANG_ENGLISH        "呼叫友军攻击直升机"
+
+REFERENCE           SURVIVAL_AIRSUPPORT_REINFORCEMENT_CHOPPER_DESC
+LANG_ENGLISH        "呼叫一架友军直升机增援。直升机会在玩家上空盘旋，并自动攻击靠近的敌人。注意，直升机燃油^3仅够维持5分钟作战。"
+
+REFERENCE           SURVIVAL_AIRSUPPORT_CALL_FOR_RESUPPLY
+LANG_ENGLISH        "为盟友小队请求补给"
+
+REFERENCE           SURVIVAL_AIRSUPPORT_CALL_FOR_RESUPPLY_DESC
+LANG_ENGLISH        "为盟友小队购买补给，恢复盟友小队的弹药量和生命值。可重复购买。"
+
+REFERENCE           SURVIVAL_AIRSUPPORT_UPGRADE_FRIENDLY_SQUAD
+LANG_ENGLISH        "战场升级:龙精虎猛"
+
+REFERENCE           SURVIVAL_AIRSUPPORT_UPGRADE_FRIENDLY_SQUAD_DESC
+LANG_ENGLISH        "永久提高delta及G.ING.N小队所有成员的的血量上限500点,对新召唤的盟军增援同样有效；最多可升级4次。"
+
+REFERENCE           SURVIVAL_AIRSUPPORT_UPGRADE_SENTRY_GUN
+LANG_ENGLISH        "战场升级:工艺改良"
+
+REFERENCE           SURVIVAL_AIRSUPPORT_UPGRADE_SENTRY_GUN_DESC
+LANG_ENGLISH        "永久提高所有哨戒机枪及哨戒枪榴弹发射器的血量上限500点,对新购买的哨戒装置同样有效；仅可升级1次。"
+
+REFERENCE           FREE_ITEM_1
+LANG_ENGLISH        "预留插槽1"
+
+REFERENCE           FREE_ITEM_1_DESC
+LANG_ENGLISH        "for modder,don't buy."
+
+REFERENCE           FREE_ITEM_2
+LANG_ENGLISH        "预留插槽2"
+
+REFERENCE           FREE_ITEM_2_DESC
+LANG_ENGLISH        "for modder,don't buy."
+
+REFERENCE           SURVIVAL_ARMORY_PERKS_DESC
+LANG_ENGLISH        "汽水补给箱将通过直升机空投至战场。最多可以携带^3 2 ^7种汽水，若在战斗中被击倒，会立即丢失所有汽水。"
+
+ENDMARKER

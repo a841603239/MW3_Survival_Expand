@@ -1,0 +1,379 @@
+// Dumped from fastfile "patch_survival".
+// In their original format the strings might have been separated in multiple files.
+VERSION             "1"
+CONFIG              "C:/trees/cod3/cod3/bin/StringEd.cfg"
+FILENOTES           ""
+
+REFERENCE           MENU_SP_IIS_LEGAL_MOD
+LANG_ENGLISH        "2011 Activision Publishing, Inc."
+
+REFERENCE           MENU_SP_DESC_SPECIALOPS_MOD
+LANG_ENGLISH        "Playing solo or co-op, rank up to unlock weapons, tactical support, levels and more in Survival mode and a variety of challenging missions."
+
+REFERENCE           DEADQUOTE_SO_SURVIVAL_LAST_STAND
+LANG_ENGLISH        "Self Revive allows you to pick yourself up by killing an enemy, and can be restocked in the Equipment Armory."
+
+REFERENCE           SO_SURVIVAL_ARMOR_POINTS
+LANG_ENGLISH        "Armor         &&1"
+
+REFERENCE           SO_SURVIVAL_CHAOS_BONUS_FREEZE_METER
+LANG_ENGLISH        "Press [{+activate}] For Bonus Pickup: Freeze Meter"
+
+REFERENCE           SO_SURVIVAL_CHAOS_BONUS_LASTSTAND
+LANG_ENGLISH        "Press [{+activate}] For Bonus Pickup: +Laststand"
+
+REFERENCE           SO_SURVIVAL_CHAOS_BONUS_MULTIPLIER
+LANG_ENGLISH        "Press [{+activate}] For Bonus Pickup: x10"
+
+REFERENCE           SO_SURVIVAL_CHAOS_BONUS_POINT
+LANG_ENGLISH        "Press [{+activate}] For Bonus Pickup: +5000"
+
+REFERENCE           SO_SURVIVAL_CHAOS_BONUS_SCORE
+LANG_ENGLISH        "Bonus Score +&&1"
+
+REFERENCE           SO_SURVIVAL_CHAOS_BONUS_SENTRY
+LANG_ENGLISH        "Press [{+activate}] For Bonus Pickup: Sentry"
+
+REFERENCE           SO_SURVIVAL_CHAOS_BONUS_TIME
+LANG_ENGLISH        "Press [{+activate}] For Bonus Pickup: +1:00"
+
+REFERENCE           SO_SURVIVAL_CHAOS_CARE_PACKAGE
+LANG_ENGLISH        "Care Package +&&1"
+
+REFERENCE           SO_SURVIVAL_CHAOS_CHEMICAL_CORPS
+LANG_ENGLISH        "Chemical Corps +&&1"
+
+REFERENCE           SO_SURVIVAL_CHAOS_CLAYMORE_CORPS
+LANG_ENGLISH        "Claymore Corps +&&1"
+
+REFERENCE           SO_SURVIVAL_CHAOS_DES_CHOPPER
+LANG_ENGLISH        "Chopper Destroyed +&&1"
+
+REFERENCE           SO_SURVIVAL_CHAOS_DOG_KILL
+LANG_ENGLISH        "Dog Kill +&&1"
+
+REFERENCE           SO_SURVIVAL_CHAOS_DOG_TAGS
+LANG_ENGLISH        "Dog Tags +&&1"
+
+REFERENCE           SO_SURVIVAL_CHAOS_EASY_KILL
+LANG_ENGLISH        "Easy Kill +&&1"
+
+REFERENCE           SO_SURVIVAL_CHAOS_ELITE_KILL
+LANG_ENGLISH        "Elite Kill +&&1"
+
+REFERENCE           SO_SURVIVAL_CHAOS_EOG_CHEMICAL
+LANG_ENGLISH        "Chemical Corps Kill (+300):"
+
+REFERENCE           SO_SURVIVAL_CHAOS_EOG_CHOPPER
+LANG_ENGLISH        "Chopper Destroyed (+2000):"
+
+REFERENCE           SO_SURVIVAL_CHAOS_EOG_EASY
+LANG_ENGLISH        "Easy Kill (+50):"
+
+REFERENCE           SO_SURVIVAL_CHAOS_EOG_ELITE
+LANG_ENGLISH        "Elite Kill (+250):"
+
+REFERENCE           SO_SURVIVAL_CHAOS_EOG_EXECUTION
+LANG_ENGLISH        "Execution (+200):"
+
+REFERENCE           SO_SURVIVAL_CHAOS_EOG_EXP_DOG
+LANG_ENGLISH        "Explosive Dog Kill (+150):"
+
+REFERENCE           SO_SURVIVAL_CHAOS_EOG_EXP_JUG
+LANG_ENGLISH        "Explosive Juggernaut Kill (+1000):"
+
+REFERENCE           SO_SURVIVAL_CHAOS_EOG_EXP_KILL
+LANG_ENGLISH        "Explosive Kill (+150):"
+
+REFERENCE           SO_SURVIVAL_CHAOS_EOG_GRENADE
+LANG_ENGLISH        "Grenade Kill (+400):"
+
+REFERENCE           SO_SURVIVAL_CHAOS_EOG_HARDENED
+LANG_ENGLISH        "Hardened Kill (+150):"
+
+REFERENCE           SO_SURVIVAL_CHAOS_EOG_HEADSHOT
+LANG_ENGLISH        "Head Shot (+300):"
+
+REFERENCE           SO_SURVIVAL_CHAOS_EOG_KNIFE
+LANG_ENGLISH        "Knife Kill (+150):"
+
+REFERENCE           SO_SURVIVAL_CHAOS_EOG_LONG_SHOT
+LANG_ENGLISH        "Long Shot (+150):"
+
+REFERENCE           SO_SURVIVAL_CHAOS_EOG_MARTYRDOM
+LANG_ENGLISH        "Martyrdom Kill (+150):"
+
+REFERENCE           SO_SURVIVAL_CHAOS_EOG_MASSIVE_EXP
+LANG_ENGLISH        "Massive Explosion (+2000):"
+
+REFERENCE           SO_SURVIVAL_CHAOS_EOG_MUL_KILL
+LANG_ENGLISH        "Multi Kill (+1000):"
+
+REFERENCE           SO_SURVIVAL_CHAOS_EOG_NEW_WEAPON
+LANG_ENGLISH        "New Weapon Collected (+500):"
+
+REFERENCE           SO_SURVIVAL_CHAOS_EOG_QUAD_KILL
+LANG_ENGLISH        "Quad Kill (+800):"
+
+REFERENCE           SO_SURVIVAL_CHAOS_EOG_REG_DOG
+LANG_ENGLISH        "Regular Dog Kill (+100):"
+
+REFERENCE           SO_SURVIVAL_CHAOS_EOG_REG_JUG
+LANG_ENGLISH        "Regular Juggernaut Kill (+500):"
+
+REFERENCE           SO_SURVIVAL_CHAOS_EOG_REG_KILL
+LANG_ENGLISH        "Regular Kill (+100):"
+
+REFERENCE           SO_SURVIVAL_CHAOS_EOG_SHIELD_JUG
+LANG_ENGLISH        "Shield Juggernaut Kill (+750):"
+
+REFERENCE           SO_SURVIVAL_CHAOS_EOG_TRI_HEADSHOT
+LANG_ENGLISH        "Triple Head Shot (+1000):"
+
+REFERENCE           SO_SURVIVAL_CHAOS_EOG_TRI_KILL
+LANG_ENGLISH        "Triple Kill (+600):"
+
+REFERENCE           SO_SURVIVAL_CHAOS_EOG_TRI_KNIFE
+LANG_ENGLISH        "Triple Knife Kill (+1000):"
+
+REFERENCE           SO_SURVIVAL_CHAOS_EOG_TRI_LONGSHOT
+LANG_ENGLISH        "Triple Long Shot (+1000):"
+
+REFERENCE           SO_SURVIVAL_CHAOS_EOG_VETERAN
+LANG_ENGLISH        "Veteran Kill (+200):"
+
+REFERENCE           SO_SURVIVAL_CHAOS_EXECUTION
+LANG_ENGLISH        "Execution +&&1"
+
+REFERENCE           SO_SURVIVAL_CHAOS_EXP_DOG
+LANG_ENGLISH        "Explosive Dog +&&1"
+
+REFERENCE           SO_SURVIVAL_CHAOS_EXP_JUG
+LANG_ENGLISH        "Explosive Juggernaut +&&1"
+
+REFERENCE           SO_SURVIVAL_CHAOS_EXPLOSION
+LANG_ENGLISH        "Explosion +&&1"
+
+REFERENCE           SO_SURVIVAL_CHAOS_GRENADE
+LANG_ENGLISH        "Grenade +&&1"
+
+REFERENCE           SO_SURVIVAL_CHAOS_HARDENED_KILL
+LANG_ENGLISH        "Hardened Kill +&&1"
+
+REFERENCE           SO_SURVIVAL_CHAOS_HEAD_SHOT
+LANG_ENGLISH        "Head Shot +&&1"
+
+REFERENCE           SO_SURVIVAL_CHAOS_HIGHEST_COMBO
+LANG_ENGLISH        "Highest Combo Multiplier:"
+
+REFERENCE           SO_SURVIVAL_CHAOS_LONG_SHOT
+LANG_ENGLISH        "Long Shot +&&1"
+
+REFERENCE           SO_SURVIVAL_CHAOS_MASSIVE_EXPLOSION
+LANG_ENGLISH        "Massive Explosion +&&1"
+
+REFERENCE           SO_SURVIVAL_CHAOS_MINIGUN_JUG
+LANG_ENGLISH        "Minigun Juggernaut +&&1"
+
+REFERENCE           SO_SURVIVAL_CHAOS_MULTI_KILL
+LANG_ENGLISH        "Multi Kill +&&1"
+
+REFERENCE           SO_SURVIVAL_CHAOS_NEW_WEAPON
+LANG_ENGLISH        "New Weapon +&&1"
+
+REFERENCE           SO_SURVIVAL_CHAOS_OBJECTIVE
+LANG_ENGLISH        "Survive the Chaos..."
+
+REFERENCE           SO_SURVIVAL_CHAOS_PICKUP_1887
+LANG_ENGLISH        "Press [{+activate}] for Model 1887"
+
+REFERENCE           SO_SURVIVAL_CHAOS_PICKUP_AA12
+LANG_ENGLISH        "Press [{+activate}] for AA-12"
+
+REFERENCE           SO_SURVIVAL_CHAOS_PICKUP_ACR
+LANG_ENGLISH        "Press [{+activate}] for ACR 6.8"
+
+REFERENCE           SO_SURVIVAL_CHAOS_PICKUP_AK47
+LANG_ENGLISH        "Press [{+activate}] for AK-47"
+
+REFERENCE           SO_SURVIVAL_CHAOS_PICKUP_AS50
+LANG_ENGLISH        "Press [{+activate}] for AS50"
+
+REFERENCE           SO_SURVIVAL_CHAOS_PICKUP_C4
+LANG_ENGLISH        "Press [{+activate}] for C4"
+
+REFERENCE           SO_SURVIVAL_CHAOS_PICKUP_CLAYMORE
+LANG_ENGLISH        "Press [{+activate}] for Claymore"
+
+REFERENCE           SO_SURVIVAL_CHAOS_PICKUP_CM901
+LANG_ENGLISH        "Press [{+activate}] for CM901"
+
+REFERENCE           SO_SURVIVAL_CHAOS_PICKUP_FAD
+LANG_ENGLISH        "Press [{+activate}] for FAD"
+
+REFERENCE           SO_SURVIVAL_CHAOS_PICKUP_FLASH
+LANG_ENGLISH        "Press [{+activate}] for Flash Grenade"
+
+REFERENCE           SO_SURVIVAL_CHAOS_PICKUP_FMG9
+LANG_ENGLISH        "Press [{+activate}] for FMG9"
+
+REFERENCE           SO_SURVIVAL_CHAOS_PICKUP_G18
+LANG_ENGLISH        "Press [{+activate}] for G18"
+
+REFERENCE           SO_SURVIVAL_CHAOS_PICKUP_G36
+LANG_ENGLISH        "Press [{+activate}] for G36C"
+
+REFERENCE           SO_SURVIVAL_CHAOS_PICKUP_M16
+LANG_ENGLISH        "Press [{+activate}] for M16A4"
+
+REFERENCE           SO_SURVIVAL_CHAOS_PICKUP_M4
+LANG_ENGLISH        "Press [{+activate}] for M4A1"
+
+REFERENCE           SO_SURVIVAL_CHAOS_PICKUP_M60
+LANG_ENGLISH        "Press [{+activate}] for M60E4"
+
+REFERENCE           SO_SURVIVAL_CHAOS_PICKUP_M9
+LANG_ENGLISH        "Press [{+activate}] for PM-9"
+
+REFERENCE           SO_SURVIVAL_CHAOS_PICKUP_MG36
+LANG_ENGLISH        "Press [{+activate}] for MG36"
+
+REFERENCE           SO_SURVIVAL_CHAOS_PICKUP_MK14
+LANG_ENGLISH        "Press [{+activate}] for MK14"
+
+REFERENCE           SO_SURVIVAL_CHAOS_PICKUP_MK46
+LANG_ENGLISH        "Press [{+activate}] for MK46"
+
+REFERENCE           SO_SURVIVAL_CHAOS_PICKUP_MP5
+LANG_ENGLISH        "Press [{+activate}] for MP5"
+
+REFERENCE           SO_SURVIVAL_CHAOS_PICKUP_MP7
+LANG_ENGLISH        "Press [{+activate}] for MP7"
+
+REFERENCE           SO_SURVIVAL_CHAOS_PICKUP_MP9
+LANG_ENGLISH        "Press [{+activate}] for MP9"
+
+REFERENCE           SO_SURVIVAL_CHAOS_PICKUP_P90
+LANG_ENGLISH        "Press [{+activate}] for P90"
+
+REFERENCE           SO_SURVIVAL_CHAOS_PICKUP_PECHENEG
+LANG_ENGLISH        "Press [{+activate}] for PKP Pecheneg"
+
+REFERENCE           SO_SURVIVAL_CHAOS_PICKUP_PP90
+LANG_ENGLISH        "Press [{+activate}] for PP90M1"
+
+REFERENCE           SO_SURVIVAL_CHAOS_PICKUP_RPG
+LANG_ENGLISH        "Press [{+activate}] for RPG-7"
+
+REFERENCE           SO_SURVIVAL_CHAOS_PICKUP_RSASS
+LANG_ENGLISH        "Press [{+activate}] for RSASS"
+
+REFERENCE           SO_SURVIVAL_CHAOS_PICKUP_SA80
+LANG_ENGLISH        "Press [{+activate}] for L86 LSW"
+
+REFERENCE           SO_SURVIVAL_CHAOS_PICKUP_SCAR
+LANG_ENGLISH        "Press [{+activate}] for SCAR-L"
+
+REFERENCE           SO_SURVIVAL_CHAOS_PICKUP_SKORPION
+LANG_ENGLISH        "Press [{+activate}] for Skorpion"
+
+REFERENCE           SO_SURVIVAL_CHAOS_PICKUP_STRIKER
+LANG_ENGLISH        "Press [{+activate}] for Striker"
+
+REFERENCE           SO_SURVIVAL_CHAOS_PICKUP_TYPE95
+LANG_ENGLISH        "Press [{+activate}] for Type 95"
+
+REFERENCE           SO_SURVIVAL_CHAOS_PICKUP_UMP45
+LANG_ENGLISH        "Press [{+activate}] for UMP45"
+
+REFERENCE           SO_SURVIVAL_CHAOS_PICKUP_USAS12
+LANG_ENGLISH        "Press [{+activate}] for USAS 12"
+
+REFERENCE           SO_SURVIVAL_CHAOS_PICKUP_USP45
+LANG_ENGLISH        "Press [{+activate}] for USP45"
+
+REFERENCE           SO_SURVIVAL_CHAOS_QUAD_KILL
+LANG_ENGLISH        "Quad Kill +&&1"
+
+REFERENCE           SO_SURVIVAL_CHAOS_REG_JUG
+LANG_ENGLISH        "Regular Juggernaut +&&1"
+
+REFERENCE           SO_SURVIVAL_CHAOS_REGULAR_KILL
+LANG_ENGLISH        "Regular Kill +&&1"
+
+REFERENCE           SO_SURVIVAL_CHAOS_SHIELD_JUG
+LANG_ENGLISH        "Shield Juggernaut +&&1"
+
+REFERENCE           SO_SURVIVAL_CHAOS_SPLASH_DEMO_MAN
+LANG_ENGLISH        "Demolition Man"
+
+REFERENCE           SO_SURVIVAL_CHAOS_SPLASH_FINAL_STAND
+LANG_ENGLISH        "Final Stand!"
+
+REFERENCE           SO_SURVIVAL_CHAOS_SPLASH_HEAD_HUNTER
+LANG_ENGLISH        "Head Hunter"
+
+REFERENCE           SO_SURVIVAL_CHAOS_SPLASH_LONG_SHOOTER
+LANG_ENGLISH        "Long Shooter"
+
+REFERENCE           SO_SURVIVAL_CHAOS_SPLASH_MULTI_KILL
+LANG_ENGLISH        "Multi Kill!"
+
+REFERENCE           SO_SURVIVAL_CHAOS_SPLASH_QUAD_KILL
+LANG_ENGLISH        "Quad Kill!"
+
+REFERENCE           SO_SURVIVAL_CHAOS_SPLASH_SLASHER
+LANG_ENGLISH        "Slasher"
+
+REFERENCE           SO_SURVIVAL_CHAOS_SPLASH_TRIPLE_KILL
+LANG_ENGLISH        "Triple Kill!"
+
+REFERENCE           SO_SURVIVAL_CHAOS_STAB
+LANG_ENGLISH        "Stab +&&1"
+
+REFERENCE           SO_SURVIVAL_CHAOS_SUICIDE_BOMBER
+LANG_ENGLISH        "Suicide Bomber +&&1"
+
+REFERENCE           SO_SURVIVAL_CHAOS_TRIPLE_HEADSHOT
+LANG_ENGLISH        "Triple Head Shot +&&1"
+
+REFERENCE           SO_SURVIVAL_CHAOS_TRIPLE_KILL
+LANG_ENGLISH        "Triple Kill +&&1"
+
+REFERENCE           SO_SURVIVAL_CHAOS_TRIPLE_KNIFE_KILL
+LANG_ENGLISH        "Triple Knife Kill +&&1"
+
+REFERENCE           SO_SURVIVAL_CHAOS_TRIPLE_LONGSHOT
+LANG_ENGLISH        "Triple Long Shot +&&1"
+
+REFERENCE           SO_SURVIVAL_CHAOS_VETERAN_KILL
+LANG_ENGLISH        "Veteran Kill +&&1"
+
+REFERENCE           SO_SURVIVAL_MENU_SHARE_HINT
+LANG_ENGLISH        "SHARE $500 ^2F2^7"
+
+REFERENCE           SO_SURVIVAL_PARTNER_READY
+LANG_ENGLISH        "Teammate ready\nPress ^3[{skip}]^7 to ready up: &&1"
+
+REFERENCE           SO_SURVIVAL_READY_UP
+LANG_ENGLISH        "Press ^3[{skip}]^7 to ready up: &&1"
+
+REFERENCE           SP_KILLSTREAKS_SPECIALTY_BULLETACCURACY_PICKUP
+LANG_ENGLISH        "Press and hold ^3[{+activate}]^7 for Perk: Steady Aim"
+
+REFERENCE           SP_KILLSTREAKS_SPECIALTY_DETECTEXPLOSIVE_PICKUP
+LANG_ENGLISH        "Press and hold ^3[{+activate}]^7 for Perk: SitRep"
+
+REFERENCE           SP_KILLSTREAKS_SPECIALTY_FASTRELOAD_PICKUP
+LANG_ENGLISH        "Press and hold ^3[{+activate}]^7 for Perk: Sleight of Hand"
+
+REFERENCE           SP_KILLSTREAKS_SPECIALTY_LONGERSPRINT_PICKUP
+LANG_ENGLISH        "Press and hold ^3[{+activate}]^7 for Perk: Extreme Conditioning"
+
+REFERENCE           SP_KILLSTREAKS_SPECIALTY_QUICKDRAW_PICKUP
+LANG_ENGLISH        "Press and hold ^3[{+activate}]^7 for Perk: Quickdraw"
+
+REFERENCE           SP_KILLSTREAKS_SPECIALTY_STALKER_PICKUP
+LANG_ENGLISH        "Press and hold ^3[{+activate}]^7 for Perk: Stalker"
+
+ENDMARKER
