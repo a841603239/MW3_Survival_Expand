@@ -1,3 +1,5 @@
+[中文](README-CN.md) | [English](README.md)
+
 ## 📖 General
 
 - Waves timer increased from 30 seconds to **40 seconds**.  
