@@ -95,7 +95,7 @@
 
 **MW3_survival_expand** 是一个免费模组. 制作不易，欢迎打赏🤩
 
-| Alipay       | [![支付宝](\donate_Alipay.png)](#) | thank you! |
+| Alipay       | [![支付宝](https://github.com/a841603239/MW3_Survival_Expand/blob/main/donate_Alipay.png)](#) | thank you! |
 
 
 | 敌人属性 | 每波次增幅 | 最高上限（相对于基础） | 达到上限的波次 |

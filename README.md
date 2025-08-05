@@ -99,7 +99,6 @@
 | Platforms    | Donation Button                                                                                              | Message    |  
 |:------------:|:------------------------------------------------------------------------------------------------------------:|:-----------|  
 | PayPal       | [![PayPal](https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif)](https://paypal.me/841603239)        | Thank you! |  
-| Alipay       | [![支付宝](\donate_Alipay.png)](#) | thank you! |
 
 ## ✅ Mod File Structure  
 
