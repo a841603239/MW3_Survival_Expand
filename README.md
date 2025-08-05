@@ -1,187 +1,186 @@
-## 📖 全局 
+## 📖 General
 
--   每回合倒计时由30秒调整为**40秒**。
--   每波敌人数量与配置组合做出调整。
--   装备购买菜单在**第2波结束时**可用,武器购买菜单在**第4波结束时**可用,空中支援菜单在**第6波结束时**可用。
--   修复或重写了诸多生存模式中的中文描述。
--   更换了新的菜单背景。
--   调整每波次敌人强度和数量，不同类型的敌人血量略微调整,**击杀获得分数降低**。
--   随着波次增加,敌人属性值呈线性增长,详情如下:
+- Waves timer increased from 30 seconds to **40 seconds**.  
+- Adjusted enemy count and composition per wave.  
+- Equipment_menu available after ** Wave 2**, Weapon_menu available after **Wave 4**, and Airsupport_menu available after **Wave 6**.  
+- Fixed or rewrote numerous Chinese localzation in Survival Mode.  
+- Replaced the menu background.  
+- Adjusted enemy strength and numbers per wave, with slight tweaks to different enemy types' health and **reduced score rewards for kills**.  
+- Enemy attributes scale linearly with wave progression, as detailed below:  
 
-| 敌人属性   | 每波次增幅 | 最高上限（相对于基础） | 达到上限的波次 |
-|------------|------------|------------------------|----------------|
-| 生命值     | 线性增长   | 300%                  | 40波           |
-| 移动速度   | 线性增长   | 150%                  | 25波           |
-| 命中精度   | 线性增长   | 120%                  | 20波           |
+| Attribute    | Per-Wave Increase | Max Cap (Relative to Base) | Wave to Reach Cap |  
+|-------------|------------------|---------------------------|------------------|  
+| Health      | Linear Growth    | 300%                      | Wave 40          |  
+| Movement Speed | Linear Growth | 150%                      | Wave 25          |  
+| Accuracy    | Linear Growth    | 120%                      | Wave 20          |  
 
-- 不同难度地图的区别,**仅体现在出生装备上**。
--   HUD调整:
-	- PERK图标的HUD位置现在更为靠近屏幕左侧。
-	- 在左上角缩略地图下方,增加盟友小队的生命值/最大生命值的HUB显示。
+- Difficulty differences between maps **only affect starting equipment&ammo**.  
+- HUD Adjustments:  
+  - PERK icons are now positioned closer to the left side of the screen.  
+  - Added ally squad maxhealth/health display below the minimap in the top-left corner.  
 
+## 🔫 Weapon Menu  
 
-## 🔫 枪械购买菜单
+- Adjusted weapon prices.  
+- Refined descriptions for all firearms.  
+- Weapon realism adjustments:  
+  - M1887 **base damage** increased from 30 to 40, **minimum damage** from 20 to 30.  
+- Integrated [@SadSlothXL's Akimbo Mod](https://github.com/SadSlothXL/IW5-mod_akimbo). Supported weapons:  
 
--   调整枪械购买菜单项价格
--   修改完善了所有枪支的描述。
--   武器真实性调整:
-	- M1887**基础伤害**由30调整为40,**最小伤害**由20调整为30。
--   整合了[@SadSlothXL的枪械双持模组](https://github.com/SadSlothXL/IW5-mod_akimbo),支持的枪械清单如下:
+| Weapon Type      | Akimbo-Compatible Weapons                                                                 |  
+|------------------|------------------------------------------------------------------------------------------|  
+| All Pistols      | Five Seven, USP.45, MP412, Desert Eagle, .44 Magnum, P99                                |  
+| All Machine Pistols | G18, Skorpion, MP9, FMG9                                                              |  
+| SMGs            | UMP45, PP90M1                                                                           |  
+| Shotguns        | Model 1887                                                                              |  
 
-| 枪械类型     | 双持模组适用枪械列表                                                                  |
-|--------------|-----------------------------------------------------------------------------|
-| 所有手枪     | Five Seven, USP.45, MP412, Desert Eagle, .44 magnum, P99                   |
-| 所有冲锋手枪 | G18, Skorpion, MP9, FMG9                                                   |
-| 冲锋枪       | UMP45, PP90M1                                                              |
-| 霰弹枪       | Model 1887                                                                 |
 ```
-*已知BUG*:
-	  - *因菜单修改技术瓶颈,所有武器均显示可以加装双持,但除上述武器外没有效果;*
-	  - *双持模组占用GP25榴弹发射器栏位,这意味着无法再购买GP25,好消息是仅AK47这一把枪械可加装GP25榴弹发射器.*
-```
-
-## 💣 装备支援菜单
-
--   调整装备支援菜单项价格
--   防弹衣改为**多层防弹衣**。最多**可连续购买3次**,每次购买获得200点护甲值,护甲值大于600时无法购买
-- 	RPG的最大携弹量由原版的4发增加为8发。
--   哨戒机枪、哨戒榴弹炮数量上限由原版的2座增加为**4座**,并修改了描述。
--   哨戒机枪的生命值由原版800增加到1800,哨戒榴弹炮的生命值由原版1000增加到1600
-
-
-## ✈️ 空中支援菜单
-
-- 调整空中支援菜单项价格
-- 战地补给(汽水)**最大携带量增加为2种**,当玩家已获得2种汽水后,无法再购买其他汽水.
-- 玩家被击倒后进入**濒死状态(LastStand)时,会丢失所有战地补给（汽水）**.
-- 为所有调整过的空中支援相关的购买项,增加了屏幕消息提示。
-- 重新设计的盟友增援系统,详情如下:
-	- **修改Delta小队成员为一名无畏战士,人数1名,配备佩切涅格重机枪,基础生命上限2000点.无畏战士拥有50%的伤害抗性,会跟随玩家行动,但移动速度较慢。**
-	- **修改G.I.G.N小队人数改为两人,武器改为真实的SPAS12霰弹枪,基础生命上限500点.G.I.G.N小队降落战场后,前60秒会跟随玩家行动,然后行为策略会转变为为固守,建议提前找好固守位置。**
-	- **新增可呼叫增援"呼叫友军攻击直升机",直升机会在玩家上空盘旋,并自动攻击靠近的敌人,但直升机燃油仅够维持5分钟作战,300秒后直升机离场。友军直升机最多可存在1架。**
-	- **盟友小队数量上限改为最多3队同时在场(即最多6人),友军直升机不计入其中。**
--   新增战地升级可购买项——龙精虎猛:永久提高delta及G.ING.N小队所有成员的的血量上限500点,对新呼叫的盟军增援同样有效;最多可升级4次。
--   新增战地升级可购买项——工艺改良:永久提高所有哨戒机枪及哨戒枪榴弹发射器的血量上限500点,对新购买的哨戒装置同样有效;仅可升级1次。
--   新增可购买项——呼叫补给:可为友军小队恢复生命值与弹药量。
-```
-*已知BUG*:
-	- *因菜单修改技术瓶颈,空中支援菜单打开后无法自动居中;*
-	- *新增的6行菜单背景底色始终为绿色;*
+*Known Bugs:*
+	  - *Due to menu modification limitations, all weapons display the akimbo option, but only the listed weapons are functional.*
+	  - *The akimbo model occupies the GP25 grenade launcher slot, meaning GP25 can no longer be purchased. The only affected weapon is the AK47.*
 ```
 
 
-## 💻 安装说明
+## 💣 Equipment Menu  
 
-1.  在release页面下载模组文件<span style="color:red">MW3_survival_expand_cn.rar</span>
-2.  解压并复制到游戏根目录，会询问是否覆盖，点击确定。
-    <span style="color:red">
-        将覆盖以下文件：<br>
-        \main\iw_24.iwd<br>
-        \zone\chinese\patch_survival.ff
-    </span>
-3.  (可选)手动运行<span style="color:red">IW5_background_menu_replace.exe</span> 程序会自动替换开始菜单背景图
-4.  开始游戏
+- Adjusted equipment item prices.  
+- Body armor replaced with **multi-layered armor**. Can be purchased **up to 3 times**, granting 200 armor points per purchase. No purchases allowed if armor exceeds 600.  
+- RPG max ammo capacity increased from 4 to 8.  
+- Sentry-gun and sentry-grenade-launcher limits raised from 2 to **4**, with updated descriptions.  
+- Sentry gun health increased from 800 to 1800; sentry grenade launcher health increased from 1000 to 1600.  
 
+## ✈️ Airsupport Menu  
 
-## 📖 制作人员信息
--   本模组由Sorin制作.
--   部分思路借鉴了@[@神念MAX](https://space.bilibili.com/175979296).的使命召唤6生存模式mod.也非常感谢念姐给予的技术指导.
--   生存模式枪械双持模组原作者[@SadSlothXL](https://github.com/SadSlothXL/IW5-mod_akimbo).本模组已包含，无需额外下载.
+- Adjusted airsupport item prices.  
+- Perks **max carry capacity increased to 2 types**. Players cannot purchase additional perks if they already have 2.  
+- **All perks are lost when downed in LastStand.**  
+- Add screen notifications for most airsupport purchases.  
+- Remaked ally support system:  
+  - **Delta Squad replaced with 1 Juggernaut, equipped with a Pecheneg LMG, base health : 2000, damage resistance : 50% . Moves slowly but follows the player.**  
+  - **G.I.G.N Squad now consists of 2 members wielding SPAS-12 shotguns, base health of 500. They follow the player for the first 60 seconds before switching to a defensive hold.**  
+  - **New reinforcement: "Call Friendly Attack Helicopter." The helicopter circles above, engaging nearby enemies for 5 minutes before departing. Max 1 helicopter active at a time.**  
+  - **Ally squad cap increased to 3 teams (max 6 members), excluding helicopters.**  
+- New battlefield upgrades:  
+  - **Vigor Boost**: Permanently increases Delta and G.I.G.N squad health by 500 per upgrade (max 4 upgrades).  
+  - **Improved Crafting**: Permanently increases sentry gun and grenade launcher health by 500 (1 upgrade only).  
+  - **Call Resupply**: Restores health and ammo for ally squads.  
 
-
-## 💖 打赏作者
-
-**MW3_survival_expand** 是一个免费模组. 如果您喜欢此模组，欢迎打赏🤩
-| Platforms    | Donation Button                                                                                              | Message    |
-|:------------:|:------------------------------------------------------------------------------------------------------------:|:-----------|
-| PayPal       | [![PayPal](https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif)](https://paypal.me/841603239)        | thank you! |
-| Alipay       | [![支付宝](https://codeberg.org/a841603239/MW3_survival_expand/raw/commit/4d1a9d3dd1e61df3eebdbefdf1bca9caad1ab772/donate/donate_paypal.png)](#) | thank you! |
-
-
-## ✅ 模组源文件列表
-
-```bash
-├── accuracy/
-│   ├── aivsai/
-│   │   ├── assault_rifle.accu
-│   │   ├── pistol.accu
-│   │   ├── rpg.accu
-│   │   ├── smg.accu
-│   │   └── sniper_rifle.accu
-│   │
-│   └── aivsplayer/
-│       ├── assault_rifle.accu
-│       ├── mg.accu
-│       ├── pistol.accu
-│       ├── rpg.accu
-│       ├── shotgun.accu
-│       ├── smg.accu
-│       └── sniper_rifle.accu
-│
-├── aitype/
-│   ├── ally_so_delta.gsc
-│   ├── ally_so_riotshield.gsc
-│   ├── enemy_juggernaut_so_survival.gsc
-│   └── enemy_so_chemical.gsc
-│
-├── english/
-│   └── localizedstrings/
-│       ├── mod_survival_airsupport_menu.str
-│       ├── mod_survival_equipment_menu.str
-│       ├── mod_survival_weapon_menu.str
-│       └── patch_survival.str
-│
-├── images/
-│   ├── icon_call_for_resupply.iwi
-│   ├── icon_friendly_support_chopper.iwi
-│   ├── icon_friendly_support_dog.iwi
-│   ├── icon_friendly_support_juggernaut.iwi
-│   ├── icon_upgrade_friendly_squad.iwi
-│   ├── icon_upgrade_sentry_gun.iwi
-│   ├── small_icon_survival_chopper.iwi
-│   ├── small_icon_survival_gign.iwi
-│   └── small_icon_survival_juggernaut.iwi
-│
-├── materials/
-│   ├── icon_call_for_resupply.json
-│   ├── icon_friendly_support_chopper.json
-│   ├── icon_friendly_support_dog.json
-│   ├── icon_friendly_support_juggernaut.json
-│   ├── icon_upgrade_friendly_squad.json
-│   ├── icon_upgrade_sentry_gun.json
-│   ├── small_icon_survival_chopper.json
-│   ├── small_icon_survival_gign.json
-│   └── small_icon_survival_juggernaut.json
-│
-├── sp/
-│   ├── survival_armories.csv
-│   ├── survival_waves.csv
-│   │
-│   └── so_survival/
-│       ├── tier_1.csv
-│       ├── tier_2.csv
-│       ├── tier_3.csv
-│       ├── tier_4.csv
-│       ├── tier_dlc_1.csv
-│       └── tier_dlc_2.csv
-│
-├── ui/
-│   └── scriptmenus/
-│       ├── survival_armory_airsupport.menu
-│       └── survival_armory_airsupport_perks.menu
-│
-├── weapons/
-│   ├── iw5_1887_mp
-│   ├── iw5_pp90m1_mp
-│   ├── iw5_ump45_mp
-│   └── rpg_survival
-│
-└── [base]
-    ├── 1557.gsc
-    ├── 1564.gsc
-    ├── 1571.gsc
-    ├── 1574.gsc
-    ├── mod_friendly_health_hud.gsc
-    └── mod_friendly_upgrade.gsc
+```
+*Known Bugs:*
+	- *Due to menu limitations, the air support menu does not auto-center when opened.*
+	- *Due to menu limitations, the air support menu does not auto-center when opened.*
 ```
 
+
+## 💻 Installation Guide  
+
+1. Download <span style="color:red">MW3_survival_expand.rar</span> from the Releases.  
+2. Extract and copy to the game root directory. Overwrite when prompted.  
+   <span style="color:red">  
+       The following files will be overwritten:<br>  
+       \main\iw_24.iwd<br>  
+       \zone\chinese\patch_survival.ff  
+   </span>  
+3. (Optional) Run <span style="color:red">IW5_background_menu_replace.exe</span> to replace the main menu background.  
+4. Start game.  
+
+## 📖 Credits  
+
+- Mod created by Sorin.  
+- Inspired by [@神念MAX](https://space.bilibili.com/175979296)'s MW2 Survival Mod. Special thanks for technical guidance.  
+- Akimbo mod originally by [@SadSlothXL](https://github.com/SadSlothXL/IW5-mod_akimbo). Included in this mod.  
+
+## 💖 Donate 
+
+**MW3_survival_expand** is a free mod. If you enjoy it,please consider donating! 🤩  
+
+| Platforms    | Donation Button                                                                                              | Message    |  
+|:------------:|:------------------------------------------------------------------------------------------------------------:|:-----------|  
+| PayPal       | [![PayPal](https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif)](https://paypal.me/841603239)        | Thank you! |  
+
+## ✅ Mod File Structure  
+
+```bash  
+├── accuracy/  
+│   ├── aivsai/  
+│   │   ├── assault_rifle.accu  
+│   │   ├── pistol.accu  
+│   │   ├── rpg.accu  
+│   │   ├── smg.accu  
+│   │   └── sniper_rifle.accu  
+│   │  
+│   └── aivsplayer/  
+│       ├── assault_rifle.accu  
+│       ├── mg.accu  
+│       ├── pistol.accu  
+│       ├── rpg.accu  
+│       ├── shotgun.accu  
+│       ├── smg.accu  
+│       └── sniper_rifle.accu  
+│  
+├── aitype/  
+│   ├── ally_so_delta.gsc  
+│   ├── ally_so_riotshield.gsc  
+│   ├── enemy_juggernaut_so_survival.gsc  
+│   └── enemy_so_chemical.gsc  
+│  
+├── english/  
+│   └── localizedstrings/  
+│       ├── mod_survival_airsupport_menu.str  
+│       ├── mod_survival_equipment_menu.str  
+│       ├── mod_survival_weapon_menu.str  
+│       └── patch_survival.str  
+│  
+├── images/  
+│   ├── icon_call_for_resupply.iwi  
+│   ├── icon_friendly_support_chopper.iwi  
+│   ├── icon_friendly_support_dog.iwi  
+│   ├── icon_friendly_support_juggernaut.iwi  
+│   ├── icon_upgrade_friendly_squad.iwi  
+│   ├── icon_upgrade_sentry_gun.iwi  
+│   ├── small_icon_survival_chopper.iwi  
+│   ├── small_icon_survival_gign.iwi  
+│   └── small_icon_survival_juggernaut.iwi  
+│  
+├── materials/  
+│   ├── icon_call_for_resupply.json  
+│   ├── icon_friendly_support_chopper.json  
+│   ├── icon_friendly_support_dog.json  
+│   ├── icon_friendly_support_juggernaut.json  
+│   ├── icon_upgrade_friendly_squad.json  
+│   ├── icon_upgrade_sentry_gun.json  
+│   ├── small_icon_survival_chopper.json  
+│   ├── small_icon_survival_gign.json  
+│   └── small_icon_survival_juggernaut.json  
+│  
+├── sp/  
+│   ├── survival_armories.csv  
+│   ├── survival_waves.csv  
+│   │  
+│   └── so_survival/  
+│       ├── tier_1.csv  
+│       ├── tier_2.csv  
+│       ├── tier_3.csv  
+│       ├── tier_4.csv  
+│       ├── tier_dlc_1.csv  
+│       └── tier_dlc_2.csv  
+│  
+├── ui/  
+│   └── scriptmenus/  
+│       ├── survival_armory_airsupport.menu  
+│       └── survival_armory_airsupport_perks.menu  
+│  
+├── weapons/  
+│   ├── iw5_1887_mp  
+│   ├── iw5_pp90m1_mp  
+│   ├── iw5_ump45_mp  
+│   └── rpg_survival  
+│  
+└── [base]  
+    ├── 1557.gsc  
+    ├── 1564.gsc  
+    ├── 1571.gsc  
+    ├── 1574.gsc  
+    ├── mod_friendly_health_hud.gsc  
+    └── mod_friendly_upgrade.gsc  
+```
