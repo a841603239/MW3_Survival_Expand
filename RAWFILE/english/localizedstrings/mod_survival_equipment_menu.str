@@ -1,0 +1,31 @@
+// Dumped from fastfile "patch_survival".
+// In their original format the strings might have been separated in multiple files.
+VERSION             "1"
+CONFIG              "C:/trees/cod3/cod3/bin/StringEd.cfg"
+FILENOTES           ""
+
+REFERENCE           SURVIVAL_EQUIPMENT_RPG
+LANG_ENGLISH        "Purchase RPG-7"
+
+REFERENCE           SURVIVAL_EQUIPMENT_RPG_DESC
+LANG_ENGLISH        "Shoulder-fired rocket launcher. Restores 2 rockets per purchase. Max carried: ^18^7."
+
+REFERENCE           SURVIVAL_EQUIPMENT_BODYARMOR
+LANG_ENGLISH        "Purchase Body Armor"
+
+REFERENCE           SURVIVAL_EQUIPMENT_BODYARMOR_DESC
+LANG_ENGLISH        "+200 armor per purchase. Purchase cap: ^33^7 times. Cannot buy if armor > ^3600^7."
+
+REFERENCE           SURVIVAL_EQUIPMENT_SENTRY
+LANG_ENGLISH        "Purchase Sentry Gun"
+
+REFERENCE           SURVIVAL_EQUIPMENT_SENTRY_DESC
+LANG_ENGLISH         "Auto-turret with M134 minigun. Base HP: ^31800^7. Warning: Enemy helicopters lethal."
+
+REFERENCE           SURVIVAL_EQUIPMENT_SENTRY_GL
+LANG_ENGLISH        "Purchase Sentry Grenade Launcher"
+
+REFERENCE           SURVIVAL_EQUIPMENT_SENTRY_GL_DESC
+LANG_ENGLISH         "Auto-turret with grenade launcher. Base HP: ^31600^7. Warning: Enemy helicopters lethal."
+
+ENDMARKER

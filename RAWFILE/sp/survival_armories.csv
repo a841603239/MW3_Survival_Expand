@@ -1,0 +1,85 @@
+a0,b1,c2,d3,e4,f5,g6,h7,i8,j9,k10,l11
+0,ammo,weapon,1250,SO_SURVIVAL_AMMO_REFILL,SO_SURVIVAL_AMMO_REFILL_DESC,weapon_missing_image,0,,0 0,0,
+1,iw5_fnfiveseven_mp,weapon,750,WEAPON_FNFIVESEVEN,WEAPON_FNFIVESEVEN_DESC,weapon_fnfiveseven,0,akimbo,0 10,1,pistol
+2,iw5_usp45_mp,weapon,750,WEAPON_USP,WEAPON_USP_DESC,weapon_usp_45,0,akimbo,0 10,1,pistol
+3,iw5_mp412_mp,weapon,750,WEAPON_MP412,WEAPON_MP412_DESC,weapon_mp412,1,akimbo,0 10,1,pistol
+4,iw5_deserteagle_mp,weapon,750,WEAPON_DESERTEAGLE,WEAPON_DESERTEAGLE_DESC,weapon_desert_eagle,10,akimbo,0 5,1,pistol
+5,iw5_44magnum_mp,weapon,750,WEAPON_MAGNUM,WEAPON_MAGNUM_DESC,weapon_magnum,19,akimbo,0 5,1,pistol
+6,iw5_p99_mp,weapon,750,WEAPON_P99,WEAPON_P99_DESC,weapon_p99,39,akimbo,0 10,1,pistol
+7,iw5_g18_mp,weapon,1500,WEAPON_GLOCK,WEAPON_GLOCK_DESC,weapon_glock,0,eotech reflex akimbo,0 12,1,machinepistol
+8,iw5_skorpion_mp,weapon,1500,WEAPON_SKORPION,WEAPON_SKORPION_DESC,weapon_skorpion,2,eotech reflex akimbo,0 12,1,machinepistol
+9,iw5_mp9_mp,weapon,1500,WEAPON_MP9,WEAPON_MP9_DESC,weapon_mp9,16,eotech reflex akimbo,0 12,1,machinepistol
+10,iw5_fmg9_mp,weapon,1500,WEAPON_FMG9,WEAPON_FMG9_DESC,weapon_fmg9,36,eotech reflex akimbo,0 12,1,machinepistol
+11,iw5_mp5_mp,weapon,2500,WEAPON_MP5K,WEAPON_MP5K_DESC,weapon_mp5k,0,acog eotech reflex,0 12,1,smg
+12,iw5_ump45_mp,weapon,2500,WEAPON_UMP45,WEAPON_UMP45_DESC,weapon_ump45,3,acog eotech reflex akimbo,0 12,1,smg
+13,iw5_mp7_mp,weapon,2500,WEAPON_MP7,WEAPON_MP7_DESC,weapon_mp7,12,acog eotech reflex,0 12,1,smg
+14,iw5_m9_mp,weapon,2500,WEAPON_UZI,WEAPON_UZI_DESC,weapon_mini_uzi,22,acog eotech reflex,0 12,1,smg
+15,iw5_pp90m1_mp,weapon,2500,WEAPON_PP90M1,WEAPON_PP90M1_DESC,weapon_pp90m1,37,acog eotech reflex akimbo,0 12,1,smg
+16,iw5_p90_mp,weapon,2500,WEAPON_P90,WEAPON_P90_DESC,weapon_p90,45,acog eotech reflex,0 12,1,smg
+17,iw5_m60_mp,weapon,7000,WEAPON_M60,WEAPON_M60_DESC,weapon_m60e4,11,acog eotech grip reflex,0 30,1,lmg
+18,iw5_pecheneg_mp,weapon,7000,WEAPON_PECHENEG,WEAPON_PECHENEG_DESC,weapon_pecheneg,17,acog eotech grip reflex,0 30,1,lmg
+19,iw5_mk46_mp,weapon,7000,WEAPON_MK46,WEAPON_MK46_DESC,weapon_mk46,33,acog eotech grip reflex,0 30,1,lmg
+20,iw5_sa80_mp,weapon,7000,WEAPON_SA80,WEAPON_SA80_DESC,weapon_sa80,40,acog eotech grip reflex,0 30,1,lmg
+21,iw5_mg36_mp,weapon,7000,WEAPON_MG36,WEAPON_MG36_DESC,weapon_mg36,47,acog eotech grip reflex,0 30,1,lmg
+22,iw5_m4_mp,weapon,3500,WEAPON_M4,WEAPON_M4_DESC,weapon_m4_short,0,acog eotech gl reflex shotgun,0 15,1,assaultrifle
+23,iw5_m16_mp,weapon,3500,WEAPON_M16,WEAPON_M16_DESC,weapon_m16a4,0,acog eotech gl reflex shotgun,0 15,1,assaultrifle
+24,iw5_scar_mp,weapon,3500,WEAPON_SCAR,WEAPON_SCAR_DESC,weapon_scar_h,4,acog eotech m320 reflex shotgun,0 15,1,assaultrifle
+25,iw5_acr_mp,weapon,3500,WEAPON_ACR,WEAPON_ACR_DESC,weapon_acr,13,acog eotech m320 reflex shotgun,0 15,1,assaultrifle
+26,iw5_ak47_mp,weapon,3500,WEAPON_AK47,WEAPON_AK47_DESC,weapon_ak47,23,acog eotech gp25 reflex shotgun,0 15,1,assaultrifle
+27,iw5_fad_mp,weapon,3500,WEAPON_FAD,WEAPON_FAD_DESC,weapon_fad,31,acog eotech m320 reflex shotgun,0 15,1,assaultrifle
+28,iw5_g36c_mp,weapon,3500,WEAPON_G36,WEAPON_G36_DESC,weapon_g36,38,acog eotech m320 reflex shotgun,0 15,1,assaultrifle
+29,iw5_cm901_mp,weapon,3500,WEAPON_CM901,WEAPON_CM901_DESC,weapon_cm901,42,acog eotech m320 reflex shotgun,0 15,1,assaultrifle
+30,iw5_mk14_mp,weapon,3500,WEAPON_MK14,WEAPON_MK14_DESC,weapon_mk14,46,acog eotech m320 reflex shotgun,0 15,1,assaultrifle
+31,iw5_type95_mp,weapon,3500,WEAPON_TYPE95,WEAPON_TYPE95_DESC,weapon_type95,49,acog eotech m320 reflex shotgun,0 15,1,assaultrifle
+32,iw5_1887_mp,weapon,2000,WEAPON_MODEL1887,WEAPON_MODEL1887_DESC,weapon_model1887,0,akimbo,0 3,1,shotgun
+33,iw5_usas12_mp,weapon,2000,WEAPON_USAS12,WEAPON_USAS12_DESC,weapon_usas12,5,eotech grip reflex,0 2,1,shotgun
+34,iw5_spas12_mp,weapon,2000,WEAPON_SPAS12,WEAPON_SPAS12_DESC,weapon_spas12,15,eotech grip reflex,0 2,1,shotgun
+35,iw5_ksg_mp,weapon,2000,WEAPON_KSG,WEAPON_KSG_DESC,weapon_ksg,25,eotech grip reflex,0 2,1,shotgun
+36,iw5_striker_mp,weapon,3000,WEAPON_STRIKER,WEAPON_STRIKER_DESC,weapon_striker,32,eotech grip reflex,0 2,1,shotgun
+37,iw5_aa12_mp,weapon,2500,WEAPON_AA12,WEAPON_AA12_DESC,weapon_aa12,43,eotech grip reflex,0 2,1,shotgun
+38,iw5_msr_mp,weapon,4000,WEAPON_MSR,WEAPON_MSR_DESC,weapon_msr,6,acog,0 3,1,sniper
+39,iw5_dragunov_mp,weapon,4000,WEAPON_DRAGUNOV,WEAPON_DRAGUNOV_DESC,weapon_dragunov,15,acog,0 3,1,sniper
+40,iw5_rsass_mp,weapon,4000,WEAPON_RSASS,WEAPON_RSASS_DESC,weapon_rsass,28,acog,0 3,1,sniper
+41,iw5_l96a1_mp,weapon,4000,WEAPON_L96A1,WEAPON_L96A1_DESC,weapon_l96a1,34,acog,0 3,1,sniper
+42,iw5_as50_mp,weapon,4000,WEAPON_AS50,WEAPON_AS50_DESC,weapon_as50,41,acog,0 3,1,sniper
+43,iw5_barrett_mp,weapon,4000,WEAPON_BARRETT,WEAPON_BARRETT_DESC,weapon_barrett,48,acog,0 3,1,sniper
+100,eotech,scope,1500,SO_SURVIVAL_ATTACHMENT_EOTECH,PERKS_DESC_EOTECH,weapon_attachment_eotech,0,,,1,
+101,reflex,scope,1500,SO_SURVIVAL_ATTACHMENT_RED_DOT_SIGHT,PERKS_REPLACE_THE_IRON_SIGHTS,weapon_attachment_reflex,6,,,1,
+102,grip,main,1250,SO_SURVIVAL_ATTACHMENT_GRIP,PERKS_VERTICAL_FOREGRIP_FOR,weapon_attachment_grip,18,,,1,
+103,gl,main,2000,SO_SURVIVAL_ATTACHMENT_GRENADE_LAUNCHER,PERKS_GRENADE_LAUNCHER_ATTACHMENT2,weapon_attachment_m203,27,,,1,
+1044,gp25,main,2000,SO_SURVIVAL_ATTACHMENT_GRENADE_LAUNCHER1,PERKS_GRENADE_LAUNCHER_ATTACHMENT2,weapon_attachment_gp25,27,,,1,
+105,m320,main,2000,SO_SURVIVAL_ATTACHMENT_GRENADE_LAUNCHER2,PERKS_GRENADE_LAUNCHER_ATTACHMENT2,weapon_attachment_m320,27,,,1,
+106,acog,scope,1500,SO_SURVIVAL_ATTACHMENT_ACOG_SCOPE,PERKS_ENHANCED_ZOOM_ACOG_SCOPE,weapon_attachment_acog,29,,,1,
+107,shotgun,main,2250,SO_SURVIVAL_ATTACHMENT_SHOTGUN,PERKS_DESC_SHOTGUN,weapon_attachment_shotgun,44,,,1,
+104,akimbo,main,3000,SO_SURVIVAL_ATTACHMENT_AKIMBO,SO_SURVIVAL_ATTACHMENT_AKIMBO_DESC,weapon_attachment_akimbo,45,,,1,
+108,dragunovscope,scope,0,,,weapon_missing_image,0,,,1,
+109,msrscope,scope,0,,,weapon_missing_image,0,,,1,
+110,barrettscope,scope,0,,,weapon_missing_image,0,,,1,
+111,rsassscope,scope,0,,,weapon_missing_image,0,,,1,
+112,as50scope,scope,0,,,weapon_missing_image,0,,,1,
+113,l96a1scope,scope,0,,,weapon_missing_image,0,,,1,
+1000,fraggrenade,equipment,750,SO_SURVIVAL_EQUIPMENT_FRAG_REFILL,SO_SURVIVAL_EQUIPMENT_FRAG_REFILL_DESC,weapon_fraggrenade,0,0,,4,
+1001,flash_grenade,equipment,1000,SO_SURVIVAL_EQUIPMENT_FLASH_REFILL,SO_SURVIVAL_EQUIPMENT_FLASH_REFILL_DESC,weapon_flashbang,0,0,,4,
+1002,claymore,equipment,1500,SO_SURVIVAL_EQUIPMENT_CLAYMORE,PERKS_DIRECTIONAL_ANTIPERSONNEL,weapon_claymore,1,0,,10,
+1003,c4,equipment,1500,SO_SURVIVAL_EQUIPMENT_C4,PERKS_CHARGE_OF_PLASTIC_EXPLOSIVES,weapon_c4,2,0,,10,
+1004,rpg_survival,equipment,1750,SURVIVAL_EQUIPMENT_RPG,SURVIVAL_EQUIPMENT_RPG_DESC,weapon_rpg_survival,26,0,,8,
+1005,armor,equipment,2000,SURVIVAL_EQUIPMENT_BODYARMOR,SURVIVAL_EQUIPMENT_BODYARMOR_DESC,equipment_body_armor,9,0,,100,
+1006,laststand,equipment,5000,SO_SURVIVAL_EQUIPMENT_LASTSTAND,SO_SURVIVAL_EQUIPMENT_LASTSTAND_DESC,specialty_self_revive,12,0,,1,
+1007,sentry,equipment,4000,SURVIVAL_EQUIPMENT_SENTRY,SURVIVAL_EQUIPMENT_SENTRY_DESC,equipment_sentry_gun,16,0,,2,
+1008,sentry_gl,equipment,4500,SURVIVAL_EQUIPMENT_SENTRY_GL,SURVIVAL_EQUIPMENT_SENTRY_GL_DESC,equipment_grenade_launcher,30,0,,2,
+1009,iw5_riotshield_so,equipment,1250,WEAPON_RIOTSHIELD,PERKS_RIOT_SHIELD,weapon_riotshield_so,36,0,,1,
+10000,remote_missile,airsupport,2500,SO_SURVIVAL_AIRSUPPORT_PREDATOR,SO_SURVIVAL_AIRSUPPORT_PREDATOR_DESC,dpad_killstreak_predator_missile_static_frontend,0,0,,1,
+10001,precision_airstrike,airsupport,2500,SO_SURVIVAL_AIRSUPPORT_AIRSTRIKE,SO_SURVIVAL_AIRSUPPORT_AIRSTRIKE_DESC,dpad_killstreak_ac130_static_frontend,3,0,,1,
+10002,friendly_support_delta,airsupport,7000,SURVIVAL_AIRSUPPORT_REINFORCEMENT_DELTA,SURVIVAL_AIRSUPPORT_REINFORCEMENT_DELTA_DESC,icon_friendly_support_juggernaut,13,0,,1,
+10003,friendly_support_riotshield,airsupport,5000,SURVIVAL_AIRSUPPORT_REINFORCEMENT_RIOT,SURVIVAL_AIRSUPPORT_REINFORCEMENT_RIOT_DESC,menu_so_friendly_riot_team,26,0,,1,
+10004,specialty_quickdraw,airsupport,3000,PERKS_QUICKDRAW,PERKS_DESC_QUICKDRAW,specialty_quickdraw,0,0,,1,
+10005,specialty_bulletaccuracy,airsupport,3000,PERKS_STEADY_AIM,PERKS_DESC_STEADY_AIM,specialty_steadyaim,8,0,,1,
+10006,specialty_stalker,airsupport,3500,PERKS_STALKER,PERKS_DESC_STALKER,specialty_stalker,16,0,,1,
+10007,specialty_longersprint,airsupport,4000,PERKS_LONGERSPRINT,PERKS_DESC_LONGERSPRINT,specialty_longersprint,32,0,,1,
+10008,specialty_fastreload,airsupport,4000,PERKS_SLEIGHT_OF_HAND,PERKS_DESC_SLEIGHT_OF_HAND,specialty_fastreload,48,0,,1,
+10009,friendly_support_chopper,airsupport,6500,SURVIVAL_AIRSUPPORT_REINFORCEMENT_CHOPPER,SURVIVAL_AIRSUPPORT_REINFORCEMENT_CHOPPER_DESC,icon_friendly_support_chopper,39,0,,1,
+10010,free_item_1,airsupport,50,FREE_ITEM_1,FREE_ITEM_1_DESC,menu_so_friendly_assault_team,51,0,,1,
+10011,free_item_2,airsupport,50,FREE_ITEM_2,FREE_ITEM_2_DESC,menu_so_friendly_assault_team,51,0,,1,
+10012,call_for_resupply,airsupport,3000,SURVIVAL_AIRSUPPORT_CALL_FOR_RESUPPLY,SURVIVAL_AIRSUPPORT_CALL_FOR_RESUPPLY_DESC,icon_call_for_resupply,15,0,,1,
+10013,upgrade_friendly_squad,airsupport,5000,SURVIVAL_AIRSUPPORT_UPGRADE_FRIENDLY_SQUAD,SURVIVAL_AIRSUPPORT_UPGRADE_FRIENDLY_SQUAD_DESC,icon_upgrade_friendly_squad,15,0,,1,
+10014,upgrade_sentry_gun,airsupport,8000,SURVIVAL_AIRSUPPORT_UPGRADE_SENTRY_GUN,SURVIVAL_AIRSUPPORT_UPGRADE_SENTRY_GUN_DESC,icon_upgrade_sentry_gun,15,0,,1,

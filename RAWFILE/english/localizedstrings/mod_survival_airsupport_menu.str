@@ -1,0 +1,58 @@
+// Dumped from fastfile "patch_survival".
+// In their original format the strings might have been separated in multiple files.
+VERSION             "1"
+CONFIG              "C:/trees/cod3/cod3/bin/StringEd.cfg"
+FILENOTES           ""
+
+REFERENCE           SURVIVAL_AIRSUPPORT_REINFORCEMENT_DELTA
+LANG_ENGLISH        "Delta Juggernaut Squad"
+
+REFERENCE           SURVIVAL_AIRSUPPORT_REINFORCEMENT_DELTA_DESC
+LANG_ENGLISH        "Call a Juggernaut. PKP MG, 50% Dmg Resist, 2000 HP. Follows player (slow speed)."
+
+REFERENCE           SURVIVAL_AIRSUPPORT_REINFORCEMENT_RIOT
+LANG_ENGLISH        "Riot Shield Squad"
+
+REFERENCE           SURVIVAL_AIRSUPPORT_REINFORCEMENT_RIOT_DESC
+LANG_ENGLISH        "Call 2 GIGN troops. SPAS12, 500 HP. ^3Follows 60s, then turn to holds position."
+
+REFERENCE           SURVIVAL_AIRSUPPORT_REINFORCEMENT_CHOPPER
+LANG_ENGLISH        "Call Friendly Bird"
+
+REFERENCE           SURVIVAL_AIRSUPPORT_REINFORCEMENT_CHOPPER_DESC
+LANG_ENGLISH        "Call attack heli. Circles player, auto-fires. ^3Limited fuel (5min)."
+
+REFERENCE           SURVIVAL_AIRSUPPORT_CALL_FOR_RESUPPLY
+LANG_ENGLISH        "Resupply Allies"
+
+REFERENCE           SURVIVAL_AIRSUPPORT_CALL_FOR_RESUPPLY_DESC
+LANG_ENGLISH        "Restore health & ammo for ally squads. can be upgraded up to 4 times."
+
+REFERENCE           SURVIVAL_AIRSUPPORT_UPGRADE_FRIENDLY_SQUAD
+LANG_ENGLISH        "Battlefield Upgrade: Strong Body"
+
+REFERENCE           SURVIVAL_AIRSUPPORT_UPGRADE_FRIENDLY_SQUAD_DESC
+LANG_ENGLISH        "Permanently +500 HP for Delta/GIGN squad members. Affects news. Max: 4 upgrades."
+
+REFERENCE           SURVIVAL_AIRSUPPORT_UPGRADE_SENTRY_GUN
+LANG_ENGLISH        "Battlefield Upgrade: Sentry Refinement"
+
+REFERENCE           SURVIVAL_AIRSUPPORT_UPGRADE_SENTRY_GUN_DESC
+LANG_ENGLISH        "Permanently +500 HP for Sentry Guns & Grenade Launchers. Affects news. Once only."
+
+REFERENCE           FREE_ITEM_1
+LANG_ENGLISH        "Free Slot 1"
+
+REFERENCE           FREE_ITEM_1_DESC
+LANG_ENGLISH        "for modder,don't buy."
+
+REFERENCE           FREE_ITEM_2
+LANG_ENGLISH        "Free Slot 2"
+
+REFERENCE           FREE_ITEM_2_DESC
+LANG_ENGLISH        "for modder,don't buy."
+
+REFERENCE           SURVIVAL_ARMORY_PERKS_DESC
+LANG_ENGLISH        "Perk Crates airdropped via chopper. Max carry: ^32^7 Perks. Laststand will lose all Perks¡£"
+
+ENDMARKER

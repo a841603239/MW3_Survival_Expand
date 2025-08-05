@@ -1,0 +1,142 @@
+// Dumped from fastfile "patch_survival".
+// In their original format the strings might have been separated in multiple files.
+VERSION             "1"
+CONFIG              "C:/trees/cod3/cod3/bin/StringEd.cfg"
+FILENOTES           ""
+
+REFERENCE           SO_SURVIVAL_ATTACHMENT_AKIMBO
+LANG_ENGLISH        "Akimbo Model"
+
+REFERENCE           SO_SURVIVAL_ATTACHMENT_AKIMBO_DESC
+LANG_ENGLISH        "^3For UMP45/PP90M1/Model 1887/ALL pistols/ALL machine pistols.^1Ineffective on other weapons."
+
+REFERENCE           WEAPON_FNFIVESEVEN_DESC
+LANG_ENGLISH        "Belgian semi-auto. Low dmg, mid range, fast reload. Max pistol mag. Excellent handling."
+
+REFERENCE           WEAPON_USP_DESC
+LANG_ENGLISH        "German semi-auto. Low dmg, mid range, avg reload. Smaller mag than Five-seveN. Stable."
+
+REFERENCE           WEAPON_MP412_DESC
+LANG_ENGLISH        "Russian semi-auto. Mid-high dmg, mid range, slow reload. Fast draw. Small mag."
+
+REFERENCE           WEAPON_DESERTEAGLE_DESC
+LANG_ENGLISH        "American semi-auto. Very high dmg, mid-long range, fast reload. Heavy recoil. Low accuracy."
+
+REFERENCE           WEAPON_MAGNUM_DESC
+LANG_ENGLISH        "Israeli semi-auto. Very high dmg, mid-long range, avg reload. Better accuracy than Deagle. Tiny mag."
+
+REFERENCE           WEAPON_P99_DESC
+LANG_ENGLISH        "German semi-auto. High dmg, mid range, fast reload. High ROF+accuracy. Top performer."
+
+REFERENCE           WEAPON_GLOCK_DESC
+LANG_ENGLISH        "Austrian semi-auto. Low dmg, close-mid range, fast reload. Full-auto unstable. Fast ammo drain."
+
+REFERENCE           WEAPON_SKORPION_DESC
+LANG_ENGLISH        "Czech machine pistol. Low dmg, close range, avg reload. Excellent grouping. More stable than Glock."
+
+REFERENCE           WEAPON_MP9_DESC
+LANG_ENGLISH        "Swiss machine pistol. Mid dmg, close-mid range, fast reload. Red dot recommended. Good mid-range."
+
+REFERENCE           WEAPON_FMG9_DESC
+LANG_ENGLISH        "German machine pistol. High dmg, close-mid range, slow reload. Akimbo viable. High recoil."
+
+REFERENCE           WEAPON_MP5K_DESC
+LANG_ENGLISH        "German SMG. Mid dmg, close-mid range, fast reload. Enemy drops common. Resource-friendly."
+
+REFERENCE           WEAPON_UMP45_DESC
+LANG_ENGLISH        "German SMG. High dmg, mid range, avg reload. Low ROF/high impact. AR substitute."
+
+REFERENCE           WEAPON_MP7_DESC
+LANG_ENGLISH        "German SMG. Mid dmg, mid range, fast reload. ACOG recommended. Strong mid-range."
+
+REFERENCE           WEAPON_UZI_DESC
+LANG_ENGLISH        "Israeli SMG. Mid dmg, close-mid range, fast reload. ACOG recommended. Strong mid-range."
+
+REFERENCE           WEAPON_PP90M1_DESC
+LANG_ENGLISH        "Russian SMG. Mid dmg, close-mid range, fast reload. High ROF/low recoil. Common enemy drop."
+
+REFERENCE           WEAPON_P90_DESC
+LANG_ENGLISH        "Belgian SMG. Mid dmg, mid range, avg reload. Large mag (2nd to LMGs). Sustain fire."
+
+REFERENCE           WEAPON_M60_DESC
+LANG_ENGLISH        "American LMG. Very high dmg, long range, slow reload. Optic required. Low ROF."
+
+REFERENCE           WEAPON_PECHENEG_DESC
+LANG_ENGLISH        "Russian LMG. High dmg, long range, slow reload. Balance between M60/MK46."
+
+REFERENCE           WEAPON_MK46_DESC
+LANG_ENGLISH        "Belgian LMG. Mid-high dmg, long range, slow reload. High ROF/ammo drain. Stable."
+
+REFERENCE           WEAPON_SA80_DESC
+LANG_ENGLISH        "British LMG. Mid dmg, mid-long range, avg reload. Mag-fed. Fast mag swap."
+
+REFERENCE           WEAPON_MG36_DESC
+LANG_ENGLISH        "German LMG. Mid dmg, mid-long range, fast reload. Fastest LMG reload. Sustain fire."
+
+REFERENCE           WEAPON_M4_DESC
+LANG_ENGLISH        "American AR. Mid dmg, mid range, fast reload. Highly customizable. Well-balanced."
+
+REFERENCE           WEAPON_M16_DESC
+LANG_ENGLISH        "American burst AR. Mid-high dmg, mid-long range, fast reload. 3-round burst. Weak CQB."
+
+REFERENCE           WEAPON_SCAR_DESC
+LANG_ENGLISH        "Belgian AR. Mid-high dmg, mid-long range, avg reload. Low ROF/high accuracy. Rock-solid."
+
+REFERENCE           WEAPON_ACR_DESC
+LANG_ENGLISH        "American AR. Mid dmg, mid-long range, fast reload. Minimal recoil. All-rounder."
+
+REFERENCE           WEAPON_AK47_DESC
+LANG_ENGLISH        "Soviet AR. High dmg, mid-long range, avg reload. Note: GP25 grenade launcher disabled."
+
+REFERENCE           WEAPON_FAD_DESC
+LANG_ENGLISH        "Peruvian AR. Mid dmg, mid range, slow reload. LMG-like mag. Sustain fire."
+
+REFERENCE           WEAPON_G36_DESC
+LANG_ENGLISH        "German AR. Mid dmg, mid range, fast reload. M320 GL compatible. M4-like performance."
+
+REFERENCE           WEAPON_CM901_DESC
+LANG_ENGLISH        "American AR. High dmg, mid-long range, avg reload. Heavy recoil. Burst-fire needed at range."
+
+REFERENCE           WEAPON_MK14_DESC
+LANG_ENGLISH        "American DMR. Very high dmg, long range, avg reload. Optic required. Highest AR dmg."
+
+REFERENCE           WEAPON_TYPE95_DESC
+LANG_ENGLISH        "Chinese burst AR. High dmg, mid-long range, fast reload. Precision aiming needed."
+
+REFERENCE           WEAPON_MODEL1887_DESC
+LANG_ENGLISH        "American lever shotgun. Very high dmg, long range, slow reload. Akimbo viable. Deadly mid-range."
+
+REFERENCE           WEAPON_USAS12_DESC
+LANG_ENGLISH        "Korean semi-auto shotgun. High dmg, mid range, fast reload. Effective in fast-paced combat."
+
+REFERENCE           WEAPON_SPAS12_DESC
+LANG_ENGLISH        "Italian pump shotgun. High dmg, mid range, slow reload. Weak vs high-HP. Slow ROF."
+
+REFERENCE           WEAPON_KSG_DESC
+LANG_ENGLISH        "American pump shotgun. High dmg, mid range, slow reload. Dual-tube mag. Large capacity."
+
+REFERENCE           WEAPON_STRIKER_DESC
+LANG_ENGLISH        "South African semi-auto shotgun. Mid-high dmg, mid range, avg reload. Full-auto burst. Expensive."
+
+REFERENCE           WEAPON_AA12_DESC
+LANG_ENGLISH        "American auto shotgun. Mid dmg, close range, avg reload. Limited ammo pool. Poor sustain."
+
+REFERENCE           WEAPON_MSR_DESC
+LANG_ENGLISH        "American bolt-action sniper. Very high dmg, extreme range, slow reload. Non-rapidfire. Weak vs high-HP."
+
+REFERENCE           WEAPON_DRAGUNOV_DESC
+LANG_ENGLISH        "Soviet semi-auto sniper. Mid dmg, long range, avg reload. Lost rapidfire advantage. Low stopping power."
+
+REFERENCE           WEAPON_RSASS_DESC
+LANG_ENGLISH        "American semi-auto sniper. Mid-high dmg, long range, avg reload. ACOG compatible. Tactical rifle role."
+
+REFERENCE           WEAPON_L96A1_DESC
+LANG_ENGLISH        "British bolt-action sniper. Very high dmg, extreme range, slow reload. Comparable to MSR."
+
+REFERENCE           WEAPON_AS50_DESC
+LANG_ENGLISH        "British semi-auto sniper. Very high dmg, extreme range, avg reload. Rapid suppression. Small mag."
+
+REFERENCE           WEAPON_BARRETT_DESC
+LANG_ENGLISH        "American semi-auto sniper. Very high dmg, extreme range, slow reload. Large mag/rapidfire. Top-tier."
+
+ENDMARKER
