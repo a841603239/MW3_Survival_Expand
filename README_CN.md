@@ -94,6 +94,6 @@
 ## 💖 打赏作者
 
 **MW3_survival_expand** 是一个免费模组. 制作不易，欢迎打赏🤩
-(https://github.com/a841603239/MW3_Survival_Expand/blob/main/donate_Alipay.png)
+[![支付宝](https://github.com/a841603239/MW3_Survival_Expand/blob/main/donate_Alipay.png)]
 
 
