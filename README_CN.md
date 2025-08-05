@@ -1,3 +1,5 @@
+[中文](README_CN.md) | [English](README.md)
+
 # 📖 全局 
 
 -   每回合倒计时由30秒调整为**40秒**。
